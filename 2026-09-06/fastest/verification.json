@@ -321,6 +321,26 @@
       "file": "media/0744_restored.mp4",
       "sha256": "82c963681012871e2d7e35d55f1f21e1be124a0510e3c71253bd2a6a9738f838",
       "bytes": 360717
+    },
+    {
+      "file": "assets/method_structure.svg",
+      "sha256": "839159600123f26b89959f1e2d4a9d31dfbbcc687d20b47276f27fa91267529e",
+      "bytes": 10663
+    },
+    {
+      "file": "assets/method_structure.png",
+      "sha256": "6a0e647c24f3fbba4f5bb46d708ef84eaaa9daedcf89d1f7e3e7c56240b4c0d8",
+      "bytes": 278319
+    },
+    {
+      "file": "assets/restorer_network.svg",
+      "sha256": "8a9fc4358e13fe23b98e855cef4849997077dedc0dd5711eac7e37373654ca0a",
+      "bytes": 12647
+    },
+    {
+      "file": "assets/restorer_network.png",
+      "sha256": "1caec7845d510b2c87c0ace808b2fbeebb6617ccefb3e5c9bb5b5066ccac82d0",
+      "bytes": 334346
     }
   ],
   "video_checks": [
@@ -433,7 +453,7 @@
       ]
     }
   ],
-  "site_index_sha256": "04faeab884d3c938c1b697637a6e28f042caf5a10b3b7d95270118b943a9f5ff",
+  "site_index_sha256": "fc17bac2f3f6895bdaa055c9fb0c68a7d4a9d364a47fbc8a334517e6003e4191",
   "browser_playback_verified": false,
   "visual_review_pending": false,
   "sampled_frame_review": {
@@ -529,5 +549,15 @@
     "sourceMediaSync": true,
     "sliderSeekAndPlaybackRate": true,
     "verification": "DOM mock and static checks; no browser playback"
+  },
+  "structure_manual": {
+    "components": 11,
+    "diagrams": 2,
+    "diagram_pngs_visually_reviewed": true,
+    "checkpoint_structure_read_on_cpu": true,
+    "inference_or_model_modified": false,
+    "original_63_media_assets_unchanged": true,
+    "previous_html_sha256": "04faeab884d3c938c1b697637a6e28f042caf5a10b3b7d95270118b943a9f5ff",
+    "structure_json_sha256": "cef53d798940c97e33b06417775afe331acc8fcae404875a17d5f7b5286cb784"
   }
 }

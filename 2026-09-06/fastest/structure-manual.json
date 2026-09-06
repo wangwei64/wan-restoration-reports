@@ -1,0 +1,178 @@
+{
+  "restorer_config": {
+    "width": 64,
+    "blocks": 4,
+    "feature_channels": 46,
+    "rgb_error_tolerance": 0.025,
+    "rgb_error_softness": 0.01,
+    "embedded_finetuned_backbone": true
+  },
+  "backbone_config": {
+    "in_channels": 16,
+    "width": 64,
+    "encoder_blocks": [
+      1,
+      1,
+      1,
+      8
+    ],
+    "middle_blocks": 6,
+    "decoder_blocks": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "dropout": 0.0,
+    "residual_head_std": 0.0,
+    "residual_scale": 0.107,
+    "heatmap_conditioning": true,
+    "heatmap_channels": 1,
+    "detail_blocks": 12,
+    "detail_width": 192,
+    "detail_multiscale_bands": false,
+    "detail_spatiotemporal_bands": true,
+    "detail_temporal_fusion_blocks": 4,
+    "detail_heatmap_temporal_smoothing": 0.35,
+    "detail_residual_scale": 0.195,
+    "detail_gate_floor": 0.2,
+    "learned_detail_attention": false,
+    "detail_attention_mix": 0.5,
+    "token_uncertainty_head": true,
+    "token_uncertainty_width": 64,
+    "token_uncertainty_blocks": 2
+  },
+  "feature_config": {
+    "width": 48,
+    "blocks": 4
+  },
+  "subject_config": {
+    "width": 32,
+    "blocks": 4
+  },
+  "parameter_counts": {
+    "restorer_total": 73034884,
+    "restorer_backbone": 72850721,
+    "restorer_image_encoder": 10752,
+    "restorer_quality_head": 41810,
+    "feature_student": 95567,
+    "subject_head": 88481
+  },
+  "checkpoints": {
+    "restorer": {
+      "file": "best_restorer.pt",
+      "sha256": "3f43942ad0856f47530ccc82d6db557a8b18df73fb63ac09b622723b68b41a71"
+    },
+    "backbone": {
+      "file": "epoch_002.pt",
+      "sha256": "8e449976b5853fd7f4efb2af967be48ab5294a4e1c8df12ebf5068ab586cbd66"
+    },
+    "feature_student": {
+      "file": "best.pt",
+      "sha256": "59e73c23df358288cbdc310ff5fb3e1d2a829f05b9c8f6c2faa31e8983080cb9"
+    },
+    "subject_head": {
+      "file": "best_subject.pt",
+      "sha256": "f2fcd86bb3d08dbb2c26f53b6037e8e29e4cb9fa3389fad38769db5ef0b82cac"
+    }
+  },
+  "component_interfaces": [
+    {
+      "component": "原生Wan预热",
+      "inputs": "Prompt、种子",
+      "outputs": "z10、z9、带噪状态、词空间图、Step10 K/V",
+      "function": "保持原生前十步；提供恢复输入、自动主体信号、稀疏积分初始历史与第一上下文锚点。"
+    },
+    {
+      "component": "latent特征学生网络",
+      "inputs": "z10（16C）",
+      "outputs": "F（46C）、H（1C）",
+      "function": "Conv3d 16→48，4个时序NAF块，归一化和47C输出；前46C为特征，最后1C经sigmoid为细节热图。无需先VAE解码。"
+    },
+    {
+      "component": "自动prompt关联",
+      "inputs": "Prompt各词、第10步4层相关图、主体头概率",
+      "outputs": "加权文本热图",
+      "function": "对每个词计算前景与背景相关性的差异，取正值平方并归一化；动作词、修饰词也可贡献，无手工subject。"
+    },
+    {
+      "component": "latent主体头",
+      "inputs": "拼接z10/F/H，共63C",
+      "outputs": "1C前景概率",
+      "function": "Conv3d 63→32，4个时序NAF块，归一化与1C输出；外部sigmoid后与文本热图融合，再清理连通碎片。历史使用过离线YOLOE监督。"
+    },
+    {
+      "component": "FeatureRestorer恢复网络",
+      "inputs": "z10（16C）、F（46C）、H（1C）",
+      "outputs": "R（16C）、C/e/u（各1C）",
+      "function": "基础/细节恢复 + 图像特征校正 + 外层质量头。图2展开结构。当前恢复网络总参数约73.035M，包含未被上层使用的基座旧质量支路。"
+    },
+    {
+      "component": "恢复误差校准",
+      "inputs": "外层质量头的预期RGB误差e",
+      "outputs": "校准后的误差估计",
+      "function": "当前实际使用20分箱、22节点单调分段线性映射。不是上下文校准网络；不把离线校准真值当作在线输入。"
+    },
+    {
+      "component": "互斥三区路由",
+      "inputs": "主体概率、校准误差、H、z10−z9漂移",
+      "outputs": "S、L、R区及局部风险",
+      "function": "τ=.010经主体/细节/漂移调整；S/L互斥、可靠主体也可直接恢复。候选覆盖不设固定比例。"
+    },
+    {
+      "component": "恢复修正事件控制器",
+      "inputs": "R、真实Wan修正历史、恢复风险、主体重要性",
+      "outputs": "本采样步需要计算的token集合",
+      "function": "每步轻量check。已验证稳定的修正降低需求，未预测的新修正提高需求；score≥β=2.0才触发。"
+    },
+    {
+      "component": "逐token积分器",
+      "inputs": "真实观测与各token自己的历史、当前sigma",
+      "outputs": "本步和跳步位置的latent状态",
+      "function": "UniPC-2/bh2稠密输出。只把真实Wan预测加入历史；R区沿恢复端点轨迹推进，不另加随机噪声。"
+    },
+    {
+      "component": "恢复双锚点上下文与融合算子",
+      "inputs": "Step10 K/V、恢复端点K/V、稀疏真实修正",
+      "outputs": "各层完整K/V上下文",
+      "function": "R提前可用，因此可用双锚点插值加测得修正。Triton融合上下文准备；触发token仍执行完整Wan块。"
+    },
+    {
+      "component": "第50步融合与最终VAE",
+      "inputs": "最终Wan latent、R、三区权重",
+      "outputs": "最终41帧视频",
+      "function": "所有候选S/L在第50步刷新。按原权重组装后VAE解码；本版无额外尾部恢复步骤。"
+    }
+  ],
+  "base_input_shape": [
+    1,
+    16,
+    11,
+    60,
+    104
+  ],
+  "feature_shape": [
+    1,
+    46,
+    11,
+    60,
+    104
+  ],
+  "heat_shape": [
+    1,
+    1,
+    11,
+    60,
+    104
+  ],
+  "token_grid": [
+    11,
+    30,
+    52
+  ],
+  "calibration_kind": "20-bin, 22-knot monotonic piecewise-linear expected RGB error calibration",
+  "restorer_source_sha256": "d53a77c22194ee12f7e907924752eb3353dbb5a7ff99da21ff4e945610196e3c",
+  "temporal_nafnet_sha256": "ffd51a8fb5090efc42f935138759bc11ea4a676570c6d251bc38f66e9d6ac5a4",
+  "basis": "actual frozen fastest runtime and loaded checkpoint configs; CPU inspection only; no model or inference changes",
+  "backbone_legacy_uncertainty_computed_but_not_returned": true
+}
