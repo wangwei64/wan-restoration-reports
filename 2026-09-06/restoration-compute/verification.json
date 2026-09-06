@@ -1,0 +1,336 @@
+{
+  "cases": 9,
+  "paired_runs": 18,
+  "all_tensors_and_videos_equal_previous": true,
+  "unchanged_token_decisions": 6177600,
+  "assets": [
+    {
+      "asset": "0625_debt075_0.010_pair",
+      "file": "videos/0625_debt075_0.010_vs_gt.mp4",
+      "sha256": "f0fb0b5fcba75c1306cb5d1dce976199fa5b5e1db7437c1527a6c142b83809ba",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0625_debt075_0.010_poster",
+      "file": "videos/0625_debt075_0.010_vs_gt.frame00.jpg",
+      "sha256": "2c023e42d8250a461faf6cec65b21cfca35aa2b8d4936b8ee4ec3e1db75e522f",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0625_debt075_0.010_counts",
+      "file": "intermediates/0625/debt075_0.010_counts.png",
+      "sha256": "0020aba7f4e0289316e2ce7e2f1d387ae55fa3bded288dd2f99f5f2be0da4b95",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0625_step10",
+      "file": "intermediates/0625/step10.mp4",
+      "sha256": "7bfc315fcf13c888037d476b104182c9b258a6849ccbcee00e0bd9f86dfa1ecc",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0625_restored",
+      "file": "intermediates/0625/restored.mp4",
+      "sha256": "a0c6ffd6fcd1601c408931a15966572f795cd21b9f4afdea3823489fea8d366b",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0625_regions",
+      "file": "intermediates/0625/regions.png",
+      "sha256": "a70643eab59b3ba59f7447266e1bbb3d90ac90be86409e4ed3ac7d337055ad12",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0307_debt075_0.010_pair",
+      "file": "videos/0307_debt075_0.010_vs_gt.mp4",
+      "sha256": "cfd0ed066d8a423102bb88ed18dc348b62b63b568d14173488f1581ec94f10f3",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0307_debt075_0.010_poster",
+      "file": "videos/0307_debt075_0.010_vs_gt.frame00.jpg",
+      "sha256": "faede026ac39604cb0d0ea94a7112f07255bb8607dfab161af7901b40e799edf",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0307_debt075_0.010_counts",
+      "file": "intermediates/0307/debt075_0.010_counts.png",
+      "sha256": "1ada33c4786f41e92434f5d1963ac3a51b331555a8ef741697377dd87d7bf7a3",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0307_step10",
+      "file": "intermediates/0307/step10.mp4",
+      "sha256": "b8d004075a5aa0d19917fba48280056393d36febaf80bdc3a033535214c9211f",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0307_restored",
+      "file": "intermediates/0307/restored.mp4",
+      "sha256": "b996b9b79d326d4fb90a6f3abddceb70378f4b83fad0bf950f84031e37a0df4d",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0307_regions",
+      "file": "intermediates/0307/regions.png",
+      "sha256": "a615b9695c31fe7daa5edac6a854ab11714c60610500ca2c033dde07b01dbf8c",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0663_debt075_0.010_pair",
+      "file": "videos/0663_debt075_0.010_vs_gt.mp4",
+      "sha256": "719dd0e4327755f61813b9fa9a080a880430c94603f7de99f37ef9f2ec4e5211",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0663_debt075_0.010_poster",
+      "file": "videos/0663_debt075_0.010_vs_gt.frame00.jpg",
+      "sha256": "021b6d989e58ceb95137426b00181722c6fbf0beb3abfa83c61d80dc4ff18c9d",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0663_debt075_0.010_counts",
+      "file": "intermediates/0663/debt075_0.010_counts.png",
+      "sha256": "77c01e4947309c6b9735f51a2a20ce7e22c111bfdb89fa29677f5cef40db2416",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0663_step10",
+      "file": "intermediates/0663/step10.mp4",
+      "sha256": "b26bc86f60cefab39cce70bd39471b1d55c796c6945e9dd8da1bc6a4afeb8454",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0663_restored",
+      "file": "intermediates/0663/restored.mp4",
+      "sha256": "fba7b69c9011fe444e7889f59e4c65149b3d52013677d3b174d28edd4a608c8d",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0663_regions",
+      "file": "intermediates/0663/regions.png",
+      "sha256": "63faf48712cd38ddac14f952a2bf8f48cf49a2ec3dd891985cad68f56fb6e987",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0722_debt075_0.010_pair",
+      "file": "videos/0722_debt075_0.010_vs_gt.mp4",
+      "sha256": "d2057d694120286f5c5aebf7a6115eea4ceff36b684cbfb23c4f35c5ee343b20",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0722_debt075_0.010_poster",
+      "file": "videos/0722_debt075_0.010_vs_gt.frame00.jpg",
+      "sha256": "5b91b8a7a75121cf65028fbcf6dd2c3819225ca3e4468c44a0e9cf020951a00f",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0722_debt075_0.010_counts",
+      "file": "intermediates/0722/debt075_0.010_counts.png",
+      "sha256": "466ed81843572e10e1b76750381eeb854cb0f404575b6d16d709e1eae97fffa6",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0722_step10",
+      "file": "intermediates/0722/step10.mp4",
+      "sha256": "58bbc41a9e7495e15bcaef79c6ec032473b15e559a586f897e1490ce5b438bee",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0722_restored",
+      "file": "intermediates/0722/restored.mp4",
+      "sha256": "78a5e2f2018ce222a5205ba880da91abcb04e86039c2abc5edd618c210841400",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0722_regions",
+      "file": "intermediates/0722/regions.png",
+      "sha256": "1afbe157009fb037e2bec65180d1f53d5f279fc8c7d1045d447d7654d95d81dd",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0744_debt075_0.010_pair",
+      "file": "videos/0744_debt075_0.010_vs_gt.mp4",
+      "sha256": "e8de542e2c83d6a1f177193e6f0e8e6b2de45a041e4c159da9887944e153559f",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0744_debt075_0.010_poster",
+      "file": "videos/0744_debt075_0.010_vs_gt.frame00.jpg",
+      "sha256": "1c55c8a35e7a75cc33867ffe01695f5ac6118f1721748640f328d6ee5352e759",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0744_debt075_0.010_counts",
+      "file": "intermediates/0744/debt075_0.010_counts.png",
+      "sha256": "f3e037906cc74fa359871ba50bc4202b12df5de144eab925d0bbdfaf54d75d56",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0744_step10",
+      "file": "intermediates/0744/step10.mp4",
+      "sha256": "f620e6b017ea5aba3dbdb625e3a7bba43fe12cea1743f4e05a193c7bf9dd548c",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0744_restored",
+      "file": "intermediates/0744/restored.mp4",
+      "sha256": "82c963681012871e2d7e35d55f1f21e1be124a0510e3c71253bd2a6a9738f838",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0744_regions",
+      "file": "intermediates/0744/regions.png",
+      "sha256": "65def4363873f2b6b5879c578b3ca53a04da418024bc8cd6d72095f9dce8ad72",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0157_debt075_0.010_pair",
+      "file": "videos/0157_debt075_0.010_vs_gt.mp4",
+      "sha256": "d4dd8e94948388d83de2cad98120d2af43580fe004a1d424eb95d56ce4cd2049",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0157_debt075_0.010_poster",
+      "file": "videos/0157_debt075_0.010_vs_gt.frame00.jpg",
+      "sha256": "e0e977f1c2bb6d5ec730414c18d598089bf14cec8de04cb401db581588d84e8e",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0157_debt075_0.010_counts",
+      "file": "intermediates/0157/debt075_0.010_counts.png",
+      "sha256": "e1267f39e555bde0eb7c6d30403e63b4ff09dd87da7b1c5be2d07978fa243e65",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0157_step10",
+      "file": "intermediates/0157/step10.mp4",
+      "sha256": "4245042ff2c9cd5d0838fdfa09dcc2c0f6d454800de885b3bcc04607839d12bc",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0157_restored",
+      "file": "intermediates/0157/restored.mp4",
+      "sha256": "27c146062f438adc5a9e6408177247b1dcfafa633ad312e6d6d8596ba69d4f30",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0157_regions",
+      "file": "intermediates/0157/regions.png",
+      "sha256": "f67b548dc598f26385aea1a3752ab71bc0b1af9d644ea42501acdbee875fbc2d",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0272_debt075_0.010_pair",
+      "file": "videos/0272_debt075_0.010_vs_gt.mp4",
+      "sha256": "98c7a4b160abd98a27929cd1f5d1cf3ce0e064256f43aa3e6324b946608225a5",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0272_debt075_0.010_poster",
+      "file": "videos/0272_debt075_0.010_vs_gt.frame00.jpg",
+      "sha256": "16d355eafaf892b0fd5075b3630157eb2c4d70194164ed936bb605b173c78ddb",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0272_debt075_0.010_counts",
+      "file": "intermediates/0272/debt075_0.010_counts.png",
+      "sha256": "a8e62769f4094c2521751aa8055ba4d34b6d26a6c7f69aa971224fad7d6f67a0",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0272_step10",
+      "file": "intermediates/0272/step10.mp4",
+      "sha256": "75b3142da898134983bd2272b627848c0c542cd02bf314d385672459a38cf2f0",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0272_restored",
+      "file": "intermediates/0272/restored.mp4",
+      "sha256": "7ab064016b9b67c9e8815f91bd184c1278ed891109ac5cf025f4e0537bf139f5",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0272_regions",
+      "file": "intermediates/0272/regions.png",
+      "sha256": "ab479411fd1a4376fce01309bb8618599029ee289babdb2f74181346c4cd45b7",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0315_debt075_0.010_pair",
+      "file": "videos/0315_debt075_0.010_vs_gt.mp4",
+      "sha256": "d9ddb3948fcb5c1586fc195d266ac2d1101912838dd4b0192cbb89315e8b40c6",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0315_debt075_0.010_poster",
+      "file": "videos/0315_debt075_0.010_vs_gt.frame00.jpg",
+      "sha256": "7294efb260c3926a367906355f60c8c338c6e3559aceb2f056a900077812ae7c",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0315_debt075_0.010_counts",
+      "file": "intermediates/0315/debt075_0.010_counts.png",
+      "sha256": "d03728165c70110f025ff27a653b22bb1843db60e5fc117e1be5905edc129181",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0315_step10",
+      "file": "intermediates/0315/step10.mp4",
+      "sha256": "891ea26dc57f52dedce6d01317bb27be37ca6b0fc1e04248b104a8181d00b5fb",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0315_restored",
+      "file": "intermediates/0315/restored.mp4",
+      "sha256": "f8aaf133dcdeda138431b02525e56b397296abfa5ac496e8dc259f655fac0a00",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0315_regions",
+      "file": "intermediates/0315/regions.png",
+      "sha256": "9beae6224e4a78ec7fb3a5f0e65342c38e70ff4a837464cdf0777de5af2bb79b",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0730_debt075_0.010_pair",
+      "file": "videos/0730_debt075_0.010_vs_gt.mp4",
+      "sha256": "7e598c5c1ee8ebf1abbe240e85c5e0485d8b2b4c0e2829dacdaa6fcbe8142a0d",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0730_debt075_0.010_poster",
+      "file": "videos/0730_debt075_0.010_vs_gt.frame00.jpg",
+      "sha256": "c37f957cb30119182296b5afd065cbdf5f845ee3a798a84493f8a5a9be5c3938",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0730_debt075_0.010_counts",
+      "file": "intermediates/0730/debt075_0.010_counts.png",
+      "sha256": "c15127c812b0054751760f97289fbdeecc13b9f86bf861f671493786106f329a",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0730_step10",
+      "file": "intermediates/0730/step10.mp4",
+      "sha256": "4d294751e4361cc2b99953dd08e3fd9d261f2ee9e53e32ed0cba8dbfb4aa92d1",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0730_restored",
+      "file": "intermediates/0730/restored.mp4",
+      "sha256": "356da929c05103cf56404c21975854cdd29501cf9cbaf67cd1c0cbfdb58e8241",
+      "reused_after_exact_new_output_check": true
+    },
+    {
+      "asset": "0730_regions",
+      "file": "intermediates/0730/regions.png",
+      "sha256": "61fa3d44813e44f3568312fdc835b346f96956df7330408686569e10c05a4ce4",
+      "reused_after_exact_new_output_check": true
+    }
+  ],
+  "video_count": 27,
+  "prior_full_decode_verified": true,
+  "browser_playback_verified": false,
+  "site_index_sha256": "ada8e3ff6465a4182989a70f6bafe73492598ef937c6f8137567f4f15e0f8066"
+}
