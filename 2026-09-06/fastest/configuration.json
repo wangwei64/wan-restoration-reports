@@ -1,0 +1,19 @@
+{
+  "selected_refinement_budget": 2.0,
+  "quality_tolerance": 0.01,
+  "selection_scope": "fastest overall among previously compared beta .75,1,1.25,1.5,2; current auto+fused combined implementation freshly measured",
+  "policy": "restoration_debt",
+  "restoration_risk_power": 1,
+  "native_warmup_steps": 10,
+  "last_step": 50,
+  "extra_tail_steps": 0,
+  "subject_input": "automatic prompt/latent agreement; no manual label",
+  "online_yolo": false,
+  "online_preview_vae": false,
+  "new_training": false,
+  "new_network": false,
+  "operator_backend": "fused restoration-anchor context with sparse measured residuals",
+  "cli_arguments": "--refinement-budget 2.0 --quality-tolerance 0.010",
+  "runtime_entrypoint_default_budget": 0.75,
+  "explicit_override_required": true
+}
