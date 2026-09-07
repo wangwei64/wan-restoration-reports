@@ -1,0 +1,238 @@
+{
+  "passed": true,
+  "html_references_verified": 20,
+  "video_count": 9,
+  "videos": [
+    {
+      "file": "assets/0157_20260828_compare.mp4",
+      "frames": 41,
+      "fps": 16.0,
+      "shape": [
+        528,
+        1664,
+        3
+      ]
+    },
+    {
+      "file": "assets/0157_20260828_regions.mp4",
+      "frames": 41,
+      "fps": 16.0,
+      "shape": [
+        528,
+        832,
+        3
+      ]
+    },
+    {
+      "file": "assets/0157_20260828_workflow.mp4",
+      "frames": 41,
+      "fps": 16.0,
+      "shape": [
+        288,
+        2080,
+        3
+      ]
+    },
+    {
+      "file": "assets/0500_20260828_compare.mp4",
+      "frames": 41,
+      "fps": 16.0,
+      "shape": [
+        528,
+        1664,
+        3
+      ]
+    },
+    {
+      "file": "assets/0500_20260828_regions.mp4",
+      "frames": 41,
+      "fps": 16.0,
+      "shape": [
+        528,
+        832,
+        3
+      ]
+    },
+    {
+      "file": "assets/0500_20260828_workflow.mp4",
+      "frames": 41,
+      "fps": 16.0,
+      "shape": [
+        288,
+        2080,
+        3
+      ]
+    },
+    {
+      "file": "assets/0625_20260828_compare.mp4",
+      "frames": 41,
+      "fps": 16.0,
+      "shape": [
+        528,
+        1664,
+        3
+      ]
+    },
+    {
+      "file": "assets/0625_20260828_regions.mp4",
+      "frames": 41,
+      "fps": 16.0,
+      "shape": [
+        528,
+        832,
+        3
+      ]
+    },
+    {
+      "file": "assets/0625_20260828_workflow.mp4",
+      "frames": 41,
+      "fps": 16.0,
+      "shape": [
+        288,
+        2080,
+        3
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "case": "0157_20260828",
+      "finite": true,
+      "ownership_disjoint": true,
+      "restored_refreshes": 0,
+      "final_candidates_refreshed": true,
+      "equal_to_old_fastest": true
+    },
+    {
+      "case": "0500_20260828",
+      "finite": true,
+      "ownership_disjoint": true,
+      "restored_refreshes": 0,
+      "final_candidates_refreshed": true,
+      "equal_to_old_fastest": null
+    },
+    {
+      "case": "0625_20260828",
+      "finite": true,
+      "ownership_disjoint": true,
+      "restored_refreshes": 0,
+      "final_candidates_refreshed": true,
+      "equal_to_old_fastest": true
+    }
+  ],
+  "visual_review": "Compared first, middle and last frames of every case; local detail differences documented.",
+  "browser_playback_verified": false,
+  "page_sha256": "7fd9a6f6403ae0f5a71ac12809a94bf0dffefcfb5be9c07c533b2853973afee0",
+  "assets": [
+    {
+      "file": "assets/0157_20260828_compare.mp4",
+      "bytes": 1561779,
+      "sha256": "afea43d1fffba382e1f2f2dfdab23f35ba3f6f70c977311b1fc34098c0b6e112"
+    },
+    {
+      "file": "assets/0157_20260828_contact.jpg",
+      "bytes": 514745,
+      "sha256": "763b983f449480e0db362671f0583264e2b79bd8e103b9fb0badadb14402aea5"
+    },
+    {
+      "file": "assets/0157_20260828_poster.jpg",
+      "bytes": 153649,
+      "sha256": "9e9e45ac06a0cd62bc5bbeb072b4447e911f6a10b9134fb2ee970c880ca4083b"
+    },
+    {
+      "file": "assets/0157_20260828_regions.mp4",
+      "bytes": 615349,
+      "sha256": "7c4b2a0a7f2b696aeb026db09672d2d5f41ace05e9e625bb58efd6755a431240"
+    },
+    {
+      "file": "assets/0157_20260828_workflow.jpg",
+      "bytes": 124578,
+      "sha256": "3da3c1206997c4e0f26010728ee738c9b5405c7a46d2e71c311cba258529eee9"
+    },
+    {
+      "file": "assets/0157_20260828_workflow.mp4",
+      "bytes": 1110574,
+      "sha256": "86cdda3aa4d9fdebacdced7f7818b5469d151cbc048ea6bc7419eaf652fb0996"
+    },
+    {
+      "file": "assets/0500_20260828_compare.mp4",
+      "bytes": 1094514,
+      "sha256": "94f791329cb94917d208b9a3a187f0de37b1293912e2ce52338accd95a9e7775"
+    },
+    {
+      "file": "assets/0500_20260828_contact.jpg",
+      "bytes": 705818,
+      "sha256": "405d338c403fdbfbb8a641381e906b4f89e3fd8cd7557c67d624a70edcb192c0"
+    },
+    {
+      "file": "assets/0500_20260828_poster.jpg",
+      "bytes": 213829,
+      "sha256": "0d2ecb9a9c717ff46e37955c353839f97d57f550113468cd4ce0283221729227"
+    },
+    {
+      "file": "assets/0500_20260828_regions.mp4",
+      "bytes": 493815,
+      "sha256": "7bebf31c2f023546a60934b0021d6ae79e2f6e1c8a4431a03b74e9c62ac506da"
+    },
+    {
+      "file": "assets/0500_20260828_workflow.jpg",
+      "bytes": 150763,
+      "sha256": "b5c915bc88628ae30b202401be23c77b4f5ee30e315a4c72c172661b01b62aca"
+    },
+    {
+      "file": "assets/0500_20260828_workflow.mp4",
+      "bytes": 619063,
+      "sha256": "8bf990cfa0ece1db8f0c26dc6e5f4ffc8016e2f6b98ffa81e0a2f06a8a85302f"
+    },
+    {
+      "file": "assets/0625_20260828_compare.mp4",
+      "bytes": 973864,
+      "sha256": "c4b97a11d097be867ebe5a46243e0338e087932f53d2f49bd7d1dcdb86f1ee69"
+    },
+    {
+      "file": "assets/0625_20260828_contact.jpg",
+      "bytes": 558638,
+      "sha256": "d449b7f94a1f14cab9f3e8ee8bbf9aaf909b00fdd9ec7b2cf6299c7e2483d904"
+    },
+    {
+      "file": "assets/0625_20260828_poster.jpg",
+      "bytes": 171263,
+      "sha256": "a79be7c6a6791527b0f1951e2dea20923369f928e1bccebba759bf1613480f57"
+    },
+    {
+      "file": "assets/0625_20260828_regions.mp4",
+      "bytes": 431230,
+      "sha256": "523dce929bea7ab4152a47264dbc106e2c75caed1a34a411ec393c85307526d3"
+    },
+    {
+      "file": "assets/0625_20260828_workflow.jpg",
+      "bytes": 136650,
+      "sha256": "4dcb24de5bc7a01d6bcb051da16939eea6bcca62a7f9aa573fe8f9698fe689fe"
+    },
+    {
+      "file": "assets/0625_20260828_workflow.mp4",
+      "bytes": 649065,
+      "sha256": "e89d994feb41062ee4eb1455f58ab5043f53746061353626718019c7700c3505"
+    },
+    {
+      "file": "assets/method.svg",
+      "bytes": 7234,
+      "sha256": "9c31c8f308e6deaadd5ebfe6d903bd3779d1e22e403ceb0f53fe6969dbe1af1a"
+    },
+    {
+      "file": "assets/restorer.svg",
+      "bytes": 71080,
+      "sha256": "dda89bc5ac7b0900740abd72471a8cee7ffc2fd77c3fc6d9a029f4f2d0f501e3"
+    },
+    {
+      "file": "index.html",
+      "bytes": 10195,
+      "sha256": "7fd9a6f6403ae0f5a71ac12809a94bf0dffefcfb5be9c07c533b2853973afee0"
+    },
+    {
+      "file": "results.json",
+      "bytes": 7470,
+      "sha256": "f91a074167623e2feba4da02b3bc0ae0d4a524099d1f6aa49577cdd17365a3f9"
+    }
+  ]
+}
