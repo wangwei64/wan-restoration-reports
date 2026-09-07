@@ -94,6 +94,11 @@ def check(repo=None, checkpoint=None):
             if not ok:
                 errors.append(
                     f"Packaged weight/config failed verification: {record['file']}"
+                    + (
+                        ". Run python run.py --download-weights, or generate a prompt to download automatically."
+                        if record["file"].endswith(".safetensors")
+                        else ""
+                    )
                 )
     except (FileNotFoundError, KeyError, json.JSONDecodeError) as e:
         errors.append(f"Weight manifest unreadable: {e}")

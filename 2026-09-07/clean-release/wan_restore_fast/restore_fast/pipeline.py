@@ -9,22 +9,26 @@ from .models.restorer import load_models
 from .routing import route
 from .refresh import RefinementState
 from .video import write_video
+from .weights import ensure_weights
 
 
 class RestorationPipeline:
     def __init__(self, wan=None, weights=None, config=None, repo=None, checkpoint=None):
-        start = time.perf_counter()
         self.config = config or GenerationConfig()
         if (self.config.steps, self.config.warmup_steps) != (50, 10):
             raise ValueError(
                 "The released architecture requires exactly 10 warmup and 50 total steps."
             )
+        self.weights = Path(weights) if weights else PACKAGE_ROOT / "weights"
+        prepare_start = time.perf_counter()
+        self.weights_status = ensure_weights(self.weights)
+        self.weights_prepare_seconds = time.perf_counter() - prepare_start
+        start = time.perf_counter()
         if wan is None:
             from .wan.adapter import OfficialWanAdapter
 
             wan = OfficialWanAdapter(repo, checkpoint, config=self.config)
         self.wan = wan
-        self.weights = Path(weights) if weights else PACKAGE_ROOT / "weights"
         self.restorer, self.features, self.subject_head = load_models(
             self.weights, self.wan.device
         )
@@ -177,6 +181,8 @@ class RestorationPipeline:
             "seed": seed,
             "online_seconds": online,
             "model_load_seconds": self.load_seconds,
+            "weights_prepare_seconds": self.weights_prepare_seconds,
+            "weights_status": self.weights_status,
             "stages": stages,
             "steps": steps,
             "context_observations": observations,

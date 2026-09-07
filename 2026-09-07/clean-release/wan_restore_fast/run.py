@@ -29,12 +29,30 @@ def main():
         type=Path,
         help="Optional external official Wan weights; auto-discovered by default",
     )
-    p.add_argument(
+    modes = p.add_mutually_exclusive_group()
+    modes.add_argument(
         "--doctor",
         action="store_true",
         help="Check dependencies, GPU, external Wan and packaged weights",
     )
+    modes.add_argument(
+        "--download-weights",
+        action="store_true",
+        help="Download and SHA256-verify our three checkpoints; no Torch/GPU required",
+    )
     a = p.parse_args()
+    if a.download_weights:
+        from restore_fast.config import PACKAGE_ROOT
+        from restore_fast.weights import ensure_weights
+
+        start = time.perf_counter()
+        result = ensure_weights(PACKAGE_ROOT / "weights")
+        print(
+            json.dumps(
+                {"weights": result, "seconds": time.perf_counter() - start}, indent=2
+            )
+        )
+        return 0
     if a.doctor:
         from restore_fast.doctor import check
 
@@ -64,6 +82,7 @@ def main():
                     "directory": result["directory"],
                     "online_seconds": result["report"]["online_seconds"],
                     "model_load_seconds": pipe.load_seconds,
+                    "weights_prepare_seconds": pipe.weights_prepare_seconds,
                     "wall_seconds": result["report"][
                         "cli_wall_seconds_including_load_and_artifacts"
                     ],

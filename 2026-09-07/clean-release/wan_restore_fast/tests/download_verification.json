@@ -1,0 +1,113 @@
+{
+  "status": "passed",
+  "started_at": 1788752308.426724,
+  "finished_at": 1788752361.7846086,
+  "initial_checkpoint_count": 0,
+  "authentication_sent": false,
+  "network_environment": "direct network; stale inherited server proxy removed from test subprocesses",
+  "download": {
+    "weights": [
+      {
+        "file": "features.safetensors",
+        "status": "downloaded_verified"
+      },
+      {
+        "file": "restorer.safetensors",
+        "status": "downloaded_verified"
+      },
+      {
+        "file": "subject.safetensors",
+        "status": "downloaded_verified"
+      }
+    ],
+    "seconds": 24.362574000000677
+  },
+  "downloaded_files": {
+    "features.safetensors": {
+      "bytes": 389444,
+      "sha256": "1cebb2b95dd17e0f99e01e8f63b93008fbd06c560b03f24f5697c678c3bf666e"
+    },
+    "restorer.safetensors": {
+      "bytes": 291738636,
+      "sha256": "ace34a269fc183274785c9a80aafbf8360ce2d9ed80da932a6bbae09d3d5acd2"
+    },
+    "subject.safetensors": {
+      "bytes": 361108,
+      "sha256": "865a421a3aac95ec01a00aa27e7059baa03115b0efcbe08a5a538496845eb6be"
+    }
+  },
+  "offline_reuse": {
+    "weights": [
+      {
+        "file": "features.safetensors",
+        "status": "verified_local"
+      },
+      {
+        "file": "restorer.safetensors",
+        "status": "verified_local"
+      },
+      {
+        "file": "subject.safetensors",
+        "status": "verified_local"
+      }
+    ],
+    "seconds": 0.28135721012949944
+  },
+  "offline_mtimes_unchanged": true,
+  "regression": {
+    "prompt": "A cute happy Corgi playing in park, sunset, zoom out",
+    "seed": 20260828,
+    "tensors": 24,
+    "all_tensors_exact": true,
+    "maximum_absolute_difference": 0.0,
+    "final_mp4_sha256": "8742d5cd6977d2df4b5a9e21d1d6d256a019c2f57e2d73d4ee98587a987601f7",
+    "baseline_mp4_sha256": "8742d5cd6977d2df4b5a9e21d1d6d256a019c2f57e2d73d4ee98587a987601f7",
+    "video_byte_identical": true
+  },
+  "download_host": "Local Windows, Python 3.12 standard library",
+  "gpu_test_host": "Linux CUDA server; existing checkpoint files copied locally after confirming identical SHA256 to the public download",
+  "offline_network_calls_local_test": 0,
+  "public_download_hash_match_verified": true,
+  "runtime_sha256": {
+    "run.py": "93beff9f3ef0f0440d2b0a750cbd9ac2b723c18251d17dd8f450839ae02cd8ed",
+    "run.sh": "4b2759b139d95fb3582fbd1ab63e8e946b8c455a59a51760feed77caee30c458",
+    "restore_fast/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "restore_fast/config.py": "b237aa29f1c3b28c70f0525b134d35c909a2d9f4082f36b81324415fc6445676",
+    "restore_fast/doctor.py": "64180bc9895497529ab7cebe00bae798b7d7a4c60b46ffd7156a8aa025ac136b",
+    "restore_fast/integrator.py": "12f0239c0d6464b08194f624076561ed275631562e95fbaaaa0bc69c1e802d60",
+    "restore_fast/kernels/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "restore_fast/kernels/arithmetic.py": "0faa6f8a3e8b8084acdcc811f16e7da4d2d1d7c7ed3b0d7fcba080e64b39aab8",
+    "restore_fast/kernels/context.py": "7209fc1b0fe912bf8cbc7ebfa6b8a673409fd521dbbff907dbe104219416eeb4",
+    "restore_fast/kernels/selected.py": "c5802342dd850f2c80325fb11ba512e047a68af20ff4272d81ce943a00172eef",
+    "restore_fast/models/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "restore_fast/models/blocks.py": "d589e34b476c1a1b926956b1734a4bc78e14127bd1b8bb319a2c8e282d008d9f",
+    "restore_fast/models/restorer.py": "d0248122378624c5123aa6c98fa58c85b22680a40800dbeee2ee9179b7c4178f",
+    "restore_fast/pipeline.py": "488285aad0ee66cde3e6fe3d393afce67583dc329aec34203d7e6b0fddb22dc6",
+    "restore_fast/refresh.py": "30779b8b7db9c387e20af5250cd31f244bbdeaf2517d9302ec39ca7686feaa49",
+    "restore_fast/routing.py": "5907e35a1a32288313b302d6a27f2c72e6c77eafd06cd57ca4992922ae9fe2b6",
+    "restore_fast/subject.py": "66b15621019d003151245f307f9edc1a6fb4127d8a543f0c62cc36172a17e5d2",
+    "restore_fast/video.py": "a6acceba3bc8e7550544771cc504ee9e3c56defd3d77cfc05613e25c07b1fd19",
+    "restore_fast/wan/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "restore_fast/wan/adapter.py": "b317bd275245a7a8130f15105d9d29328905a322523281bef89e800420173bd5",
+    "restore_fast/wan/controller.py": "c4160320de9857c4f9e7eed6625f9f2fd99f17e2c4abd10290e240db8a8679a7",
+    "restore_fast/weights.py": "48c19e99255e2588369a411e2389c3c64427bc95669580a89832c8674cdddf83"
+  },
+  "checks": {
+    "offline_exit_code": 0,
+    "unit_tests_exit_code": 0,
+    "release_check_exit_code": 0,
+    "doctor_exit_code": 0,
+    "prompt_only_exit_code": 0
+  },
+  "prompt_execution": {
+    "online_seconds": 28.80594216287136,
+    "model_load_seconds": 14.59498280659318,
+    "weights_prepare_seconds": 0.28063543140888214,
+    "wall_seconds": 43.76065856218338
+  },
+  "environment_scope": "Fresh source and empty owned weights folder on local Windows; Python standard library fetched all public checkpoints without GitHub credentials. Full GPU regression used a new code directory and existing GPU-server checkpoint files copied locally after SHA256 equality to the public download was verified. Existing Linux CUDA environment and external official Wan were reused. Download and GPU checks were performed separately.",
+  "prior_attempt": "Inherited refused server proxy caused the first attempt to fail. Direct server asset download and SFTP transfer were too slow and the owned test/transfer processes were stopped. Local anonymous download completed in 24.36 seconds. Released code respects user proxy settings.",
+  "reference": "Frozen clean-release VBench sample index 625, seed 20260828; identical prompt and owned/official weights.",
+  "generation_math_unchanged": true,
+  "source_check": "All existing runtime files byte-identical except CLI, doctor and pipeline initialization/reporting; generation methods AST-identical after removing two added weight-acquisition report fields."
+}

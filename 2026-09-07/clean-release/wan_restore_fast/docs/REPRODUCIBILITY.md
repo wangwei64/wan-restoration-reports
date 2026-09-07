@@ -38,3 +38,15 @@ python benchmarks/build_report.py --results benchmarks/rerun_01 --out benchmarks
 ```
 
 使用当前 GPU Python 环境执行 `python`。`check_release.py` 核对文件完整性、默认参数、网络加载与数量；不重新跑 Wan。报告脚本的额外 VAE 解码全部发生在生成计时之后。
+
+## 公开权重与自动获取
+
+公开 Release `wan-restore-fast-weights-v1` 分发上述相同 FP32 safetensors；SHA256 仍以提交的 `weights/manifest.json` 为准。
+下载逻辑不会改变权重、阈值、区域划分、求解器或模型计算。CLI 与 `RestorationPipeline` 都会在模型加载前检查权重。
+
+`weights_prepare_seconds` 包含下载（若需要）与 SHA256 校验；`model_load_seconds` 从权重准备完成后开始。
+`online_seconds` 仍只包含 prompt 到编码视频的生成过程。CLI 的总时间包含权重准备、模型加载和结果保存，从相关 Python 模块导入完成后开始。
+
+`python tests/test_weight_download.py` 使用标准库测试下载校验、缓存复用、API 回退、损坏文件保护与离线缺失行为，不启动 GPU。
+真实公开下载和同一历史 prompt 的完整生成核对记录在 `tests/download_verification.json`。
+公开下载验证在本机 Windows 上进行：从新源码目录和空权重缓存开始，使用 Python 标准库匿名下载约 292 MB，校验 SHA256，并用禁止网络调用的方式确认离线复用。服务器直连下载与 SFTP 传输较慢，因此 GPU 验证在新代码目录中使用服务器已有权重的本地副本，并逐个确认其 SHA256 与完整公开下载一致。下载和 GPU 生成分别验证；GPU 部分复用服务器已有 CUDA/Wan 环境，不是对整个环境从零安装的验证。

@@ -3,33 +3,40 @@
 这份文件夹只保留当前已验证最快的「先恢复，再自适应细化」路线：**β=2.0，τ=0.010**。输入一个 prompt 即可生成视频；主体、区域覆盖、逐 token 刷新时机、种子和输出目录均有自动处理。Wan 源码和权重放在包外。
 
 
-## GitHub 源码版本
+## 下载和运行
 
-此目录上传了整理后的推理源码、配置、说明文档、VBench 样例和验证记录。
-**模型二进制权重、生成 latent 和视频未放进这个源码目录。**
-
-运行前，将完整交付包中的以下三个文件复制到本目录的 `weights/`，文件名保持不变：
-
-```text
-weights/restorer.safetensors
-weights/features.safetensors
-weights/subject.safetensors
-```
-
-完整交付包为 `wan_restore_fast_20260907.zip`；项目服务器上的原始文件在
-`/root/autodl-tmp/wan_restore_fast/weights/`。这是现有交付位置，不是公共下载链接。
-`weights/manifest.json` 提供哈希核对，配置和误差标定文件已经包含在本目录。
-外部 Wan 的准备方式见安装与接口文档。补齐已有权重和外部 Wan 后，仍然只需输入 prompt 即可运行。
-
-GitHub 中的 `code_manifest.json` 记录源码文件哈希，生产 Python 代码与已验证的最快版逐字节一致。
-下方“目前服务器直接运行”针对服务器上已准备好权重的完整目录。
-
-## 在目前服务器直接运行
+本目录包含完整推理代码、配置与复现文档；本方法的三个训练权重放在公开的
+[GitHub Release](https://github.com/wangwei64/wan-restoration-reports/releases/tag/wan-restore-fast-weights-v1)。
+**首次生成会自动下载约 292 MB 权重并校验 SHA256，之后复用本地 `weights/` 缓存，无需 GitHub 账号或手动复制文件。**
+Wan 官方源码、官方权重以及 Linux CUDA 依赖需一次性准备，见 [环境安装](docs/INSTALL.md)。
 
 ```bash
-cd /root/autodl-tmp/wan_restore_fast
+git clone --depth 1 --branch codex/report-pages https://github.com/wangwei64/wan-restoration-reports.git
+cd wan-restoration-reports/2026-09-07/clean-release/wan_restore_fast
+# 按 docs/INSTALL.md 准备环境和外部 Wan 后：
 ./run.sh "A cute happy Corgi playing in park, sunset, zoom out"
 ```
+
+可选：先下载权重，再离线生成。预下载只使用 Python 标准库，不需要先安装 Torch 或 GPU 依赖。
+
+```bash
+python run.py --download-weights
+# 配置和所有外部 Wan 文件也已在本地时：
+WAN_RESTORE_OFFLINE=1 ./run.sh "A cute happy Corgi playing in park, sunset, zoom out"
+```
+
+下载中断或校验失败不会安装不完整文件；重试会重新下载缺失/损坏的文件。
+下载源记录在 `weights/sources.json`，大小和 SHA256 记录在 `weights/manifest.json`。
+`WAN_RESTORE_OFFLINE=1` 禁止本方法的权重下载，缺文件时会明确报错。
+首次权重准备耗时单列为 `weights_prepare_seconds`，不计入生成速度或模型加载耗时。
+
+| 本方法权重 | 文件大小（十进制 MB） | 功能 |
+|---|---:|---|
+| `restorer.safetensors` | 291.739 | 恢复端点、置信度及误差/风险预测 |
+| `features.safetensors` | 0.389 | 从 Step10 latent 提取 F/H |
+| `subject.safetensors` | 0.361 | latent 主体概率头 |
+
+本源码目录不存放这三个二进制文件或生成视频/latent，视频对比保留在报告目录中。`code_manifest.json` 核对源码；新增自动获取入口，生成算法与选定最快版保持一致。
 
 不需要输入主体名称、YOLO 类别、mask、刷新间隔或阈值。默认 seed 是 `20260828`；相同 prompt 和 seed 可复现同一结果，换 seed 是可选操作。
 
@@ -49,7 +56,7 @@ cd /root/autodl-tmp/wan_restore_fast
 
 ```text
 your_workspace/
-├── wan_restore_fast/            # 本源码目录，另补齐我们自己的约 292 MB 权重
+├── wan_restore_fast/            # 本代码，首次运行自动下载我们自己的约 292 MB 权重
 ├── Wan2.1/                     # 外部官方源码
 └── models/Wan2.1-T2V-1.3B/      # 外部原版权重，含 T5、VAE、tokenizer
 ```
@@ -79,8 +86,9 @@ your_workspace/
 | `restore_fast/refresh.py` / `integrator.py` | 恢复相对刷新需求、逐 token UniPC 历史 |
 | `restore_fast/wan/adapter.py` / `controller.py` | 外部 Wan 装载与可撤销的稀疏执行接口 |
 | `restore_fast/kernels/` | 固定恢复参照 K/V、选中 token 算术融合 |
-| `weights/` | 3 个 safetensors、模型配置、误差标定及来源哈希 |
-| `benchmarks/` | 固定 VBench 样例、复测脚本、结果与 HTML 报告 |
+| `weights/` | 配置、标定、下载源与哈希；自动缓存 3 个 safetensors |
+| `restore_fast/weights.py` | 匿名下载、SHA256 校验、原子安装与离线缓存 |
+| `benchmarks/` | 固定 VBench 样例、复测与报告脚本、已有指标记录 |
 | `tests/` | 核对脚本、历史数值回归证据、实测环境记录 |
 
 清理掉了旧调度器的多层继承、固定间隔/分档策略、手动主体与在线检测入口、旧校准分支、训练脚本以及未参与生成的第二份 Diffusers DiT。恢复主干内未使用的旧质量头已删除，共 123,073 个参数；有效恢复网络及权重没有重新训练。

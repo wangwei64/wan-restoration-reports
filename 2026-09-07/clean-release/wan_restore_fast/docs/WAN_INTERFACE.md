@@ -34,6 +34,8 @@ finally:
 
 `RestorationPipeline(repo="...", checkpoint="...")` 可显式指定外部路径。`generate(prompt, seed=None, out=None)` 只有 prompt 必填；显式 out 必须是尚不存在的目录，以保护已有结果。
 
+构造 `RestorationPipeline` 时会先校验本方法的三个权重，缺失时从公开 Release 自动下载，随后才装载 Wan。`weights=` 可指定包含完整配置、`manifest.json` 与 `sources.json` 的独立权重目录；设置 `WAN_RESTORE_OFFLINE=1` 可强制只使用已校验的本地文件。
+
 ## 适配层的职责
 
 | 成员 | 输入 → 输出 / 约束 |

@@ -1,11 +1,12 @@
 {
-  "release": "2026-09-07-beta2-clean-code",
+  "release": "2026-09-07-beta2-public-weights",
   "source_release_manifest_sha256": "28877efafbf87e6023807f884c2beea7c5348f4e40f0b945c7f309c54efb11c2",
-  "original_runtime_unchanged": true,
+  "original_runtime_unchanged": false,
   "documentation_changes": [
-    "README GitHub code-only setup",
-    "Foreground teacher-label definition",
-    "Publication scope"
+    "Anonymous public weight setup and caching",
+    "External Wan/environment prerequisites",
+    "Download test and complete prompt regression evidence",
+    "Foreground teacher-label definition retained"
   ],
   "model_weights_included": false,
   "wan_included": false,
@@ -68,8 +69,8 @@
     },
     {
       "path": "docs/INSTALL.md",
-      "bytes": 1491,
-      "sha256": "5cf04fde283f858abbec2ae701c63daa0af3ba2550a5721e9dea794726a8b17e"
+      "bytes": 2772,
+      "sha256": "46e58838278ca7e21f0fdf44787f39bedc5849faaf15da685690d8410986911e"
     },
     {
       "path": "docs/METHOD.md",
@@ -83,8 +84,8 @@
     },
     {
       "path": "docs/REPRODUCIBILITY.md",
-      "bytes": 3540,
-      "sha256": "86ad4a6144064bebe9e8886df5386cfdef339e2613695d9889523f7183aeb5de"
+      "bytes": 4991,
+      "sha256": "f74f7e6c5601896d8081646a7b5f3ab56184e656d34e3ce628e9103bea92ca39"
     },
     {
       "path": "docs/restorer.svg",
@@ -93,13 +94,13 @@
     },
     {
       "path": "docs/WAN_INTERFACE.md",
-      "bytes": 3435,
-      "sha256": "ff6c923f0217ffaf8a55e993aed0ead91ba5aa90539374a36bf9084b60572d33"
+      "bytes": 3748,
+      "sha256": "18c5a7c30e18667b47adcd8c4db8a0940cb73e3bc7d49a5c3950dac79185ba22"
     },
     {
       "path": "README.md",
-      "bytes": 6755,
-      "sha256": "e5f90e18654f4620587690389db2136628bf7994ff0ed736035f2de0790b8be6"
+      "bytes": 7697,
+      "sha256": "0843a31eb30924b922e9fe9ac6ca1ff505edb587cbd06e176d40d872f7ace6a0"
     },
     {
       "path": "requirements.txt",
@@ -118,8 +119,8 @@
     },
     {
       "path": "restore_fast/doctor.py",
-      "bytes": 3963,
-      "sha256": "9d1766e34802ef1580a180e2c39fe54c54d1e407deb72214faa645853d55ed8e"
+      "bytes": 4222,
+      "sha256": "64180bc9895497529ab7cebe00bae798b7d7a4c60b46ffd7156a8aa025ac136b"
     },
     {
       "path": "restore_fast/integrator.py",
@@ -163,8 +164,8 @@
     },
     {
       "path": "restore_fast/pipeline.py",
-      "bytes": 11420,
-      "sha256": "168160521b2f9d40673c3abc43b024890d59d552974885abbb156604f3d1f9b1"
+      "bytes": 11746,
+      "sha256": "488285aad0ee66cde3e6fe3d393afce67583dc329aec34203d7e6b0fddb22dc6"
     },
     {
       "path": "restore_fast/refresh.py",
@@ -202,9 +203,14 @@
       "sha256": "c4160320de9857c4f9e7eed6625f9f2fd99f17e2c4abd10290e240db8a8679a7"
     },
     {
+      "path": "restore_fast/weights.py",
+      "bytes": 5667,
+      "sha256": "48c19e99255e2588369a411e2389c3c64427bc95669580a89832c8674cdddf83"
+    },
+    {
       "path": "run.py",
-      "bytes": 2761,
-      "sha256": "581ae353f4fe9303beb81515f58ae1b4e775ab0e76dc4e3f22e46b3a63ea4fce"
+      "bytes": 3461,
+      "sha256": "93beff9f3ef0f0440d2b0a750cbd9ac2b723c18251d17dd8f450839ae02cd8ed"
     },
     {
       "path": "run.sh",
@@ -230,6 +236,11 @@
       "path": "tests/doctor.json",
       "bytes": 1248,
       "sha256": "8ffc034829b5633c57201f254347bd950eb7580ff28cefb27332f1cf80a1c492"
+    },
+    {
+      "path": "tests/download_verification.json",
+      "bytes": 6065,
+      "sha256": "b42902336885c51275bde2c0667cf739dba10ac631ba796194306a78ab0c443c"
     },
     {
       "path": "tests/environment.json",
@@ -262,6 +273,11 @@
       "sha256": "69839eeab66f2c6ea1f988febf10266ef6af33f91e5a9ba56848e9faef795dda"
     },
     {
+      "path": "tests/test_weight_download.py",
+      "bytes": 3685,
+      "sha256": "c8cecee2e62afd324509b6c3bbecea5c825c7f241d7e79b57586b2c4ca1c3a5f"
+    },
+    {
       "path": "tests/verify_external_weights.py",
       "bytes": 831,
       "sha256": "b9ab19f065d967eaca4278f6333c6da84d41210c75d1399bf300a53509ee0de1"
@@ -292,9 +308,22 @@
       "sha256": "65f6cfaa9284ac029c2322097060649bfc9358f7bcb59197bae3ed4fa95417c7"
     },
     {
+      "path": "weights/sources.json",
+      "bytes": 1149,
+      "sha256": "440f62f1c6733891fcfac9861906d43017be009838321e144666a4d7cefd0831"
+    },
+    {
       "path": "weights/subject.json",
       "bytes": 32,
       "sha256": "8f705069105186054ce717e2dfd4af7b05d765cd3a93f3728a50b7b8dc54d0d2"
     }
+  ],
+  "generation_math_unchanged": true,
+  "model_weights_publicly_available": true,
+  "weight_release_url": "https://github.com/wangwei64/wan-restoration-reports/releases/tag/wan-restore-fast-weights-v1",
+  "runtime_changes": [
+    "Automatic verified weight acquisition before model loading",
+    "CLI prefetch and read-only doctor guidance",
+    "Separate weight preparation timing"
   ]
 }

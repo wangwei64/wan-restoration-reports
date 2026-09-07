@@ -1,0 +1,20 @@
+{
+  "repository": "wangwei64/wan-restoration-reports",
+  "tag": "wan-restore-fast-weights-v1",
+  "release_url": "https://github.com/wangwei64/wan-restoration-reports/releases/tag/wan-restore-fast-weights-v1",
+  "authentication_required": false,
+  "assets": {
+    "features.safetensors": {
+      "browser_url": "https://github.com/wangwei64/wan-restoration-reports/releases/download/wan-restore-fast-weights-v1/features.safetensors",
+      "api_url": "https://api.github.com/repos/wangwei64/wan-restoration-reports/releases/assets/548076347"
+    },
+    "restorer.safetensors": {
+      "browser_url": "https://github.com/wangwei64/wan-restoration-reports/releases/download/wan-restore-fast-weights-v1/restorer.safetensors",
+      "api_url": "https://api.github.com/repos/wangwei64/wan-restoration-reports/releases/assets/548075669"
+    },
+    "subject.safetensors": {
+      "browser_url": "https://github.com/wangwei64/wan-restoration-reports/releases/download/wan-restore-fast-weights-v1/subject.safetensors",
+      "api_url": "https://api.github.com/repos/wangwei64/wan-restoration-reports/releases/assets/548076392"
+    }
+  }
+}
