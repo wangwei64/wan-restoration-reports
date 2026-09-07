@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.venv/
+outputs/
+weights/*.safetensors
+benchmarks/results/*/
+benchmarks/report/

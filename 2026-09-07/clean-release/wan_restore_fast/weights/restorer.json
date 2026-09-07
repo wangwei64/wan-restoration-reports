@@ -1,0 +1,31 @@
+{
+  "backbone": {
+    "width": 64,
+    "encoder_blocks": [
+      1,
+      1,
+      1,
+      8
+    ],
+    "middle_blocks": 6,
+    "decoder_blocks": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "residual_scale": 0.107,
+    "detail_blocks": 12,
+    "detail_width": 192,
+    "detail_temporal_fusion_blocks": 4,
+    "detail_heatmap_temporal_smoothing": 0.35,
+    "detail_residual_scale": 0.195,
+    "detail_gate_floor": 0.2
+  },
+  "adapter": {
+    "width": 64,
+    "blocks": 4,
+    "rgb_error_tolerance": 0.025,
+    "rgb_error_softness": 0.01
+  }
+}

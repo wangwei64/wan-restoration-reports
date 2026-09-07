@@ -1,0 +1,77 @@
+{
+  "tests": [
+    {
+      "case": "0157_20260828",
+      "max_abs": {
+        "restored": 0.0,
+        "confidence": 0.0,
+        "expected_error": 0.0
+      }
+    },
+    {
+      "case": "0272_20260828",
+      "max_abs": {
+        "restored": 0.0,
+        "confidence": 0.0,
+        "expected_error": 0.0
+      }
+    },
+    {
+      "case": "0307_20260828",
+      "max_abs": {
+        "restored": 0.0,
+        "confidence": 0.0,
+        "expected_error": 0.0
+      }
+    },
+    {
+      "case": "0315_20260830",
+      "max_abs": {
+        "restored": 0.0,
+        "confidence": 0.0,
+        "expected_error": 0.0
+      }
+    },
+    {
+      "case": "0625_20260828",
+      "max_abs": {
+        "restored": 0.0,
+        "confidence": 0.0,
+        "expected_error": 0.0
+      }
+    },
+    {
+      "case": "0663_20260828",
+      "max_abs": {
+        "restored": 0.0,
+        "confidence": 0.0,
+        "expected_error": 0.0
+      }
+    },
+    {
+      "case": "0722_20260828",
+      "max_abs": {
+        "restored": 0.0,
+        "confidence": 0.0,
+        "expected_error": 0.0
+      }
+    },
+    {
+      "case": "0730_20260830",
+      "max_abs": {
+        "restored": 0.0,
+        "confidence": 0.0,
+        "expected_error": 0.0
+      }
+    },
+    {
+      "case": "0744_20260828",
+      "max_abs": {
+        "restored": 0.0,
+        "confidence": 0.0,
+        "expected_error": 0.0
+      }
+    }
+  ],
+  "passed": true
+}

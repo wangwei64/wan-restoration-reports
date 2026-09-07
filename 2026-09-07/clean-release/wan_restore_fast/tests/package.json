@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "parameters": [
+    72911811,
+    95567,
+    88481
+  ],
+  "total_parameters": 73095859,
+  "external_wan_loaded": false,
+  "weights_verified": true
+}

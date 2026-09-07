@@ -1,0 +1,10 @@
+{
+  "indices": [157, 500, 625],
+  "seed": 20260828,
+  "vbench_source_sha256": "5dd2de80ee43cda750b2b72ea7023657c0b90d3702041c7e4608c65dbe50dccd",
+  "selection": "Fixed before running: human action, watercolor landscape, animal with camera zoom. Includes two historical prompts and one additional VBench prompt.",
+  "profile": "Fastest verified beta=2.0, tolerance=0.010, native 10+40 timeline",
+  "reference": "Fresh native official Wan2.1 T2V-1.3B 50 steps, same prompt/seed/resolution/frames/CFG/shift/precision/VAE",
+  "timing": "One measured run per case and method; text encoding through video encoding. Model loading and postprocessing excluded. No denoising or VAE cache reused across methods. Triton disk cache can be warm from regression.",
+  "evaluation": "Prompt sample only, not the full VBench evaluation suite. LPIPS-Alex at 416x240; PSNR and SSIM on encoded 832x480 videos; visual side-by-side comparison."
+}

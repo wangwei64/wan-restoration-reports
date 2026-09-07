@@ -1,0 +1,11 @@
+{
+  "single_connected_figure": true,
+  "effective_graph_preserved": true,
+  "legacy_head_removed": true,
+  "canvas": [
+    3540,
+    1640
+  ],
+  "source": "verified frozen implementation; same architecture and checkpoint configuration",
+  "visual_style": "vector cuboids, shared tensor paths, no subplot panels"
+}

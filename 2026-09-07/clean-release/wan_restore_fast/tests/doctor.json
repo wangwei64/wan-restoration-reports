@@ -1,0 +1,60 @@
+{
+  "ready": true,
+  "platform": "Linux-5.15.0-78-generic-x86_64-with-glibc2.35",
+  "gpu": {
+    "name": "NVIDIA A800-SXM4-80GB",
+    "memory_bytes": 85093777408,
+    "cuda": "12.4"
+  },
+  "external_wan": {
+    "source": "/root/autodl-tmp/Wan2.1",
+    "checkpoint": "/root/autodl-tmp/models/Wan2.1-T2V-1.3B"
+  },
+  "versions": {
+    "torch": "2.5.1+cu124",
+    "triton": "3.1.0",
+    "flash-attn": "2.7.4.post1",
+    "diffusers": "0.35.2",
+    "transformers": "4.57.1",
+    "safetensors": "0.8.0",
+    "opencv-python": "4.11.0.86",
+    "imageio-ffmpeg": "0.6.0",
+    "sentencepiece": "0.2.1",
+    "einops": "0.8.1",
+    "ftfy": "6.3.1",
+    "easydict": "1.13",
+    "imageio": "2.37.0",
+    "tqdm": "4.67.1"
+  },
+  "packaged_weights": [
+    {
+      "file": "calibration.json",
+      "verified": true
+    },
+    {
+      "file": "features.json",
+      "verified": true
+    },
+    {
+      "file": "features.safetensors",
+      "verified": true
+    },
+    {
+      "file": "restorer.json",
+      "verified": true
+    },
+    {
+      "file": "restorer.safetensors",
+      "verified": true
+    },
+    {
+      "file": "subject.json",
+      "verified": true
+    },
+    {
+      "file": "subject.safetensors",
+      "verified": true
+    }
+  ],
+  "errors": []
+}

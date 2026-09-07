@@ -1,0 +1,126 @@
+{
+  "passed": true,
+  "html_references_verified": 20,
+  "video_count": 9,
+  "videos": [
+    {
+      "file": "assets/0157_20260828_compare.mp4",
+      "frames": 41,
+      "fps": 16.0,
+      "shape": [
+        528,
+        1664,
+        3
+      ]
+    },
+    {
+      "file": "assets/0157_20260828_regions.mp4",
+      "frames": 41,
+      "fps": 16.0,
+      "shape": [
+        528,
+        832,
+        3
+      ]
+    },
+    {
+      "file": "assets/0157_20260828_workflow.mp4",
+      "frames": 41,
+      "fps": 16.0,
+      "shape": [
+        288,
+        2080,
+        3
+      ]
+    },
+    {
+      "file": "assets/0500_20260828_compare.mp4",
+      "frames": 41,
+      "fps": 16.0,
+      "shape": [
+        528,
+        1664,
+        3
+      ]
+    },
+    {
+      "file": "assets/0500_20260828_regions.mp4",
+      "frames": 41,
+      "fps": 16.0,
+      "shape": [
+        528,
+        832,
+        3
+      ]
+    },
+    {
+      "file": "assets/0500_20260828_workflow.mp4",
+      "frames": 41,
+      "fps": 16.0,
+      "shape": [
+        288,
+        2080,
+        3
+      ]
+    },
+    {
+      "file": "assets/0625_20260828_compare.mp4",
+      "frames": 41,
+      "fps": 16.0,
+      "shape": [
+        528,
+        1664,
+        3
+      ]
+    },
+    {
+      "file": "assets/0625_20260828_regions.mp4",
+      "frames": 41,
+      "fps": 16.0,
+      "shape": [
+        528,
+        832,
+        3
+      ]
+    },
+    {
+      "file": "assets/0625_20260828_workflow.mp4",
+      "frames": 41,
+      "fps": 16.0,
+      "shape": [
+        288,
+        2080,
+        3
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "case": "0157_20260828",
+      "finite": true,
+      "ownership_disjoint": true,
+      "restored_refreshes": 0,
+      "final_candidates_refreshed": true,
+      "equal_to_old_fastest": true
+    },
+    {
+      "case": "0500_20260828",
+      "finite": true,
+      "ownership_disjoint": true,
+      "restored_refreshes": 0,
+      "final_candidates_refreshed": true,
+      "equal_to_old_fastest": null
+    },
+    {
+      "case": "0625_20260828",
+      "finite": true,
+      "ownership_disjoint": true,
+      "restored_refreshes": 0,
+      "final_candidates_refreshed": true,
+      "equal_to_old_fastest": true
+    }
+  ],
+  "visual_review": "Compared first, middle and last frames of every case; local detail differences documented.",
+  "browser_playback_verified": false,
+  "page_sha256": "7fd9a6f6403ae0f5a71ac12809a94bf0dffefcfb5be9c07c533b2853973afee0"
+}

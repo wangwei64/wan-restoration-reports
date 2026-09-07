@@ -1,0 +1,300 @@
+{
+  "release": "2026-09-07-beta2-clean-code",
+  "source_release_manifest_sha256": "28877efafbf87e6023807f884c2beea7c5348f4e40f0b945c7f309c54efb11c2",
+  "original_runtime_unchanged": true,
+  "documentation_changes": [
+    "README GitHub code-only setup",
+    "Foreground teacher-label definition",
+    "Publication scope"
+  ],
+  "model_weights_included": false,
+  "wan_included": false,
+  "report_url": "https://wangwei64.github.io/wan-restoration-reports/2026-09-07/clean-release/",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 109,
+      "sha256": "b2d4aa43a9e0cef9138ed88ed1669191e86e013042e9636c0d5f809296848046"
+    },
+    {
+      "path": "benchmarks/build_report.py",
+      "bytes": 16507,
+      "sha256": "042d8f1765823c3c74e652ef05972a53f8c359c027bab8d02adc252697a0c895"
+    },
+    {
+      "path": "benchmarks/protocol.json",
+      "bytes": 924,
+      "sha256": "7475f1a0d38be370cb3cae4daae28dea2a0a738cb9fc568011ee969e159df539"
+    },
+    {
+      "path": "benchmarks/results/cases.json",
+      "bytes": 629,
+      "sha256": "225af0daf9cb6850881fbd005b1c32c392432cf356ff495d7d03c4e9f77159bd"
+    },
+    {
+      "path": "benchmarks/results/summary.json",
+      "bytes": 2437,
+      "sha256": "2868c1aa7ca59e40eb892ed10b1c03cd820229318022e342f349de421ea6d7f3"
+    },
+    {
+      "path": "benchmarks/run_vbench.py",
+      "bytes": 3713,
+      "sha256": "26dd1d71724f838026fadcdf833976dc4a5e532b709a6f26be0d8b41eee7afcc"
+    },
+    {
+      "path": "benchmarks/vbench_source.json",
+      "bytes": 228118,
+      "sha256": "5dd2de80ee43cda750b2b72ea7023657c0b90d3702041c7e4608c65dbe50dccd"
+    },
+    {
+      "path": "configs/fastest.json",
+      "bytes": 672,
+      "sha256": "f8a1ffcc051681deed9933af4ddbf6d8674ff61e3556f49506ffe90ac6b143ba"
+    },
+    {
+      "path": "docs/build_method_figure.py",
+      "bytes": 4116,
+      "sha256": "68a7b627f4078d46f1769fd6821cd5989413ca082987ead477ae7c5c2190d24e"
+    },
+    {
+      "path": "docs/build_restorer_figure.py",
+      "bytes": 14976,
+      "sha256": "c42902cf850b92725e772cb39956a778331a72232a06a7961c4805387b785203"
+    },
+    {
+      "path": "docs/connected_figure_manifest.json",
+      "bytes": 323,
+      "sha256": "e4d78a894c337eb3b43a38c66cf9f12065f84fa593d2b00adb20eec782975286"
+    },
+    {
+      "path": "docs/INSTALL.md",
+      "bytes": 1491,
+      "sha256": "5cf04fde283f858abbec2ae701c63daa0af3ba2550a5721e9dea794726a8b17e"
+    },
+    {
+      "path": "docs/METHOD.md",
+      "bytes": 7116,
+      "sha256": "1c1d776ca7d63a8e6f3d058d226b4789d007ee8484608260ecb06327985c2ee2"
+    },
+    {
+      "path": "docs/method.svg",
+      "bytes": 7234,
+      "sha256": "9c31c8f308e6deaadd5ebfe6d903bd3779d1e22e403ceb0f53fe6969dbe1af1a"
+    },
+    {
+      "path": "docs/REPRODUCIBILITY.md",
+      "bytes": 3540,
+      "sha256": "86ad4a6144064bebe9e8886df5386cfdef339e2613695d9889523f7183aeb5de"
+    },
+    {
+      "path": "docs/restorer.svg",
+      "bytes": 71080,
+      "sha256": "dda89bc5ac7b0900740abd72471a8cee7ffc2fd77c3fc6d9a029f4f2d0f501e3"
+    },
+    {
+      "path": "docs/WAN_INTERFACE.md",
+      "bytes": 3435,
+      "sha256": "ff6c923f0217ffaf8a55e993aed0ead91ba5aa90539374a36bf9084b60572d33"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6755,
+      "sha256": "e5f90e18654f4620587690389db2136628bf7994ff0ed736035f2de0790b8be6"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 428,
+      "sha256": "a8383ad57c49bebdc79c1fde567d525e083dc25bc30019389eccb997d70cbe2a"
+    },
+    {
+      "path": "restore_fast/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "restore_fast/config.py",
+      "bytes": 2180,
+      "sha256": "b237aa29f1c3b28c70f0525b134d35c909a2d9f4082f36b81324415fc6445676"
+    },
+    {
+      "path": "restore_fast/doctor.py",
+      "bytes": 3963,
+      "sha256": "9d1766e34802ef1580a180e2c39fe54c54d1e407deb72214faa645853d55ed8e"
+    },
+    {
+      "path": "restore_fast/integrator.py",
+      "bytes": 6892,
+      "sha256": "12f0239c0d6464b08194f624076561ed275631562e95fbaaaa0bc69c1e802d60"
+    },
+    {
+      "path": "restore_fast/kernels/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "restore_fast/kernels/arithmetic.py",
+      "bytes": 5368,
+      "sha256": "0faa6f8a3e8b8084acdcc811f16e7da4d2d1d7c7ed3b0d7fcba080e64b39aab8"
+    },
+    {
+      "path": "restore_fast/kernels/context.py",
+      "bytes": 3021,
+      "sha256": "7209fc1b0fe912bf8cbc7ebfa6b8a673409fd521dbbff907dbe104219416eeb4"
+    },
+    {
+      "path": "restore_fast/kernels/selected.py",
+      "bytes": 2161,
+      "sha256": "c5802342dd850f2c80325fb11ba512e047a68af20ff4272d81ce943a00172eef"
+    },
+    {
+      "path": "restore_fast/models/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "restore_fast/models/blocks.py",
+      "bytes": 5532,
+      "sha256": "d589e34b476c1a1b926956b1734a4bc78e14127bd1b8bb319a2c8e282d008d9f"
+    },
+    {
+      "path": "restore_fast/models/restorer.py",
+      "bytes": 8655,
+      "sha256": "d0248122378624c5123aa6c98fa58c85b22680a40800dbeee2ee9179b7c4178f"
+    },
+    {
+      "path": "restore_fast/pipeline.py",
+      "bytes": 11420,
+      "sha256": "168160521b2f9d40673c3abc43b024890d59d552974885abbb156604f3d1f9b1"
+    },
+    {
+      "path": "restore_fast/refresh.py",
+      "bytes": 5737,
+      "sha256": "30779b8b7db9c387e20af5250cd31f244bbdeaf2517d9302ec39ca7686feaa49"
+    },
+    {
+      "path": "restore_fast/routing.py",
+      "bytes": 3958,
+      "sha256": "5907e35a1a32288313b302d6a27f2c72e6c77eafd06cd57ca4992922ae9fe2b6"
+    },
+    {
+      "path": "restore_fast/subject.py",
+      "bytes": 3063,
+      "sha256": "66b15621019d003151245f307f9edc1a6fb4127d8a543f0c62cc36172a17e5d2"
+    },
+    {
+      "path": "restore_fast/video.py",
+      "bytes": 670,
+      "sha256": "a6acceba3bc8e7550544771cc504ee9e3c56defd3d77cfc05613e25c07b1fd19"
+    },
+    {
+      "path": "restore_fast/wan/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "restore_fast/wan/adapter.py",
+      "bytes": 5418,
+      "sha256": "b317bd275245a7a8130f15105d9d29328905a322523281bef89e800420173bd5"
+    },
+    {
+      "path": "restore_fast/wan/controller.py",
+      "bytes": 12189,
+      "sha256": "c4160320de9857c4f9e7eed6625f9f2fd99f17e2c4abd10290e240db8a8679a7"
+    },
+    {
+      "path": "run.py",
+      "bytes": 2761,
+      "sha256": "581ae353f4fe9303beb81515f58ae1b4e775ab0e76dc4e3f22e46b3a63ea4fce"
+    },
+    {
+      "path": "run.sh",
+      "bytes": 595,
+      "sha256": "4b2759b139d95fb3582fbd1ab63e8e946b8c455a59a51760feed77caee30c458"
+    },
+    {
+      "path": "tests/artifact_checks.json",
+      "bytes": 2445,
+      "sha256": "80de756a7c164908be0485d9fa64b72991dccd32bd9fc16f41945db60717abb5"
+    },
+    {
+      "path": "tests/check_release.py",
+      "bytes": 1567,
+      "sha256": "a4cf8715733f137b57ca3090e12fffa11b774b721e5dd86c5bffc7b8d1505ff0"
+    },
+    {
+      "path": "tests/cli_smoke.json",
+      "bytes": 1076,
+      "sha256": "6cc552a766a6f64dba5a46740c33ef5d0484d4f1e542a5e05a87def763cff798"
+    },
+    {
+      "path": "tests/doctor.json",
+      "bytes": 1248,
+      "sha256": "8ffc034829b5633c57201f254347bd950eb7580ff28cefb27332f1cf80a1c492"
+    },
+    {
+      "path": "tests/environment.json",
+      "bytes": 1247,
+      "sha256": "2c07858b1c4ab1bd8e72de223b8be75fcc9138d2bb7e0d14afc467914a2f3964"
+    },
+    {
+      "path": "tests/external_weights.json",
+      "bytes": 1381,
+      "sha256": "e0a3887f8d1b24480e71915ec308f5966e17748d6dc8cc5397fdbd300e3ab2b2"
+    },
+    {
+      "path": "tests/final_status.json",
+      "bytes": 131,
+      "sha256": "2b992850132dcf2e7c5ff538b9572fa28ce58f3bed18335f6d49bb4214cb5ab5"
+    },
+    {
+      "path": "tests/full_regression.json",
+      "bytes": 845,
+      "sha256": "b0fd46a718ba38f3099fe0f71ff8c3320ab48dceadf1419e3d2a1570b34b56a5"
+    },
+    {
+      "path": "tests/model_regression.json",
+      "bytes": 1414,
+      "sha256": "7ec04ade1e38210688ead3b9bab93299dfeb849617228567b3a4ba35a043a90d"
+    },
+    {
+      "path": "tests/package.json",
+      "bytes": 171,
+      "sha256": "69839eeab66f2c6ea1f988febf10266ef6af33f91e5a9ba56848e9faef795dda"
+    },
+    {
+      "path": "tests/verify_external_weights.py",
+      "bytes": 831,
+      "sha256": "b9ab19f065d967eaca4278f6333c6da84d41210c75d1399bf300a53509ee0de1"
+    },
+    {
+      "path": "THIRD_PARTY.md",
+      "bytes": 973,
+      "sha256": "2319007a4fc2b6920a7173332e85edc66f88dd737b54f9f3275347965c12deaf"
+    },
+    {
+      "path": "weights/calibration.json",
+      "bytes": 4007,
+      "sha256": "84c700feb58aea59bf829c3b5327051753c487888f701f9f8153757f65f0f740"
+    },
+    {
+      "path": "weights/features.json",
+      "bytes": 32,
+      "sha256": "83eeb21b3e6250eefae45ed1ead3026b3393fff16015b3e4371d398ae9e8e2c7"
+    },
+    {
+      "path": "weights/manifest.json",
+      "bytes": 5089,
+      "sha256": "b3dee6581ea08e87fcca8424ea7e321ad7f0083a457ec3460042a9aa9f2a3378"
+    },
+    {
+      "path": "weights/restorer.json",
+      "bytes": 576,
+      "sha256": "65f6cfaa9284ac029c2322097060649bfc9358f7bcb59197bae3ed4fa95417c7"
+    },
+    {
+      "path": "weights/subject.json",
+      "bytes": 32,
+      "sha256": "8f705069105186054ce717e2dfd4af7b05d765cd3a93f3728a50b7b8dc54d0d2"
+    }
+  ]
+}

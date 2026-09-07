@@ -1,0 +1,65 @@
+{
+  "protocol": {
+    "indices": [
+      157,
+      500,
+      625
+    ],
+    "seed": 20260828,
+    "vbench_source_sha256": "5dd2de80ee43cda750b2b72ea7023657c0b90d3702041c7e4608c65dbe50dccd",
+    "selection": "Fixed before running: human action, watercolor landscape, animal with camera zoom. Includes two historical prompts and one additional VBench prompt.",
+    "profile": "Fastest verified beta=2.0, tolerance=0.010, native 10+40 timeline",
+    "reference": "Fresh native official Wan2.1 T2V-1.3B 50 steps, same prompt/seed/resolution/frames/CFG/shift/precision/VAE",
+    "timing": "One measured run per case and method; text encoding through video encoding. Model loading and postprocessing excluded. No denoising or VAE cache reused across methods. Triton disk cache can be warm from regression.",
+    "evaluation": "Prompt sample only, not the full VBench evaluation suite. LPIPS-Alex at 416x240; PSNR and SSIM on encoded 832x480 videos; visual side-by-side comparison."
+  },
+  "results": [
+    {
+      "index": 157,
+      "seed": 20260828,
+      "prompt_en": "A person is riding a bike",
+      "dimension": [
+        "human_action"
+      ],
+      "fast_seconds": 31.596625547856092,
+      "gt50_seconds": 73.77966202422976,
+      "speedup": 2.335048782740532,
+      "active_ratio": 0.25205273892773894,
+      "initial_active_ratio": 0.8617132902145386
+    },
+    {
+      "index": 500,
+      "seed": 20260828,
+      "prompt_en": "A beautiful coastal beach in spring, waves lapping on sand, watercolor painting",
+      "dimension": [
+        "appearance_style"
+      ],
+      "auxiliary_info": {
+        "appearance_style": {
+          "appearance_style": "watercolor painting"
+        }
+      },
+      "fast_seconds": 26.57837838679552,
+      "gt50_seconds": 74.55959397926927,
+      "speedup": 2.80527249985693,
+      "active_ratio": 0.1481745337995338,
+      "initial_active_ratio": 0.9256992936134338
+    },
+    {
+      "index": 625,
+      "seed": 20260828,
+      "prompt_en": "A cute happy Corgi playing in park, sunset, zoom out",
+      "dimension": [
+        "temporal_style"
+      ],
+      "fast_seconds": 28.084095302969217,
+      "gt50_seconds": 74.33504858240485,
+      "speedup": 2.6468735339516423,
+      "active_ratio": 0.17509032634032634,
+      "initial_active_ratio": 0.8527972102165222
+    }
+  ],
+  "model_load_seconds": 15.039166830480099,
+  "aggregate_speedup": 2.581458727878615,
+  "full_vbench_score": false
+}

@@ -1,0 +1,36 @@
+{
+  "versions": {
+    "torch": "2.5.1+cu124",
+    "torchvision": "0.20.1+cu124",
+    "triton": "3.1.0",
+    "flash-attn": "2.7.4.post1",
+    "diffusers": "0.35.2",
+    "transformers": "4.57.1",
+    "tokenizers": "0.22.1",
+    "sentencepiece": "0.2.1",
+    "accelerate": "1.11.0",
+    "safetensors": "0.8.0",
+    "numpy": "1.26.4",
+    "opencv-python": "4.11.0.86",
+    "imageio-ffmpeg": "0.6.0",
+    "Pillow": "11.0.0",
+    "lpips": "0.1.4",
+    "scikit-image": "0.25.2",
+    "einops": "0.8.1",
+    "ftfy": "6.3.1",
+    "easydict": "1.13",
+    "imageio": "2.37.0",
+    "tqdm": "4.67.1",
+    "huggingface-hub": "0.36.0"
+  },
+  "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+  "cuda": "12.4",
+  "gpu": "NVIDIA A800-SXM4-80GB",
+  "wan_commit": "9737cba9c1c3c4d04b33fcad41c111989865d315",
+  "wan_core_sha256": {
+    "wan/modules/model.py": "c1572ade3bf7345bd4c00d4a19535788fab62f9c08b5aeb15f6d01f4435bb47a",
+    "wan/modules/vae.py": "4912ffd7a9fbb17ceef9a17d4a9c4b8aee36ec37c32594f54e57693b29909498",
+    "wan/modules/t5.py": "8b0cebf3192c542f92a344255a06c203df3ba24160715899a055cc8de0cd930f",
+    "wan/utils/fm_solvers_unipc.py": "0dec8c7ed17f6f2049275c6848113314da6ccec1c8db5bdc89df43c05c6038d9"
+  }
+}

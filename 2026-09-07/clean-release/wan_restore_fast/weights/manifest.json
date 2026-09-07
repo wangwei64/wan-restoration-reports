@@ -1,0 +1,127 @@
+{
+  "models": [
+    {
+      "file": "restorer.safetensors",
+      "source_sha256": "3f43942ad0856f47530ccc82d6db557a8b18df73fb63ac09b622723b68b41a71",
+      "kept_parameters": 72911811,
+      "removed_parameters": 123073,
+      "removed_keys": [
+        "backbone.quality_intro.weight",
+        "backbone.quality_intro.bias",
+        "backbone.quality_residual.weight",
+        "backbone.quality_residual.bias",
+        "backbone.quality_heat.weight",
+        "backbone.quality_heat.bias",
+        "backbone.quality_blocks.0.beta",
+        "backbone.quality_blocks.0.gamma",
+        "backbone.quality_blocks.0.conv1.weight",
+        "backbone.quality_blocks.0.conv1.bias",
+        "backbone.quality_blocks.0.conv2.weight",
+        "backbone.quality_blocks.0.conv2.bias",
+        "backbone.quality_blocks.0.temporal_conv.weight",
+        "backbone.quality_blocks.0.temporal_conv.bias",
+        "backbone.quality_blocks.0.conv3.weight",
+        "backbone.quality_blocks.0.conv3.bias",
+        "backbone.quality_blocks.0.sca.1.weight",
+        "backbone.quality_blocks.0.sca.1.bias",
+        "backbone.quality_blocks.0.conv4.weight",
+        "backbone.quality_blocks.0.conv4.bias",
+        "backbone.quality_blocks.0.conv5.weight",
+        "backbone.quality_blocks.0.conv5.bias",
+        "backbone.quality_blocks.0.norm1.weight",
+        "backbone.quality_blocks.0.norm1.bias",
+        "backbone.quality_blocks.0.norm2.weight",
+        "backbone.quality_blocks.0.norm2.bias",
+        "backbone.quality_blocks.1.beta",
+        "backbone.quality_blocks.1.gamma",
+        "backbone.quality_blocks.1.conv1.weight",
+        "backbone.quality_blocks.1.conv1.bias",
+        "backbone.quality_blocks.1.conv2.weight",
+        "backbone.quality_blocks.1.conv2.bias",
+        "backbone.quality_blocks.1.temporal_conv.weight",
+        "backbone.quality_blocks.1.temporal_conv.bias",
+        "backbone.quality_blocks.1.conv3.weight",
+        "backbone.quality_blocks.1.conv3.bias",
+        "backbone.quality_blocks.1.sca.1.weight",
+        "backbone.quality_blocks.1.sca.1.bias",
+        "backbone.quality_blocks.1.conv4.weight",
+        "backbone.quality_blocks.1.conv4.bias",
+        "backbone.quality_blocks.1.conv5.weight",
+        "backbone.quality_blocks.1.conv5.bias",
+        "backbone.quality_blocks.1.norm1.weight",
+        "backbone.quality_blocks.1.norm1.bias",
+        "backbone.quality_blocks.1.norm2.weight",
+        "backbone.quality_blocks.1.norm2.bias",
+        "backbone.quality_temporal.beta",
+        "backbone.quality_temporal.norm.weight",
+        "backbone.quality_temporal.norm.bias",
+        "backbone.quality_temporal.project_in.weight",
+        "backbone.quality_temporal.project_in.bias",
+        "backbone.quality_temporal.spatial.weight",
+        "backbone.quality_temporal.spatial.bias",
+        "backbone.quality_temporal.project_out.weight",
+        "backbone.quality_temporal.project_out.bias",
+        "backbone.quality_norm.weight",
+        "backbone.quality_norm.bias",
+        "backbone.quality_ending.weight",
+        "backbone.quality_ending.bias"
+      ],
+      "sha256": "ace34a269fc183274785c9a80aafbf8360ce2d9ed80da932a6bbae09d3d5acd2",
+      "bytes": 291738636
+    },
+    {
+      "file": "features.safetensors",
+      "source_sha256": "59e73c23df358288cbdc310ff5fb3e1d2a829f05b9c8f6c2faa31e8983080cb9",
+      "parameters": 95567,
+      "sha256": "1cebb2b95dd17e0f99e01e8f63b93008fbd06c560b03f24f5697c678c3bf666e",
+      "bytes": 389444
+    },
+    {
+      "file": "subject.safetensors",
+      "source_sha256": "f2fcd86bb3d08dbb2c26f53b6037e8e29e4cb9fa3389fad38769db5ef0b82cac",
+      "parameters": 88481,
+      "sha256": "865a421a3aac95ec01a00aa27e7059baa03115b0efcbe08a5a538496845eb6be",
+      "bytes": 361108
+    }
+  ],
+  "files": [
+    {
+      "file": "calibration.json",
+      "bytes": 4007,
+      "sha256": "84c700feb58aea59bf829c3b5327051753c487888f701f9f8153757f65f0f740"
+    },
+    {
+      "file": "features.json",
+      "bytes": 32,
+      "sha256": "83eeb21b3e6250eefae45ed1ead3026b3393fff16015b3e4371d398ae9e8e2c7"
+    },
+    {
+      "file": "features.safetensors",
+      "bytes": 389444,
+      "sha256": "1cebb2b95dd17e0f99e01e8f63b93008fbd06c560b03f24f5697c678c3bf666e"
+    },
+    {
+      "file": "restorer.json",
+      "bytes": 576,
+      "sha256": "65f6cfaa9284ac029c2322097060649bfc9358f7bcb59197bae3ed4fa95417c7"
+    },
+    {
+      "file": "restorer.safetensors",
+      "bytes": 291738636,
+      "sha256": "ace34a269fc183274785c9a80aafbf8360ce2d9ed80da932a6bbae09d3d5acd2"
+    },
+    {
+      "file": "subject.json",
+      "bytes": 32,
+      "sha256": "8f705069105186054ce717e2dfd4af7b05d765cd3a93f3728a50b7b8dc54d0d2"
+    },
+    {
+      "file": "subject.safetensors",
+      "bytes": 361108,
+      "sha256": "865a421a3aac95ec01a00aa27e7059baa03115b0efcbe08a5a538496845eb6be"
+    }
+  ],
+  "precision": "Original FP32 weights; CUDA BF16 autocast during inference",
+  "wan_included": false,
+  "training_performed": false
+}

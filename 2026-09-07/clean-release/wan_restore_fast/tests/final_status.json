@@ -1,0 +1,9 @@
+{
+  "checks": {
+    "doctor": 0,
+    "package": 0
+  },
+  "prompt_only_cli_passed": true,
+  "report_built": true,
+  "passed": true
+}

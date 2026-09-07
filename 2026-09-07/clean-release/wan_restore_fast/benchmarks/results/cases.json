@@ -1,0 +1,31 @@
+[
+  {
+    "index": 157,
+    "seed": 20260828,
+    "prompt_en": "A person is riding a bike",
+    "dimension": [
+      "human_action"
+    ]
+  },
+  {
+    "index": 500,
+    "seed": 20260828,
+    "prompt_en": "A beautiful coastal beach in spring, waves lapping on sand, watercolor painting",
+    "dimension": [
+      "appearance_style"
+    ],
+    "auxiliary_info": {
+      "appearance_style": {
+        "appearance_style": "watercolor painting"
+      }
+    }
+  },
+  {
+    "index": 625,
+    "seed": 20260828,
+    "prompt_en": "A cute happy Corgi playing in park, sunset, zoom out",
+    "dimension": [
+      "temporal_style"
+    ]
+  }
+]
