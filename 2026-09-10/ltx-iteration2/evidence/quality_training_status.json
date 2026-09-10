@@ -1,0 +1,11 @@
+{
+  "stage": "complete",
+  "quality_steps": 3000,
+  "selected_quality_step": 2800,
+  "best_validation_rgb_mae": 0.021840814501047134,
+  "train_records_seen": 960,
+  "train_records_total": 960,
+  "test_ids_used": [],
+  "smoke_test": false,
+  "restoration_weights_unchanged": true
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "id": "short_validation_15",
+    "ssim": 0.9739224035506406,
+    "denoising_abs_change": 0.05617072433233261,
+    "denoising_rmse_change": 0.07512012124061584,
+    "temporal_abs_change": 0.2038770467042923,
+    "spatial_abs_change": 0.3811754882335663,
+    "warm_rms": 1.009633183479309
+  },
+  {
+    "id": "short_validation_16",
+    "ssim": 0.9509484335214875,
+    "denoising_abs_change": 0.11071931570768356,
+    "denoising_rmse_change": 0.1533941775560379,
+    "temporal_abs_change": 0.26127633452415466,
+    "spatial_abs_change": 0.5503852963447571,
+    "warm_rms": 0.9725677967071533
+  },
+  {
+    "id": "short_validation_17",
+    "ssim": 0.9338595114397055,
+    "denoising_abs_change": 0.10888537019491196,
+    "denoising_rmse_change": 0.15500612556934357,
+    "temporal_abs_change": 0.1705777794122696,
+    "spatial_abs_change": 0.6468468904495239,
+    "warm_rms": 0.9314228296279907
+  },
+  {
+    "id": "short_validation_20",
+    "ssim": 0.9431559981375719,
+    "denoising_abs_change": 0.10617508739233017,
+    "denoising_rmse_change": 0.14559641480445862,
+    "temporal_abs_change": 0.2501293420791626,
+    "spatial_abs_change": 0.47208327054977417,
+    "warm_rms": 0.8115183711051941
+  },
+  {
+    "id": "short_validation_21",
+    "ssim": 0.8908358164273192,
+    "denoising_abs_change": 0.1011648029088974,
+    "denoising_rmse_change": 0.14213202893733978,
+    "temporal_abs_change": 0.30786243081092834,
+    "spatial_abs_change": 0.47287049889564514,
+    "warm_rms": 1.1182072162628174
+  },
+  {
+    "id": "short_validation_22",
+    "ssim": 0.9505772342191838,
+    "denoising_abs_change": 0.09910701960325241,
+    "denoising_rmse_change": 0.13532139360904694,
+    "temporal_abs_change": 0.16978777945041656,
+    "spatial_abs_change": 0.5475265979766846,
+    "warm_rms": 0.9781153202056885
+  },
+  {
+    "id": "short_validation_23",
+    "ssim": 0.884199837830915,
+    "denoising_abs_change": 0.11549536883831024,
+    "denoising_rmse_change": 0.17032399773597717,
+    "temporal_abs_change": 0.3035130500793457,
+    "spatial_abs_change": 0.5876414179801941,
+    "warm_rms": 1.0375206470489502
+  }
+]
