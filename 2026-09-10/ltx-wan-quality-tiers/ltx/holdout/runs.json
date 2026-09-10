@@ -1,0 +1,162 @@
+[
+  {
+    "id": "holdout_01",
+    "beta": 0.262,
+    "mode": "beta_0.262",
+    "seconds": 54.790006909519434,
+    "active_ratio": 0.827282027900219,
+    "video": "/root/autodl-tmp/ltx-restore-fast/experiments/quality_tiers/ltx/holdout/holdout_01/beta_0.262/video.mp4",
+    "video_sha256": "55697ff40b2128786f81b222789e0b04ef7bb138f48f17f4fd86afaa3a4bf326",
+    "historical_reuse": false
+  },
+  {
+    "id": "holdout_01",
+    "beta": 1.732,
+    "mode": "beta_1.732",
+    "seconds": 33.90255180001259,
+    "active_ratio": 0.3644904913380742,
+    "video": "/root/autodl-tmp/ltx-restore-fast/experiments/quality_tiers/ltx/holdout/holdout_01/beta_1.732/video.mp4",
+    "video_sha256": "26524a8cc80005cff9f389bf04e78afaa7bfa9c47856d1902969e50f4088cd37",
+    "historical_reuse": false
+  },
+  {
+    "id": "holdout_01",
+    "beta": 3.184,
+    "mode": "beta_3.184",
+    "seconds": 30.66246421262622,
+    "active_ratio": 0.28701217672787604,
+    "video": "/root/autodl-tmp/ltx-restore-fast/experiments/quality_tiers/ltx/holdout/holdout_01/beta_3.184/video.mp4",
+    "video_sha256": "74c4784658a0f87f49d53e52a68cc68f982577b36f3d99d787e1cdb1b290d5b5",
+    "historical_reuse": false
+  },
+  {
+    "id": "holdout_01",
+    "beta": null,
+    "mode": "native",
+    "seconds": 92.09370696544647,
+    "active_ratio": 1.0,
+    "video": "/root/autodl-tmp/ltx-restore-fast/experiments/quality_tiers/ltx/holdout/holdout_01/native/video.mp4",
+    "video_sha256": "45a7fb61fbb30ce4936ceb3542c46556192ca5fc1cfd409cc7df9966e094e5f9",
+    "historical_reuse": false
+  },
+  {
+    "id": "holdout_02",
+    "beta": 0.262,
+    "mode": "beta_0.262",
+    "seconds": 56.519917007535696,
+    "active_ratio": 0.8895240984857082,
+    "video": "/root/autodl-tmp/ltx-restore-fast/experiments/quality_tiers/ltx/holdout/holdout_02/beta_0.262/video.mp4",
+    "video_sha256": "5db5b1f0d73b2a5d54559b225dce11d8e1d6964d7430b2d4807dd0786873bf51",
+    "historical_reuse": false
+  },
+  {
+    "id": "holdout_02",
+    "beta": 1.732,
+    "mode": "beta_1.732",
+    "seconds": 38.292290672659874,
+    "active_ratio": 0.4517306945519522,
+    "video": "/root/autodl-tmp/ltx-restore-fast/experiments/quality_tiers/ltx/holdout/holdout_02/beta_1.732/video.mp4",
+    "video_sha256": "4f0edd4a6698027b1e3b8336bad0b804ed4f6f02012e0fe5e670550dea034b0b",
+    "historical_reuse": false
+  },
+  {
+    "id": "holdout_02",
+    "beta": 3.184,
+    "mode": "beta_3.184",
+    "seconds": 33.51302824169397,
+    "active_ratio": 0.340753951552324,
+    "video": "/root/autodl-tmp/ltx-restore-fast/experiments/quality_tiers/ltx/holdout/holdout_02/beta_3.184/video.mp4",
+    "video_sha256": "5d7421fd7d2a7396b27d51c96ac253e5e9f44ae19d71af175ceba25e421e5e71",
+    "historical_reuse": false
+  },
+  {
+    "id": "holdout_02",
+    "beta": null,
+    "mode": "native",
+    "seconds": 92.68728893622756,
+    "active_ratio": 1.0,
+    "video": "/root/autodl-tmp/ltx-restore-fast/experiments/quality_tiers/ltx/holdout/holdout_02/native/video.mp4",
+    "video_sha256": "26f9e53c1a7c3a99b52f47f18a8944de03ebe2f39c699a1731b4df035f5181ba",
+    "historical_reuse": false
+  },
+  {
+    "id": "holdout_03",
+    "beta": 0.262,
+    "mode": "beta_0.262",
+    "seconds": 52.43944700434804,
+    "active_ratio": 0.8090497475117445,
+    "video": "/root/autodl-tmp/ltx-restore-fast/experiments/quality_tiers/ltx/holdout/holdout_03/beta_0.262/video.mp4",
+    "video_sha256": "a3931f1bb822f634d9be46f6531ad1823c1fb66d88ffbadccfca2d27f7222291",
+    "historical_reuse": false
+  },
+  {
+    "id": "holdout_03",
+    "beta": 1.732,
+    "mode": "beta_1.732",
+    "seconds": 32.413304425776005,
+    "active_ratio": 0.3478992097079754,
+    "video": "/root/autodl-tmp/ltx-restore-fast/experiments/quality_tiers/ltx/holdout/holdout_03/beta_1.732/video.mp4",
+    "video_sha256": "8243933f615915c1c82eddcb8cd4fbcd7abb24ffd53068adbf30bd2d378847a6",
+    "historical_reuse": false
+  },
+  {
+    "id": "holdout_03",
+    "beta": 3.184,
+    "mode": "beta_3.184",
+    "seconds": 28.88659729808569,
+    "active_ratio": 0.26727720238268377,
+    "video": "/root/autodl-tmp/ltx-restore-fast/experiments/quality_tiers/ltx/holdout/holdout_03/beta_3.184/video.mp4",
+    "video_sha256": "2d649fdbb88c2f7b59ded97e0dce66448bf0132c2d0609640e1896331c24b9c0",
+    "historical_reuse": false
+  },
+  {
+    "id": "holdout_03",
+    "beta": null,
+    "mode": "native",
+    "seconds": 91.30904043465853,
+    "active_ratio": 1.0,
+    "video": "/root/autodl-tmp/ltx-restore-fast/experiments/quality_tiers/ltx/holdout/holdout_03/native/video.mp4",
+    "video_sha256": "e3fd022abe0af22459e6315dbc6c3f8b6a810a2db2ffa6dbac30dabf445d5530",
+    "historical_reuse": false
+  },
+  {
+    "id": "holdout_04",
+    "beta": 0.262,
+    "mode": "beta_0.262",
+    "seconds": 58.09574091807008,
+    "active_ratio": 0.9198246389627457,
+    "video": "/root/autodl-tmp/ltx-restore-fast/experiments/quality_tiers/ltx/holdout/holdout_04/beta_0.262/video.mp4",
+    "video_sha256": "2fb3425a2b44da493776a482326baa977d47c569c0eb37cd3ff6c88dd3124468",
+    "historical_reuse": false
+  },
+  {
+    "id": "holdout_04",
+    "beta": 1.732,
+    "mode": "beta_1.732",
+    "seconds": 37.75085761398077,
+    "active_ratio": 0.44780575451441107,
+    "video": "/root/autodl-tmp/ltx-restore-fast/experiments/quality_tiers/ltx/holdout/holdout_04/beta_1.732/video.mp4",
+    "video_sha256": "bfcfbecb23574197222f112519aa9d2b178b21b37d88bd92131de05f4fb28536",
+    "historical_reuse": false
+  },
+  {
+    "id": "holdout_04",
+    "beta": 3.184,
+    "mode": "beta_3.184",
+    "seconds": 32.89267320930958,
+    "active_ratio": 0.33261063643731176,
+    "video": "/root/autodl-tmp/ltx-restore-fast/experiments/quality_tiers/ltx/holdout/holdout_04/beta_3.184/video.mp4",
+    "video_sha256": "8253d37d9bac33e14bb9acef2ffe7f6f3953b59b068a747b33f04ba0b19f9e1b",
+    "historical_reuse": false
+  },
+  {
+    "id": "holdout_04",
+    "beta": null,
+    "mode": "native",
+    "seconds": 92.60347352549434,
+    "active_ratio": 1.0,
+    "video": "/root/autodl-tmp/ltx-restore-fast/experiments/quality_tiers/ltx/holdout/holdout_04/native/video.mp4",
+    "video_sha256": "d800fe04b05ffab28f39fd4a02b97ace310a46162eebb89818a27c32e1dc40bb",
+    "historical_reuse": false
+  }
+]

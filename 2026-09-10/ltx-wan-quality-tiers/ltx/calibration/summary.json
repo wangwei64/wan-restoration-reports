@@ -1,0 +1,207 @@
+{
+  "stage": "complete",
+  "family": "ltx",
+  "split": "calibration",
+  "metric_definition": {
+    "ssim_size": [
+      832,
+      480
+    ],
+    "lpips_alex_size": [
+      416,
+      240
+    ],
+    "resize": "torch area; applied identically to each model and its own native reference",
+    "frames": "all frames, no temporal trimming",
+    "comparisons": "within each model against native; never compare Wan pixels to LTX pixels"
+  },
+  "profiles": [
+    {
+      "beta": 0.1,
+      "cases": 6,
+      "mean_ssim": 0.988511529378303,
+      "mean_lpips": 0.002202695039660252,
+      "p90_case_one_minus_ssim": 0.01422059836657874,
+      "p90_case_lpips": 0.0029561968899355076,
+      "mean_seconds": 61.45738582871854,
+      "speedup": 1.5086077152512414,
+      "mean_active_ratio": 0.9993383104602497
+    },
+    {
+      "beta": 0.173,
+      "cases": 6,
+      "mean_ssim": 0.986549837335129,
+      "mean_lpips": 0.0032088317213703164,
+      "p90_case_one_minus_ssim": 0.016882624723714323,
+      "p90_case_lpips": 0.004393380249788877,
+      "mean_seconds": 59.404144279658794,
+      "speedup": 1.5607511486723773,
+      "mean_active_ratio": 0.9530124982198078
+    },
+    {
+      "beta": 0.228,
+      "cases": 6,
+      "mean_ssim": 0.9814855791572286,
+      "mean_lpips": 0.006070817806937581,
+      "p90_case_one_minus_ssim": 0.02206188574261725,
+      "p90_case_lpips": 0.007039886381677237,
+      "mean_seconds": 56.393444783985615,
+      "speedup": 1.6440755973592511,
+      "mean_active_ratio": 0.8795070943733055
+    },
+    {
+      "beta": 0.262,
+      "cases": 6,
+      "mean_ssim": 0.9776303146384858,
+      "mean_lpips": 0.008577382989925622,
+      "p90_case_one_minus_ssim": 0.027227867346184043,
+      "p90_case_lpips": 0.010606170764716327,
+      "mean_seconds": 55.108539854486786,
+      "speedup": 1.6824086913786829,
+      "mean_active_ratio": 0.8479751848926146
+    },
+    {
+      "beta": 0.3,
+      "cases": 6,
+      "mean_ssim": 0.9726795320232201,
+      "mean_lpips": 0.011869859924031929,
+      "p90_case_one_minus_ssim": 0.03503297817010792,
+      "p90_case_lpips": 0.016475502536285762,
+      "mean_seconds": 53.948978160197534,
+      "speedup": 1.7185698336132789,
+      "mean_active_ratio": 0.8217494249343873
+    },
+    {
+      "beta": 0.424,
+      "cases": 6,
+      "mean_ssim": 0.9645131657511476,
+      "mean_lpips": 0.01368425138417847,
+      "p90_case_one_minus_ssim": 0.05527676433899659,
+      "p90_case_lpips": 0.019722292961722072,
+      "mean_seconds": 51.06800149008632,
+      "speedup": 1.8155221217806146,
+      "mean_active_ratio": 0.7553244906011969
+    },
+    {
+      "beta": 0.504,
+      "cases": 6,
+      "mean_ssim": 0.9567940617539743,
+      "mean_lpips": 0.015436464475503718,
+      "p90_case_one_minus_ssim": 0.08037478122114816,
+      "p90_case_lpips": 0.024775328838135584,
+      "mean_seconds": 49.48373008084794,
+      "speedup": 1.8736478892940474,
+      "mean_active_ratio": 0.7180861566138143
+    },
+    {
+      "beta": 0.6,
+      "cases": 6,
+      "mean_ssim": 0.969567017099823,
+      "mean_lpips": 0.011569895011888556,
+      "p90_case_one_minus_ssim": 0.044646374286860246,
+      "p90_case_lpips": 0.015139755254134166,
+      "mean_seconds": 47.581072476382055,
+      "speedup": 1.9485707571303343,
+      "mean_active_ratio": 0.6701243263096935
+    },
+    {
+      "beta": 1.0,
+      "cases": 6,
+      "mean_ssim": 0.951942026716631,
+      "mean_lpips": 0.02270825422746091,
+      "p90_case_one_minus_ssim": 0.06377078675324116,
+      "p90_case_lpips": 0.02854991474858493,
+      "mean_seconds": 41.03746230341494,
+      "speedup": 2.259279234541308,
+      "mean_active_ratio": 0.5184985963176586
+    },
+    {
+      "beta": 1.5,
+      "cases": 6,
+      "mean_ssim": 0.9409956897713201,
+      "mean_lpips": 0.028382332018030088,
+      "p90_case_one_minus_ssim": 0.08188506940104306,
+      "p90_case_lpips": 0.033012474810104234,
+      "mean_seconds": 37.05557345723113,
+      "speedup": 2.502055096445537,
+      "mean_active_ratio": 0.4264712131562798
+    },
+    {
+      "beta": 1.732,
+      "cases": 6,
+      "mean_ssim": 0.9316552324679365,
+      "mean_lpips": 0.03280821026972503,
+      "p90_case_one_minus_ssim": 0.09917741333871566,
+      "p90_case_lpips": 0.04018921154928355,
+      "mean_seconds": 35.87147143172721,
+      "speedup": 2.584646871730315,
+      "mean_active_ratio": 0.39807427233317866
+    },
+    {
+      "beta": 1.861,
+      "cases": 6,
+      "mean_ssim": 0.9287478971439155,
+      "mean_lpips": 0.03394733266981919,
+      "p90_case_one_minus_ssim": 0.10865153144018841,
+      "p90_case_lpips": 0.041724077956981895,
+      "mean_seconds": 35.37670479466518,
+      "speedup": 2.620794869350256,
+      "mean_active_ratio": 0.3839609973617674
+    },
+    {
+      "beta": 2.0,
+      "cases": 6,
+      "mean_ssim": 0.9286133509859779,
+      "mean_lpips": 0.03414890168044849,
+      "p90_case_one_minus_ssim": 0.11122067129074692,
+      "p90_case_lpips": 0.04415389524449494,
+      "mean_seconds": 35.0987665951252,
+      "speedup": 2.641548276891705,
+      "mean_active_ratio": 0.3714360771826857
+    },
+    {
+      "beta": 2.6,
+      "cases": 6,
+      "mean_ssim": 0.9214135775021992,
+      "mean_lpips": 0.04210964777345253,
+      "p90_case_one_minus_ssim": 0.10914085723084477,
+      "p90_case_lpips": 0.056501328406378254,
+      "mean_seconds": 33.2847423988084,
+      "speedup": 2.785513113170325,
+      "mean_active_ratio": 0.3302768516334106
+    },
+    {
+      "beta": 3.184,
+      "cases": 6,
+      "mean_ssim": 0.9230247089333751,
+      "mean_lpips": 0.04047209276630448,
+      "p90_case_one_minus_ssim": 0.10375326744215457,
+      "p90_case_lpips": 0.045653772194030856,
+      "mean_seconds": 31.993826346471906,
+      "speedup": 2.8979055339093938,
+      "mean_active_ratio": 0.3073212481339094
+    },
+    {
+      "beta": 3.524,
+      "cases": 6,
+      "mean_ssim": 0.9069517864386719,
+      "mean_lpips": 0.04884637373219919,
+      "p90_case_one_minus_ssim": 0.1391594122437146,
+      "p90_case_lpips": 0.06271762984289117,
+      "mean_seconds": 31.644916584715247,
+      "speedup": 2.929857191191309,
+      "mean_active_ratio": 0.29723975862919666
+    },
+    {
+      "beta": 3.9,
+      "cases": 6,
+      "mean_ssim": 0.9012016284490635,
+      "mean_lpips": 0.04917408052072463,
+      "p90_case_one_minus_ssim": 0.1511648248802191,
+      "p90_case_lpips": 0.061700146260463495,
+      "mean_seconds": 31.009386602789164,
+      "speedup": 2.989903915482087,
+      "mean_active_ratio": 0.28603000454119565
+    }
+  ]
+}

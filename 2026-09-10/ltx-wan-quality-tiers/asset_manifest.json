@@ -1,0 +1,182 @@
+{
+  "assets/cal_18_ltx_three_quality_tiers.mp4": {
+    "sha256": "9c904a5d77dfa03f83e4047b411bbe87524412fd521e438f2c10555b97da80b8",
+    "bytes": 18757965
+  },
+  "assets/cal_18_wan_three_quality_tiers.mp4": {
+    "sha256": "29b8757ee2ed42d579a038cff779ac26248ec5028a649c685b4d35124de9ab9b",
+    "bytes": 3349667
+  },
+  "assets/cal_19_ltx_three_quality_tiers.mp4": {
+    "sha256": "20b8155ece67884f41af341d986f56112460f37451805f709b4fad1440de9669",
+    "bytes": 2809255
+  },
+  "assets/cal_19_wan_three_quality_tiers.mp4": {
+    "sha256": "715b57a08d7a5b1110a2dc772a88198fae1d488c55ac1eba17f2f5aed5f49ae1",
+    "bytes": 2225988
+  },
+  "assets/cal_25_ltx_three_quality_tiers.mp4": {
+    "sha256": "c3b3eae07ed66daed21a92f18f26440babbd0a09b835025e55a29a0de25d60f7",
+    "bytes": 4666724
+  },
+  "assets/cal_25_wan_three_quality_tiers.mp4": {
+    "sha256": "02ca79c305d9d6c70aba4241f324ef554e6d357797bac32d8e040e94800290ae",
+    "bytes": 2238430
+  },
+  "assets/cal_26_ltx_three_quality_tiers.mp4": {
+    "sha256": "ef85ba0dee255ba5a52259ec16f1455490a5fcdecdfb934540d11261550d2baa",
+    "bytes": 35499329
+  },
+  "assets/cal_26_wan_three_quality_tiers.mp4": {
+    "sha256": "ed7ac4e32da49c3fc4092e93e82db1f4979889e949f1afa9e69a45dad5f29b3c",
+    "bytes": 5329368
+  },
+  "assets/cal_27_ltx_three_quality_tiers.mp4": {
+    "sha256": "f59374469490678a191e2ece8a428ce0b9b3f8506b07a1771f7eb9e7f10e1fc9",
+    "bytes": 12448464
+  },
+  "assets/cal_27_wan_three_quality_tiers.mp4": {
+    "sha256": "5920608a3420d6ce6e039905d5e8fa7d223d283b71621c070e8ebd2ebbbffbae",
+    "bytes": 6186230
+  },
+  "assets/cal_28_ltx_three_quality_tiers.mp4": {
+    "sha256": "bf925052a78357f2de013b6cdaed566d5e018c628bd88271a4ee3f1d7ea81708",
+    "bytes": 4265473
+  },
+  "assets/cal_28_wan_three_quality_tiers.mp4": {
+    "sha256": "1ff7cf6e5ca14950d35559946b53f072ff3568a717735455731c1f413267aefb",
+    "bytes": 1468868
+  },
+  "assets/holdout_01_ltx_three_quality_tiers.mp4": {
+    "sha256": "1ef4606c1c5cdc0361a6642a8262c10ec35935d49f39546dc8f3529ad267ad33",
+    "bytes": 4799509
+  },
+  "assets/holdout_01_wan_three_quality_tiers.mp4": {
+    "sha256": "58119279af640ecc29224cb05f04ebf571d84acec558251b7a64bffa4fc26ac9",
+    "bytes": 2285233
+  },
+  "assets/holdout_02_ltx_three_quality_tiers.mp4": {
+    "sha256": "0b4dfebefb5a63fb957a915d19a9383af3043ae6e43fb5339f9e55f79f434575",
+    "bytes": 19350100
+  },
+  "assets/holdout_02_wan_three_quality_tiers.mp4": {
+    "sha256": "a6be1a073cde3f3939070da1cef4d32dc61b54df6be041737d97df5e27cc013c",
+    "bytes": 4009804
+  },
+  "assets/holdout_03_ltx_three_quality_tiers.mp4": {
+    "sha256": "216dc30c9fcf9caf79239b4ab0952caf21d2e67f5d362af50dc718d2b951fa0c",
+    "bytes": 1619551
+  },
+  "assets/holdout_03_wan_three_quality_tiers.mp4": {
+    "sha256": "c5d3e606f3956946a479e72b47731ed670cb5996ed7a395c84912ac18b9e55ab",
+    "bytes": 1324592
+  },
+  "assets/holdout_04_ltx_three_quality_tiers.mp4": {
+    "sha256": "89c002cf39aee06eb0ed7432dc0bf8f52f9e1c6f901522168742e411fa797bb0",
+    "bytes": 9470249
+  },
+  "assets/holdout_04_wan_three_quality_tiers.mp4": {
+    "sha256": "1753c85dc17acbd7b3f19f45c69e6bb8a50aac8c1ddf0d3252f3a53aa6f5392b",
+    "bytes": 2675593
+  },
+  "checks/cli/verification.json": {
+    "sha256": "e6f6df45050f378af3d601e78dd74d3885ff0a0a7e35d68a88c4ed845f28872a",
+    "bytes": 1045
+  },
+  "historical_anchor/metrics.json": {
+    "sha256": "c09ba8e3f190ad8c85d613dd7617a2509639864e270268ec82cf488f2207113f",
+    "bytes": 56304
+  },
+  "historical_anchor/summary.json": {
+    "sha256": "46bbf205ae370cb85c82f527333e0a36ef04aefb2e4c9d3cabf0c2f3ae061d65",
+    "bytes": 940
+  },
+  "holdout_assessment.json": {
+    "sha256": "e0e579ec9ec769135263151f4253ea63465f4ff833c98e63dc7337e320ae857a",
+    "bytes": 17081
+  },
+  "index.html": {
+    "sha256": "0b25575e74a63fe1ec2267a3d22c4bc86547fd19a48b1b183d154c8bc4b9d14d",
+    "bytes": 30798
+  },
+  "installation.json": {
+    "sha256": "9bbb3dd0f389e05e2965f02a19bae5ea5c8470ff8c175ff8c753d8639ebcdf5a",
+    "bytes": 591
+  },
+  "ltx/calibration/metrics.json": {
+    "sha256": "f3923366e6281b5930ef25e7bdcadee4b3d6a22bc8fe55cf6443fd76104067b6",
+    "bytes": 779796
+  },
+  "ltx/calibration/runs.json": {
+    "sha256": "76d40f0e2a34297a819ca8210217ebf2a0304d28ba6594a5638da570e1a6dbb0",
+    "bytes": 41808
+  },
+  "ltx/calibration/summary.json": {
+    "sha256": "d86d4cb6085834ac11b103a055a6494e630c4d362608da0b9dadef44db907e93",
+    "bytes": 6497
+  },
+  "ltx/holdout/metrics.json": {
+    "sha256": "bf0e0de39f344f8bcf7b334056c12fb9fb9bc51021db842420c696bcb24f764b",
+    "bytes": 91665
+  },
+  "ltx/holdout/runs.json": {
+    "sha256": "e57c16278e1eb6b756f3b7dec3c24bcbcd29fc5d21aa49e7fa2924ae515b38d2",
+    "bytes": 6153
+  },
+  "ltx/holdout/summary.json": {
+    "sha256": "e3ff72d1f5f148ab8af14fa32ca3182a32456d14f671f011d8bc5ea2e8a332f0",
+    "bytes": 1520
+  },
+  "media_provenance.json": {
+    "sha256": "2dfb281accf7116958847d7a2991a4fcfffefae2c15df38e280b7d5d1f80b141",
+    "bytes": 18891
+  },
+  "protocol.json": {
+    "sha256": "4a798ee3a61e93c408cdd17c4ff883090ff9e8a13c7bd730b1af19cd9e6e228d",
+    "bytes": 6257
+  },
+  "quality_floor_amendment.json": {
+    "sha256": "12a6efb1ef3e16071ac7d8cc0fa454758fae25eabf91e102839c7915dc2584e6",
+    "bytes": 637
+  },
+  "quality_presets.json": {
+    "sha256": "ca71510dd7776e246a0f5637a798af7e42621135dbe235aeaae2a4cb81061795",
+    "bytes": 6696
+  },
+  "release.json": {
+    "sha256": "e257aae881a14276fedaac50bbb68d3dd5b701fa83aea8c79c1d76c2c9c299b6",
+    "bytes": 178
+  },
+  "selection_analysis.json": {
+    "sha256": "8f0d67f558e0bfbd29898dad74205d6b78991f0c0e785ba8a0db4613adc43ccb",
+    "bytes": 63745
+  },
+  "selection_history.json": {
+    "sha256": "5f80df3f8d5a3ac8fcf65c80719ab341b764455cd5c1710673a491c601cedd9a",
+    "bytes": 209958
+  },
+  "wan/calibration/metrics.json": {
+    "sha256": "05fdf4b5f9ab014fc7f92ffdb074c3e0e6a637a85805d4f7ac667e38e4419c37",
+    "bytes": 57343
+  },
+  "wan/calibration/runs.json": {
+    "sha256": "6e88b16cd7b52da2d783453655ae34feeb95ed4381b96e06c9288cf00322c2e4",
+    "bytes": 6123
+  },
+  "wan/calibration/summary.json": {
+    "sha256": "0cd8ef03ef789a97c23de438314aee4f4443fdf00109ea2c7ea0902b7a5b4695",
+    "bytes": 1517
+  },
+  "wan/holdout/metrics.json": {
+    "sha256": "865ccc4ffc326b0607a3d64a95805bbda492f5370de80fd1f0e14ff1feda05a3",
+    "bytes": 38335
+  },
+  "wan/holdout/runs.json": {
+    "sha256": "494030b3807ddaf893f8eee6ddf38ffbc9bcd93f83cee10b8e06a2477bbb6f0d",
+    "bytes": 4143
+  },
+  "wan/holdout/summary.json": {
+    "sha256": "d6dc42ea1315ba78831b4a4b2808347d81b3e402f8f0e2947f727ac625ea31f6",
+    "bytes": 1513
+  }
+}

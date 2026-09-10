@@ -1,0 +1,36 @@
+{
+  "stage": "passed",
+  "release": "/root/autodl-tmp/ltx-restore-fast/releases/ltx2b_wan_quality_tiers_v1",
+  "describe_verified": true,
+  "tiers_exercised": 3,
+  "rows": [
+    {
+      "quality_tier": 0.1,
+      "beta": 0.262,
+      "final_latent_bit_exact": true,
+      "max_absolute_latent_difference": 0.0,
+      "online_seconds": 54.637051705271006,
+      "teacher_used_online": false,
+      "full_reference_run_online": false
+    },
+    {
+      "quality_tier": 1.0,
+      "beta": 1.732,
+      "final_latent_bit_exact": true,
+      "max_absolute_latent_difference": 0.0,
+      "online_seconds": 34.90424330160022,
+      "teacher_used_online": false,
+      "full_reference_run_online": false
+    },
+    {
+      "quality_tier": 2.0,
+      "beta": 3.184,
+      "final_latent_bit_exact": true,
+      "max_absolute_latent_difference": 0.0,
+      "online_seconds": 31.60471375286579,
+      "teacher_used_online": false,
+      "full_reference_run_online": false
+    }
+  ],
+  "note": "Final latent equality does not assert encoded RGB equality."
+}

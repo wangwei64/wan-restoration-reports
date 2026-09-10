@@ -1,0 +1,130 @@
+[
+  {
+    "id": "holdout_01",
+    "beta": 0.1,
+    "mode": "beta_0.1",
+    "seconds": 52.61971529200673,
+    "active_ratio": 0.7978321678321678,
+    "video": "/root/autodl-tmp/ltx-restore-fast/experiments/quality_tiers/wan/holdout/holdout_01/beta_0.1/final.mp4"
+  },
+  {
+    "id": "holdout_01",
+    "beta": 1.0,
+    "mode": "beta_1",
+    "seconds": 32.46424216777086,
+    "active_ratio": 0.30090763403263404,
+    "video": "/root/autodl-tmp/ltx-restore-fast/experiments/quality_tiers/wan/holdout/holdout_01/beta_1/final.mp4"
+  },
+  {
+    "id": "holdout_01",
+    "beta": 2.0,
+    "mode": "beta_2",
+    "seconds": 29.7495541498065,
+    "active_ratio": 0.2223441142191142,
+    "video": "/root/autodl-tmp/ltx-restore-fast/experiments/quality_tiers/wan/holdout/holdout_01/beta_2/final.mp4"
+  },
+  {
+    "id": "holdout_01",
+    "beta": null,
+    "mode": "native",
+    "seconds": 74.42456944659352,
+    "active_ratio": 1.0,
+    "video": "/root/autodl-tmp/ltx-restore-fast/experiments/quality_tiers/wan/holdout/holdout_01/native/final.mp4"
+  },
+  {
+    "id": "holdout_02",
+    "beta": 0.1,
+    "mode": "beta_0.1",
+    "seconds": 56.16828252747655,
+    "active_ratio": 0.8959833916083916,
+    "video": "/root/autodl-tmp/ltx-restore-fast/experiments/quality_tiers/wan/holdout/holdout_02/beta_0.1/final.mp4"
+  },
+  {
+    "id": "holdout_02",
+    "beta": 1.0,
+    "mode": "beta_1",
+    "seconds": 35.68943325802684,
+    "active_ratio": 0.3743006993006993,
+    "video": "/root/autodl-tmp/ltx-restore-fast/experiments/quality_tiers/wan/holdout/holdout_02/beta_1/final.mp4"
+  },
+  {
+    "id": "holdout_02",
+    "beta": 2.0,
+    "mode": "beta_2",
+    "seconds": 31.591610960662365,
+    "active_ratio": 0.27472027972027974,
+    "video": "/root/autodl-tmp/ltx-restore-fast/experiments/quality_tiers/wan/holdout/holdout_02/beta_2/final.mp4"
+  },
+  {
+    "id": "holdout_02",
+    "beta": null,
+    "mode": "native",
+    "seconds": 73.92426192387938,
+    "active_ratio": 1.0,
+    "video": "/root/autodl-tmp/ltx-restore-fast/experiments/quality_tiers/wan/holdout/holdout_02/native/final.mp4"
+  },
+  {
+    "id": "holdout_03",
+    "beta": 0.1,
+    "mode": "beta_0.1",
+    "seconds": 50.75814139842987,
+    "active_ratio": 0.7740268065268066,
+    "video": "/root/autodl-tmp/ltx-restore-fast/experiments/quality_tiers/wan/holdout/holdout_03/beta_0.1/final.mp4"
+  },
+  {
+    "id": "holdout_03",
+    "beta": 1.0,
+    "mode": "beta_1",
+    "seconds": 32.58013569936156,
+    "active_ratio": 0.29584061771561776,
+    "video": "/root/autodl-tmp/ltx-restore-fast/experiments/quality_tiers/wan/holdout/holdout_03/beta_1/final.mp4"
+  },
+  {
+    "id": "holdout_03",
+    "beta": 2.0,
+    "mode": "beta_2",
+    "seconds": 29.532741367816925,
+    "active_ratio": 0.2166127622377622,
+    "video": "/root/autodl-tmp/ltx-restore-fast/experiments/quality_tiers/wan/holdout/holdout_03/beta_2/final.mp4"
+  },
+  {
+    "id": "holdout_03",
+    "beta": null,
+    "mode": "native",
+    "seconds": 74.2197364717722,
+    "active_ratio": 1.0,
+    "video": "/root/autodl-tmp/ltx-restore-fast/experiments/quality_tiers/wan/holdout/holdout_03/native/final.mp4"
+  },
+  {
+    "id": "holdout_04",
+    "beta": 0.1,
+    "mode": "beta_0.1",
+    "seconds": 55.71175751835108,
+    "active_ratio": 0.9080288461538462,
+    "video": "/root/autodl-tmp/ltx-restore-fast/experiments/quality_tiers/wan/holdout/holdout_04/beta_0.1/final.mp4"
+  },
+  {
+    "id": "holdout_04",
+    "beta": 1.0,
+    "mode": "beta_1",
+    "seconds": 35.068222764879465,
+    "active_ratio": 0.3636130536130536,
+    "video": "/root/autodl-tmp/ltx-restore-fast/experiments/quality_tiers/wan/holdout/holdout_04/beta_1/final.mp4"
+  },
+  {
+    "id": "holdout_04",
+    "beta": 2.0,
+    "mode": "beta_2",
+    "seconds": 31.49897761270404,
+    "active_ratio": 0.2696299533799534,
+    "video": "/root/autodl-tmp/ltx-restore-fast/experiments/quality_tiers/wan/holdout/holdout_04/beta_2/final.mp4"
+  },
+  {
+    "id": "holdout_04",
+    "beta": null,
+    "mode": "native",
+    "seconds": 74.86188436672091,
+    "active_ratio": 1.0,
+    "video": "/root/autodl-tmp/ltx-restore-fast/experiments/quality_tiers/wan/holdout/holdout_04/native/final.mp4"
+  }
+]

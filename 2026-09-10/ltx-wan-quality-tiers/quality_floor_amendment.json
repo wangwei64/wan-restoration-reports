@@ -1,0 +1,9 @@
+{
+  "created_unix": 1789035184.3541088,
+  "use_historical_floor": true,
+  "decision": "Conservative default after optional user preference question; no LTX scoring or selection has occurred.",
+  "reason": "New same-prompt Wan scenes have more error than historical report; do not relax LTX quality solely because of scene mix.",
+  "source": "architecture_event_parameters_v1, all nine cases for beta 1.0 and 2.0, remeasured with identical CommonMetrics",
+  "combination": "For each of four error metrics, take stricter of same-prompt Wan envelope and historical envelope. Same allowance formula.",
+  "initial_protocol_unchanged": true
+}

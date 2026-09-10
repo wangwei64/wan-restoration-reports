@@ -1,0 +1,140 @@
+{
+  "task": "Match LTX final-video fidelity to latest Wan restore-fast beta 0.1, 1.0, 2.0; prioritize measured speed among quality-matched candidates.",
+  "reference_wan_betas": [
+    0.1,
+    1.0,
+    2.0
+  ],
+  "initial_ltx_betas": [
+    0.1,
+    0.3,
+    0.6,
+    1.0,
+    1.5,
+    2.0,
+    2.6
+  ],
+  "only_inference_parameter_to_sweep": "controller.budget",
+  "ltx_source_candidate": "/root/autodl-tmp/ltx-restore-fast/experiments/iteration2/candidates/ltx2b_user_accepted_273x",
+  "ltx_recent_candidate": "/root/autodl-tmp/ltx-restore-fast/experiments/iteration2/candidates/ltx2b_beta20_20260910",
+  "wan_source_package": "/root/autodl-tmp/wan_restore_fast",
+  "ltx_generation": {
+    "height": 704,
+    "width": 1216,
+    "frames": 121,
+    "steps": 50,
+    "flow_scale": 0.1,
+    "dynamic_flow": true
+  },
+  "wan_generation": {
+    "width": 832,
+    "height": 480,
+    "frames": 41,
+    "fps": 16,
+    "steps": 50,
+    "warmup_steps": 10,
+    "shift": 2.0,
+    "cfg": 5.0,
+    "quality_tolerance": 0.01
+  },
+  "common_metrics": {
+    "ssim_size": [
+      832,
+      480
+    ],
+    "lpips_alex_size": [
+      416,
+      240
+    ],
+    "resize": "torch area; applied identically to each model and its own native reference",
+    "frames": "all frames, no temporal trimming",
+    "comparisons": "within each model against native; never compare Wan pixels to LTX pixels"
+  },
+  "selection": {
+    "quality_statistics": [
+      "mean_ssim",
+      "mean_lpips",
+      "p90_case_one_minus_ssim",
+      "p90_case_lpips"
+    ],
+    "ssim_loss_slack": "min(0.005, 0.10 * corresponding Wan SSIM loss)",
+    "lpips_slack": "min(0.003, 0.10 * corresponding Wan LPIPS)",
+    "choose": "lowest summed LTX generation time among qualifying measured thresholds; preserve the full sweep including regressions",
+    "refinement": "add thresholds around quality feasibility boundaries if the initial grid is insufficient",
+    "cross_model_equivalence": "operational metric match with joint-video inspection; not a claim of identical perceptual quality"
+  },
+  "validation": "Freeze thresholds on six calibration cases, then evaluate four new prompts on both models without using them in initial threshold selection.",
+  "reuse": "Archived LTX beta 2.0 / 2.6 videos and native references can be reused for offline calibration only. Fresh native runs for held-out final timing.",
+  "report_media": "Combined videos only; no screenshots or poster images.",
+  "calibration_cases": [
+    {
+      "id": "cal_18",
+      "source_id": "test_18",
+      "split": "calibration",
+      "prompt": "A black and white border collie running at an easy pace along a sandy beach near the water. Small waves roll onto the sand as the camera tracks smoothly beside the dog. A single uninterrupted photographic shot with stable framing, consistent natural illumination, clear subject details, coherent movement and realistic textures. No cuts or abrupt camera motion.",
+      "seed": 364089
+    },
+    {
+      "id": "cal_19",
+      "source_id": "test_19",
+      "split": "calibration",
+      "prompt": "A woman in a green sweater turns a pottery bowl slowly on a wheel in a softly lit studio. Her hands guide the wet clay with careful continuous movements. A single uninterrupted photographic shot with stable framing, consistent natural illumination, clear subject details, coherent movement and realistic textures. No cuts or abrupt camera motion.",
+      "seed": 364206
+    },
+    {
+      "id": "cal_25",
+      "source_id": "test_25",
+      "split": "calibration",
+      "prompt": "A woman wearing a cream sweater folds a red scarf on a wooden table beside a bright window. Her hands move slowly and continuously, and soft fabric wrinkles follow the motion. A steady medium close-up with realistic detail and consistent sunlight.",
+      "seed": 945900
+    },
+    {
+      "id": "cal_26",
+      "source_id": "test_26",
+      "split": "calibration",
+      "prompt": "A gray pony walks along a narrow dirt path beside a field of yellow wildflowers. Its mane and tail move softly in a breeze while the camera tracks gently from the side. Continuous realistic shot with natural gait and stable proportions.",
+      "seed": 946031
+    },
+    {
+      "id": "cal_27",
+      "source_id": "test_27",
+      "split": "calibration",
+      "prompt": "A little green rowboat drifts beneath a stone arch bridge on a quiet canal. Reflections of the bridge ripple across the water as the camera moves steadily forward. Soft afternoon sunlight, detailed realistic textures and coherent motion.",
+      "seed": 946162
+    },
+    {
+      "id": "cal_28",
+      "source_id": "test_28",
+      "split": "calibration",
+      "prompt": "A baker wearing a brown apron rolls a small ball of dough across a flour-dusted wooden counter with both hands. The camera stays close at counter height, showing consistent fingers and gentle continuous movement in a bright kitchen.",
+      "seed": 946293
+    }
+  ],
+  "holdout_cases": [
+    {
+      "id": "holdout_01",
+      "prompt": "A fluffy orange cat walks across a sunlit room and gently brushes its tail against the leg of a wooden chair. A steady low camera follows the natural walking motion, with realistic fur and consistent warm light.",
+      "seed": 961101,
+      "split": "holdout"
+    },
+    {
+      "id": "holdout_02",
+      "prompt": "A woman in a blue jacket jogs at a relaxed pace along a riverside path. Her arms move naturally as the camera tracks smoothly from the side, with coherent proportions and detailed trees in soft daylight.",
+      "seed": 961238,
+      "split": "holdout"
+    },
+    {
+      "id": "holdout_03",
+      "prompt": "A close view of two hands slowly pouring clear water from a small glass pitcher into a ceramic cup on a wooden kitchen counter. The water stream and fingers remain visible throughout a continuous steady realistic shot.",
+      "seed": 961375,
+      "split": "holdout"
+    },
+    {
+      "id": "holdout_04",
+      "prompt": "A red tram moves slowly along rails past a row of old brick buildings. The camera stays steady at street level, showing smooth wheel motion and changing reflections in the windows under soft afternoon light.",
+      "seed": 961512,
+      "split": "holdout"
+    }
+  ],
+  "retraining": false
+}

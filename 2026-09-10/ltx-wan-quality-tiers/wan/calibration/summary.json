@@ -1,0 +1,53 @@
+{
+  "stage": "complete",
+  "family": "wan",
+  "split": "calibration",
+  "metric_definition": {
+    "ssim_size": [
+      832,
+      480
+    ],
+    "lpips_alex_size": [
+      416,
+      240
+    ],
+    "resize": "torch area; applied identically to each model and its own native reference",
+    "frames": "all frames, no temporal trimming",
+    "comparisons": "within each model against native; never compare Wan pixels to LTX pixels"
+  },
+  "profiles": [
+    {
+      "beta": 0.1,
+      "cases": 6,
+      "mean_ssim": 0.9650904141137951,
+      "mean_lpips": 0.009361281279262489,
+      "p90_case_one_minus_ssim": 0.04143638464249272,
+      "p90_case_lpips": 0.014691203719050418,
+      "mean_seconds": 52.81223320712646,
+      "speedup": 1.411528637656747,
+      "mean_active_ratio": 0.8144408022533022
+    },
+    {
+      "beta": 1.0,
+      "cases": 6,
+      "mean_ssim": 0.9015896310648251,
+      "mean_lpips": 0.05124221727009712,
+      "p90_case_one_minus_ssim": 0.13241962839396199,
+      "p90_case_lpips": 0.07439320897910653,
+      "mean_seconds": 33.491179924458265,
+      "speedup": 2.2258391540282956,
+      "mean_active_ratio": 0.3181808469308469
+    },
+    {
+      "beta": 2.0,
+      "cases": 6,
+      "mean_ssim": 0.8785637352521561,
+      "mean_lpips": 0.06604041574083692,
+      "p90_case_one_minus_ssim": 0.1718003979538616,
+      "p90_case_lpips": 0.09451771809197054,
+      "mean_seconds": 30.27064539057513,
+      "speedup": 2.4626491648465403,
+      "mean_active_ratio": 0.2353370240870241
+    }
+  ]
+}
