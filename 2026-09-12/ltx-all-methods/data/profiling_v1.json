@@ -1,0 +1,257 @@
+{
+  "stage": "complete",
+  "segmentation_revision": 2,
+  "block_scores": [
+    0.6196509818262383,
+    0.6326414564077742,
+    0.614184094576537,
+    0.6156041259014126,
+    0.571193186696701,
+    0.6842580740275289,
+    0.5769087497757256,
+    0.577449319300966,
+    0.6236628640713142,
+    0.6042670849751633,
+    0.6076675489474045,
+    0.5564044320606131,
+    0.5304773399818589,
+    0.319692741713965,
+    0.3221566150320498,
+    0.18242532631118843,
+    0.13196319604646226,
+    0.31057087335857636,
+    0.4280784970348217,
+    0.2264954778936302,
+    0.6496708118865531,
+    0.6677697959270316,
+    0.6007572941783826,
+    0.5592146272994118,
+    0.5116925221997417,
+    0.5324369004875945,
+    0.5056481694030183,
+    0.38742947697184343
+  ],
+  "threshold": 0.5652039069980564,
+  "background_blocks": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "foreground_blocks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    20,
+    21,
+    22
+  ],
+  "calibration_cases": [
+    "cal_18",
+    "cal_19",
+    "cal_25",
+    "cal_26",
+    "cal_27",
+    "cal_28"
+  ],
+  "mask_count": 96,
+  "seconds": 4.0901660695672035,
+  "no_training": true,
+  "settings": {
+    "revision": 2,
+    "SAM2": "sam2.1_hiera_tiny",
+    "training": false,
+    "input": "Decoded native calibration video RGB frames (not PCA noise)",
+    "reason": "CPU preflight PCA/noise mask selected background; not a reliable semantic mask for native LTX velocity outputs.",
+    "box_prompts": {
+      "coordinate_system": "320x186 native calibration contact images; keyframes 0,60,120",
+      "selection": "Manual subject boxes from visual inspection of only six calibration videos; SAM2 image masks interpolate these prompts over 16 causal latent frames. No holdout images used.",
+      "cal_18": {
+        "subject": "dog",
+        "boxes": [
+          [
+            144,
+            67,
+            178,
+            95
+          ],
+          [
+            137,
+            69,
+            180,
+            103
+          ],
+          [
+            140,
+            76,
+            187,
+            111
+          ]
+        ]
+      },
+      "cal_19": {
+        "subject": "woman including hands",
+        "boxes": [
+          [
+            49,
+            0,
+            220,
+            153
+          ],
+          [
+            44,
+            0,
+            213,
+            155
+          ],
+          [
+            43,
+            0,
+            217,
+            154
+          ]
+        ]
+      },
+      "cal_25": {
+        "subject": "red scarf",
+        "boxes": [
+          [
+            29,
+            29,
+            319,
+            185
+          ],
+          [
+            34,
+            60,
+            319,
+            185
+          ],
+          [
+            39,
+            0,
+            319,
+            185
+          ]
+        ]
+      },
+      "cal_26": {
+        "subject": "pony",
+        "boxes": [
+          [
+            94,
+            39,
+            256,
+            142
+          ],
+          [
+            111,
+            20,
+            268,
+            155
+          ],
+          [
+            135,
+            48,
+            305,
+            173
+          ]
+        ]
+      },
+      "cal_27": {
+        "subject": "rowboat",
+        "boxes": [
+          [
+            140,
+            109,
+            256,
+            153
+          ],
+          [
+            121,
+            113,
+            270,
+            156
+          ],
+          [
+            105,
+            116,
+            261,
+            159
+          ]
+        ]
+      },
+      "cal_28": {
+        "subject": "baker including hands",
+        "boxes": [
+          [
+            23,
+            0,
+            279,
+            131
+          ],
+          [
+            6,
+            0,
+            271,
+            133
+          ],
+          [
+            35,
+            0,
+            279,
+            128
+          ]
+        ]
+      }
+    },
+    "box_sha256": "5bd948b18e9803fcffed61c9a96ec0fd3c6c02be4e4c9cbe02e36c13584784ac",
+    "resolution": [
+      608,
+      352
+    ],
+    "latent_frame_mapping": "RGB frame 8*k for latent k=0..15; area pooling to 38x22 and >0.25 foreground coverage.",
+    "selection": "SAM2 box-prompted single mask, no quality tuning on holdouts.",
+    "checkpoint": {
+      "checkpoint_sha256": "7402e0d864fa82708a20fbd15bc84245c2f26dff0eb43a4b5b93452deb34be69",
+      "urls": [
+        "https://dl.fbaipublicfiles.com/segment_anything_2/092824/sam2.1_hiera_tiny.pt",
+        "https://hf-mirror.com/facebook/sam2.1-hiera-tiny/resolve/main/sam2.1_hiera_tiny.pt"
+      ],
+      "training": false
+    },
+    "source_sha256": "7c46903450c73fadfe1bb3904643a9adfe966031cb975f78612845ec6cf24015"
+  },
+  "artifact_sha256": {
+    "captures/cal_18/foreground.json": "afe299053fc62b3c292cef786fe04528f3cb048c1b4d23846d6d9c1a09cb5dec",
+    "captures/cal_18/foreground_masks.npz": "e4d81b542d1e4e71f56ce5d1078b6a548fb0ad54e5f0a995461bfa302f762931",
+    "captures/cal_19/foreground.json": "fa5d11e9cbd7ec98a08afb48f46568351f9523a2548a4ff368e0f0d03c733986",
+    "captures/cal_19/foreground_masks.npz": "579c1c849154c235196d45834ced03b5b6317905eaccc5a7faa9add195af3c60",
+    "captures/cal_25/foreground.json": "b4d8f816aa2a0a17b75aaacdf31295c1bc3b48a3b960b73637f13853c8c75b16",
+    "captures/cal_25/foreground_masks.npz": "014f4d67b37a34efd3f5e861b299fc5aae6dbee6faecc6c2a1537f1aa1a5e7be",
+    "captures/cal_26/foreground.json": "35fb34dd5fd695100a0f2c55b9a6e565e5176d9c276500e1ac84a0b630ed2e3d",
+    "captures/cal_26/foreground_masks.npz": "0d0b66606573cb3933f31006fba3f9c76d717c2fd5327ff3e335eca8b374155c",
+    "captures/cal_27/foreground.json": "b7e2985a4b866ca63de64c239932305c87b119a74eff8f8abd24502709cecc4b",
+    "captures/cal_27/foreground_masks.npz": "df811485ceb29f0764abfa508ef88aaa3b70316f854a609e0a2b9e5f2145a3ce",
+    "captures/cal_28/foreground.json": "f1f655f72533444b824087da763bee7c99439e1470020fb858e3f710da98cbdc",
+    "captures/cal_28/foreground_masks.npz": "8e46ddaf07d9cbfc0de8ea33fe32fd4d8cc5e6a321c4680f40bd631054f0fed7"
+  }
+}

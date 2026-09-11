@@ -1,0 +1,113 @@
+{
+  "native": {
+    "method": "native"
+  },
+  "teacache_slow": {
+    "method": "tea",
+    "threshold": 0.03
+  },
+  "teacache_fast": {
+    "method": "tea",
+    "threshold": 0.05
+  },
+  "navicache_slow": {
+    "method": "navi",
+    "threshold": 0.04
+  },
+  "navicache_fast": {
+    "method": "navi",
+    "threshold": 0.07
+  },
+  "sencache_slow": {
+    "method": "sen",
+    "threshold": 0.5,
+    "K": 2
+  },
+  "sencache_fast": {
+    "method": "sen",
+    "threshold": 0.7,
+    "K": 4
+  },
+  "profiling_v1_slow": {
+    "method": "profiling",
+    "background_blocks": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "max_interval": 6,
+    "min_interval": 2
+  },
+  "profiling_v2_slow": {
+    "method": "profiling",
+    "background_blocks": [
+      15,
+      16
+    ],
+    "max_interval": 2,
+    "min_interval": 1,
+    "validation_candidate": "profile_k02_i2_1"
+  },
+  "profiling_v1_fast": {
+    "method": "profiling",
+    "background_blocks": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "max_interval": 12,
+    "min_interval": 3
+  },
+  "profiling_v2_fast": {
+    "method": "profiling",
+    "background_blocks": [
+      15,
+      16,
+      17,
+      19
+    ],
+    "max_interval": 2,
+    "min_interval": 1,
+    "validation_candidate": "profile_k04_i2_1"
+  },
+  "ours_quality": {
+    "method": "ours",
+    "beta": 0.262,
+    "wan_quality_label": 0.1,
+    "controller_overrides": {}
+  },
+  "ours_balanced": {
+    "method": "ours",
+    "beta": 1.732,
+    "wan_quality_label": 1.0,
+    "controller_overrides": {}
+  },
+  "ours_fast": {
+    "method": "ours",
+    "beta": 3.184,
+    "wan_quality_label": 2.0,
+    "controller_overrides": {}
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "profiles": [
+    {
+      "mode": "profile_k04_i4_1",
+      "cases": 8,
+      "mean_seconds": 87.85211008181795,
+      "mean_ssim": 0.9694964789387284,
+      "mean_lpips": 0.015072856899851179,
+      "min_case_ssim": 0.9422689236360862,
+      "max_case_lpips": 0.026013421141042197,
+      "speedup": null,
+      "mean_equivalent_full_steps": 47.0
+    },
+    {
+      "mode": "profile_k04_i6_2",
+      "cases": 8,
+      "mean_seconds": 85.727830582764,
+      "mean_ssim": 0.951172428161914,
+      "mean_lpips": 0.0274459831522439,
+      "min_case_ssim": 0.9122060965380933,
+      "max_case_lpips": 0.039632780769886064,
+      "speedup": null,
+      "mean_equivalent_full_steps": 45.857142857142854
+    },
+    {
+      "mode": "profile_k08_i4_1",
+      "cases": 8,
+      "mean_seconds": 82.51459382660687,
+      "mean_ssim": 0.9666286330271664,
+      "mean_lpips": 0.016513348378583575,
+      "min_case_ssim": 0.9383724714428594,
+      "max_case_lpips": 0.02346589293115395,
+      "speedup": null,
+      "mean_equivalent_full_steps": 44.0
+    },
+    {
+      "mode": "profile_k08_i6_2",
+      "cases": 8,
+      "mean_seconds": 78.45914072403684,
+      "mean_ssim": 0.9444445911831995,
+      "mean_lpips": 0.03195192767903671,
+      "min_case_ssim": 0.9081364295073179,
+      "max_case_lpips": 0.03975390556676329,
+      "speedup": null,
+      "mean_equivalent_full_steps": 41.714285714285715
+    },
+    {
+      "mode": "profile_k12_i4_1",
+      "cases": 8,
+      "mean_seconds": 77.23172091087326,
+      "mean_ssim": 0.9639175560793962,
+      "mean_lpips": 0.018587140187001517,
+      "min_case_ssim": 0.9373547710017335,
+      "max_case_lpips": 0.024609794932579206,
+      "speedup": null,
+      "mean_equivalent_full_steps": 41.0
+    },
+    {
+      "mode": "profile_k12_i6_2",
+      "cases": 8,
+      "mean_seconds": 71.21789794741198,
+      "mean_ssim": 0.937111171838473,
+      "mean_lpips": 0.03723546768219234,
+      "min_case_ssim": 0.8994123179060842,
+      "max_case_lpips": 0.05049691066022747,
+      "speedup": null,
+      "mean_equivalent_full_steps": 37.57142857142857
+    },
+    {
+      "mode": "profile_k16_i4_1",
+      "cases": 8,
+      "mean_seconds": 72.02530746767297,
+      "mean_ssim": 0.9633436505348629,
+      "mean_lpips": 0.01883656197142872,
+      "min_case_ssim": 0.9368684320801295,
+      "max_case_lpips": 0.024857290751062147,
+      "speedup": null,
+      "mean_equivalent_full_steps": 38.0
+    },
+    {
+      "mode": "profile_k16_i6_2",
+      "cases": 8,
+      "mean_seconds": 63.94653352955356,
+      "mean_ssim": 0.9355475902717856,
+      "mean_lpips": 0.03783342776404432,
+      "min_case_ssim": 0.8974915409399321,
+      "max_case_lpips": 0.05044774055357807,
+      "speedup": null,
+      "mean_equivalent_full_steps": 33.42857142857143
+    },
+    {
+      "mode": "profile_k02_i4_1",
+      "cases": 8,
+      "mean_seconds": 90.44477179925889,
+      "mean_ssim": 0.972271526294513,
+      "mean_lpips": 0.012577069038621434,
+      "min_case_ssim": 0.9492479752985848,
+      "max_case_lpips": 0.022219364261947386,
+      "speedup": null,
+      "mean_equivalent_full_steps": 48.5
+    },
+    {
+      "mode": "profile_k04_i2_1",
+      "cases": 8,
+      "mean_seconds": 90.62193287769333,
+      "mean_ssim": 0.984923068007082,
+      "mean_lpips": 0.005242193575581913,
+      "min_case_ssim": 0.9734432556145972,
+      "max_case_lpips": 0.009216298495442414,
+      "speedup": null,
+      "mean_equivalent_full_steps": 48.57142857142857
+    },
+    {
+      "mode": "profile_k02_i2_1",
+      "cases": 8,
+      "mean_seconds": 91.98852547630668,
+      "mean_ssim": 0.985335512747147,
+      "mean_lpips": 0.004980745455341544,
+      "min_case_ssim": 0.9770411454192777,
+      "max_case_lpips": 0.009015110121224044,
+      "speedup": null,
+      "mean_equivalent_full_steps": 49.285714285714285
+    },
+    {
+      "mode": "profile_k01_i2_1",
+      "cases": 8,
+      "mean_seconds": 92.54305070638657,
+      "mean_ssim": 0.9870540310800093,
+      "mean_lpips": 0.0038382608137066546,
+      "min_case_ssim": 0.9805478796456835,
+      "max_case_lpips": 0.0063254865798483455,
+      "speedup": null,
+      "mean_equivalent_full_steps": 49.642857142857146
+    }
+  ],
+  "cases": 8,
+  "selection_uses_holdout": false
+}

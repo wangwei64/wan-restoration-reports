@@ -1,0 +1,16 @@
+{
+  "stage": "complete",
+  "planning_passed": true,
+  "resume_and_export_passed": true,
+  "test_count": 17,
+  "platform": "Linux; pinned LTX deployment Python",
+  "source_sha256": {
+    "runtime.py": "08a2571981fd873d5d143d41f083da2734042668865be64ee1f5d185d67d7b68",
+    "benchmark.py": "74f20732a2f84b384ce193660bb68ea126bfc9f4b2665280fc9af2b9dddb2b17",
+    "restore/video.py": "7e6b883506b9ef972f97ff6b365fedb380602dbbd8c59e8ce0a30c936be9b8ad",
+    "tests/test_planning.py": "934b6a42759505619ba6577ac60b517ef60067cae8a89db309beb9a1cd06fdbb",
+    "tests/test_resume_export.py": "6a3eec51938c6503e2b17217a15a902cdaa8c1603410eb24fda9d8dd698e2e97",
+    "tests/test_video_encoding.py": "c1120cb7ea75d69a79eb121414b451e1737384c847c5ecc7ebd25e90b82d0b0d"
+  },
+  "completed": 1789154352.5110917
+}

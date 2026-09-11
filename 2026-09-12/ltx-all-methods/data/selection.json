@@ -1,0 +1,55 @@
+{
+  "created": 1789148232.6766722,
+  "layer_profile_sha256": "91138fa5585e47367d36b73be1bf99ddb2cd038c3026859beaffa20eabba4277",
+  "protocol_sha256": "44e97efcd8422628ca95465a1c84896166d3a0e58a7752e8fa4eda026bbc1fa0",
+  "validation_metrics_sha256": "f963d10d8bc5cdedb93e72bda8355cd31724b320b5d76d453b9c9e18856f9c0b",
+  "presets": {
+    "profiling_v2_slow": {
+      "mode": "profiling_v2_slow",
+      "background_blocks": [
+        15,
+        16
+      ],
+      "max_interval": 2,
+      "min_interval": 1,
+      "validation_candidate": "profile_k02_i2_1",
+      "validation_summary": {
+        "mode": "profile_k02_i2_1",
+        "cases": 8,
+        "mean_seconds": 91.98852547630668,
+        "mean_ssim": 0.985335512747147,
+        "mean_lpips": 0.004980745455341544,
+        "min_case_ssim": 0.9770411454192777,
+        "max_case_lpips": 0.009015110121224044,
+        "speedup": null,
+        "mean_equivalent_full_steps": 49.285714285714285
+      }
+    },
+    "profiling_v2_fast": {
+      "mode": "profiling_v2_fast",
+      "background_blocks": [
+        15,
+        16,
+        17,
+        19
+      ],
+      "max_interval": 2,
+      "min_interval": 1,
+      "validation_candidate": "profile_k04_i2_1",
+      "validation_summary": {
+        "mode": "profile_k04_i2_1",
+        "cases": 8,
+        "mean_seconds": 90.62193287769333,
+        "mean_ssim": 0.984923068007082,
+        "mean_lpips": 0.005242193575581913,
+        "min_case_ssim": 0.9734432556145972,
+        "max_case_lpips": 0.009216298495442414,
+        "speedup": null,
+        "mean_equivalent_full_steps": 48.57142857142857
+      }
+    }
+  },
+  "training": false,
+  "same_configuration_for_both_tiers": false,
+  "holdout_evaluated_before_selection": false
+}
