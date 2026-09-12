@@ -1,0 +1,13 @@
+{
+  "stage": "complete",
+  "png_sha256": "74cc2cde5ebe6d4a8a35c0e749a4b64e5b98f5797c86562b802e0e0d67b3350a",
+  "reviewed": 1789210996.0170884,
+  "checks": [
+    "Actually viewed rendered PNG at 2700x1520",
+    "Labels and arrows do not overlap points after annotation adjustment",
+    "Axes, legend and all footer text visible",
+    "Five restoration points and one ProfilingDiT point agree with source records",
+    "Different timing rounds and single-case scope explicitly disclosed"
+  ],
+  "data_unchanged": true
+}

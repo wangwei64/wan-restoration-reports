@@ -1,0 +1,12 @@
+{
+  "stage": "complete",
+  "png_sha256": "c90677020327ca19609d2dcb98e1f09f7c8fccfd81879c3a68f909eb865203e8",
+  "reviewed_at": 1789203793.122298,
+  "actual_image_viewed": true,
+  "checks": [
+    "Chinese text readable; no clipped title, legend or footnotes",
+    "Five methods have distinct colors; only one Profiling point",
+    "Single-case scope and offline adaptation limitations visible",
+    "Axes and point locations consistent with measured table"
+  ]
+}

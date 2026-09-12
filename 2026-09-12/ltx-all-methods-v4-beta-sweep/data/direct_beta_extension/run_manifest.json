@@ -1,0 +1,290 @@
+{
+  "outputs/warmup/speed_holdout_01/ours_fast": {
+    "method": "ours_fast",
+    "case": "speed_holdout_01",
+    "seconds": 31.572627302259207,
+    "request_sha256": "6068a0ef1f4b9cc3fcc4ca30b7308b6dae3cc17ea3f09fc7f66898f7203171b6",
+    "video_sha256": "74d25a812b934b7f293c2fee36a8627e56916e13d0390fdc5a00452aa879ccea",
+    "run_sha256": "e68a0ee15df8b25850cc9fcdaea2de04b78ba2ae1a2dfea7024a5fa60bcc44fb",
+    "completed": 1789210054.0776615
+  },
+  "outputs/validation/speed_holdout_01/native": {
+    "method": "native",
+    "case": "speed_holdout_01",
+    "seconds": 92.38032173365355,
+    "request_sha256": "111fd489343bdbbb4669b93b48bb39b17ccb8afe0f4fda28b358e3c1b981a422",
+    "video_sha256": "8986d55c2671f44749e4b8c39a43ec81da56389a1545bef53e39f2f390679a55",
+    "run_sha256": "9da566249f33b77ed55688b505ed5da556ec4bb71f3e71a914b6447b82ac9b20",
+    "completed": 1789210146.6189005
+  },
+  "outputs/validation/speed_holdout_01/ours_beta_0p1": {
+    "method": "ours_beta_0p1",
+    "case": "speed_holdout_01",
+    "seconds": 61.42776095867157,
+    "request_sha256": "e3b445f2582de8380b8acf53981e01b75f333d1799a173cb91460c5df594401d",
+    "video_sha256": "6cb9fc1110db1a293370f5b6fc453e881db7ec2a43ae173b1d18de159442b35c",
+    "run_sha256": "65f34d89f3140d0ca46b23fd1668fbd7d56b0635cf67a6b884269fc61b6ac858",
+    "completed": 1789210208.225454
+  },
+  "outputs/validation/speed_holdout_01/ours_beta_1p0": {
+    "method": "ours_beta_1p0",
+    "case": "speed_holdout_01",
+    "seconds": 38.96301793679595,
+    "request_sha256": "549d8c4b6cd2bba848c547b72161e0f6d2ace4e78f965cc8273c99be630c80c8",
+    "video_sha256": "d077ca9590fd2772f30219d3850f3a64e02ac7ceecee8e7a9d0792aba28050c6",
+    "run_sha256": "c73a650fece288cc2429ecba9afc8aaedd90b494c77daf1d148d6abee9321167",
+    "completed": 1789210247.3847027
+  },
+  "outputs/validation/speed_holdout_01/ours_beta_2p0": {
+    "method": "ours_beta_2p0",
+    "case": "speed_holdout_01",
+    "seconds": 33.14771359786391,
+    "request_sha256": "f09968ffb5897d50044ddfb478deec47268439f4cd705d8150c790935faa8453",
+    "video_sha256": "278efc5fe67672729d321eb52ad4f1b3d42adaba66c7a1df84316d63d782f403",
+    "run_sha256": "83bfe9f0c3c8e01376ea7700ec0abfaedf8156d386b59946084217fe41405b48",
+    "completed": 1789210280.703593
+  },
+  "outputs/validation/speed_holdout_01/ours_beta_3p0": {
+    "method": "ours_beta_3p0",
+    "case": "speed_holdout_01",
+    "seconds": 30.962929382920265,
+    "request_sha256": "90ee1b611609e81e086f02009cd7291a8e3283b34882bffc2558c32fb7111c30",
+    "video_sha256": "5fad95988673da4afddbd2231e24f8963d2ec092677ee6cc76c97e583f76c758",
+    "run_sha256": "8de6ce086ce5f6f40162f93241604c670717865d217094d32de4c247b1fb4323",
+    "completed": 1789210311.8403401
+  },
+  "outputs/validation/speed_holdout_01/ours_beta_4p0": {
+    "method": "ours_beta_4p0",
+    "case": "speed_holdout_01",
+    "seconds": 29.676552921533585,
+    "request_sha256": "ad53dfbf09ab373ad53c484ba74249faed1684da2bcd7f0a56d00cf60e66adee",
+    "video_sha256": "f05b925ad798f932fb70eed73f8d97996b23141127418649809f7468999d608f",
+    "run_sha256": "4004ee1ce2b3f620e558f5612c2804c51c3691c76b55b02a0a372e3b8f82eb01",
+    "completed": 1789210341.6801536
+  },
+  "outputs/validation/speed_holdout_02/ours_beta_0p1": {
+    "method": "ours_beta_0p1",
+    "case": "speed_holdout_02",
+    "seconds": 65.06146059930325,
+    "request_sha256": "c81a6e655040f690e3992a98238c843cd4bd4d0754e4f434320b5394a127db8b",
+    "video_sha256": "b5ad587d4323f4b4a4152e6652eae9c851bd33178cfe36c3c943c22650224abd",
+    "run_sha256": "3e0f6766efe523d2e46a3db18e362624850cfb843c2a96cd6db8c97242c94bda",
+    "completed": 1789210406.9850097
+  },
+  "outputs/validation/speed_holdout_02/ours_beta_1p0": {
+    "method": "ours_beta_1p0",
+    "case": "speed_holdout_02",
+    "seconds": 45.888649962842464,
+    "request_sha256": "ebcfd6cf4fe55a83706be682dd968b3fae9cb4c0099165a6c1940a1c7774aca5",
+    "video_sha256": "815c3584cdb93caa54be0bcab274c70b9e38eae203fbc59ad04bd586cf0ccd5f",
+    "run_sha256": "4edf58fcdfb90c7ef6be65bfdb0807b50205e1dedaaa2a3dda7722c262c3b41d",
+    "completed": 1789210453.04823
+  },
+  "outputs/validation/speed_holdout_02/ours_beta_2p0": {
+    "method": "ours_beta_2p0",
+    "case": "speed_holdout_02",
+    "seconds": 39.57240818440914,
+    "request_sha256": "18a5f6c805ca89488a58c7d96808c5c7da8634f980e2fd6df83380d9bb7e96fa",
+    "video_sha256": "b4c294dca5b1f893b40c58c36381fe3f6fb4588add7eac2d1ae5e34d14ef299e",
+    "run_sha256": "f6b63bd78f70814c732ec23e3f2f5fe53304ca65fefa3c3c1841afa77808af35",
+    "completed": 1789210492.77301
+  },
+  "outputs/validation/speed_holdout_02/ours_beta_3p0": {
+    "method": "ours_beta_3p0",
+    "case": "speed_holdout_02",
+    "seconds": 36.91113219037652,
+    "request_sha256": "81b2c1ea2ff3d1341611184b7e7a6241a2bde39864edd9675d220a5b37e2c12a",
+    "video_sha256": "e3b8b29163c13a128dc24c697594359e97b24cf57087c1c69c8f72edf878e26c",
+    "run_sha256": "b87c1491994fd73ef513999d72f4e75f7c1d58a879adf3fc5427cf55e30c6512",
+    "completed": 1789210529.83165
+  },
+  "outputs/validation/speed_holdout_02/ours_beta_4p0": {
+    "method": "ours_beta_4p0",
+    "case": "speed_holdout_02",
+    "seconds": 35.4784955047071,
+    "request_sha256": "d89c55a65292b57985ae602432ce0a843d69e9a4d4f99f3a9cc930c016c2e315",
+    "video_sha256": "7325ee995e6dfd72889d26c5702bfe233e53b2c4f641027ad7757096785fd63d",
+    "run_sha256": "0863554e5178fc230d075b79d664507bd572f849307479622e53013d5c65f8e9",
+    "completed": 1789210565.4734647
+  },
+  "outputs/validation/speed_holdout_02/native": {
+    "method": "native",
+    "case": "speed_holdout_02",
+    "seconds": 96.1268679574132,
+    "request_sha256": "75ccfdcd0cbf4258df9a478819ae65915037fd290db4f12f37367680e1e8e118",
+    "video_sha256": "ac3aa0f9453f4e1bcbbb2ef08796e9193d0d8c0a4caf8e8fab96685c243eaa06",
+    "run_sha256": "3b294bebdb1c85d7b02e0d9648aa6804819e5bf0e6d65523379f0e0b86dc3d94",
+    "completed": 1789210661.789369
+  },
+  "outputs/validation/speed_holdout_03/ours_beta_1p0": {
+    "method": "ours_beta_1p0",
+    "case": "speed_holdout_03",
+    "seconds": 40.87693068385124,
+    "request_sha256": "2438bd58e1935c1180b927f6e684ae4ca6b85fcbf34176b36c8ce03b0118af2c",
+    "video_sha256": "8779ba5defc7e0790eea0dbcaef0b3714e801b9092524c66ca6b7532c3a6fad2",
+    "run_sha256": "a0e2a9d2ea695a8fb6a1611658114c7add9d289fe54d51a59fb7346fa2d6349b",
+    "completed": 1789210702.8156884
+  },
+  "outputs/validation/speed_holdout_03/ours_beta_2p0": {
+    "method": "ours_beta_2p0",
+    "case": "speed_holdout_03",
+    "seconds": 34.95601313561201,
+    "request_sha256": "a2ef631cdb65c4ad1823d69a94f0e2da9b014de09f3f694c0b5225e8d8853f70",
+    "video_sha256": "bbb6a8d8e2d8524bce482e70d21e0c824e03ed627d133591e15650959b8af7e9",
+    "run_sha256": "8715d85e64a27316bad5fb2fd1bcc39d83fe073cea6920d7ab4b3739eb4d01b2",
+    "completed": 1789210737.9200368
+  },
+  "outputs/validation/speed_holdout_03/ours_beta_3p0": {
+    "method": "ours_beta_3p0",
+    "case": "speed_holdout_03",
+    "seconds": 32.63308731839061,
+    "request_sha256": "b433fa9fe984440d888a23e62a4456c9b74a334d1a4aaf6da5784ba04202cfde",
+    "video_sha256": "665d58be54f2ec68a442646341bdbfa584e89aeb01957daffd90ef3f855b392f",
+    "run_sha256": "bf5f2b35f0a9c9280c23b2a31efe18b2c01934df395f8d0de06bbe05cc2e1773",
+    "completed": 1789210770.7001727
+  },
+  "outputs/validation/speed_holdout_03/ours_beta_4p0": {
+    "method": "ours_beta_4p0",
+    "case": "speed_holdout_03",
+    "seconds": 31.165616899728775,
+    "request_sha256": "a1db0febeaa588ef5fde0f15b3d79b16072040a8f6ea2f1cd9cf5042ea8fc76d",
+    "video_sha256": "d86fecb8ff334b5fd8f0e5db8907337ca208f28b2cad58a4f26148177bfb1d90",
+    "run_sha256": "9085f38c2dd862f3251bef229e8e20e2b679377961ce5eee4b20ef6ad57f90da",
+    "completed": 1789210801.774184
+  },
+  "outputs/validation/speed_holdout_03/native": {
+    "method": "native",
+    "case": "speed_holdout_03",
+    "seconds": 93.96242908760905,
+    "request_sha256": "1b369a8439746b513cd989765584f27cac2a3012453d470ca4ea83adf7c83842",
+    "video_sha256": "f7e6f09b84af10ed8897369972a011e7e80dd3c063788c98c5e33ba85e8da618",
+    "run_sha256": "e9a95600e7603e81c1e9a93bec7fc1c305a6d364a0b6fb960c302a0f74a4a8bd",
+    "completed": 1789210895.8582587
+  },
+  "outputs/validation/speed_holdout_03/ours_beta_0p1": {
+    "method": "ours_beta_0p1",
+    "case": "speed_holdout_03",
+    "seconds": 62.90713823214173,
+    "request_sha256": "eedc297f459488896d3f55588d8b80c2dcd7019f9f0f743844a3d81dc7f8de60",
+    "video_sha256": "55e0c1d646112d06e6fdf8d6e82dff0f65d45023580eb7806cbfba69d6a71345",
+    "run_sha256": "cfee1278da084cd49e9c36414390484d91d1102dd8d3759e7291daebecffc045",
+    "completed": 1789210958.9376345
+  },
+  "outputs/validation/speed_holdout_04/ours_beta_2p0": {
+    "method": "ours_beta_2p0",
+    "case": "speed_holdout_04",
+    "seconds": 36.498322166502476,
+    "request_sha256": "43dbaf894dd6268ccc9999dc6caf294fad631bf23d21d6786fc6bbcedb0bbbe6",
+    "video_sha256": "09705ebd9890817cfc198875557ea2896b6325e35ad69b3801a62e2e57fec273",
+    "run_sha256": "ce7fbb4efd4788f0505fc02f3c939492273c22238496d1adfb0bd12e930e4399",
+    "completed": 1789210995.5798903
+  },
+  "outputs/validation/speed_holdout_04/ours_beta_3p0": {
+    "method": "ours_beta_3p0",
+    "case": "speed_holdout_04",
+    "seconds": 34.00050823390484,
+    "request_sha256": "7cfbc10d8382ca025e583aaa160f93da6864295d283d679abd070e2620f02f0c",
+    "video_sha256": "5d3483f0e11a8b207a5825afb5c685d84f0b150aaf39172cdd3897a19e75e547",
+    "run_sha256": "66fbd22ba9d888434f8a1c50808e5dd876e064bbac4963fa2ea187ac1a7f93a0",
+    "completed": 1789211029.7447984
+  },
+  "outputs/validation/speed_holdout_04/ours_beta_4p0": {
+    "method": "ours_beta_4p0",
+    "case": "speed_holdout_04",
+    "seconds": 32.82290732860565,
+    "request_sha256": "1ccdba7ef91721708a08fc7e6670ea686d6addc06acc457e69f41fb45a0e0a3b",
+    "video_sha256": "39d38c0edc46ed854503cc22587cece8464066f624a0a566c58c82dc0920d4ae",
+    "run_sha256": "950876cf7d701a860a014d7c5f4cbd6eab68661b71915580289fb25cbb7683ef",
+    "completed": 1789211062.7502577
+  },
+  "outputs/validation/speed_holdout_04/native": {
+    "method": "native",
+    "case": "speed_holdout_04",
+    "seconds": 94.49827040731907,
+    "request_sha256": "7db2c292ef219b469715b01e411956ebed7977e58405f4f148128586e1706328",
+    "video_sha256": "1eede0c64b94f2bc29856ab9773c9d1fd123b60b48a83812fe664ca321821d38",
+    "run_sha256": "e065ee2b32f53ee746dfebec10c4397f3c01e6ffbe95e71d2a14597cf33295d3",
+    "completed": 1789211157.3904076
+  },
+  "outputs/validation/speed_holdout_04/ours_beta_0p1": {
+    "method": "ours_beta_0p1",
+    "case": "speed_holdout_04",
+    "seconds": 63.60213873907924,
+    "request_sha256": "e04cb482aa75b9e937b3c755c040ed6885fe0820ac42ce8efff1e05bf54a8069",
+    "video_sha256": "cfd81564edde0ddc6c192de17e624bc582614017c2e1ee52b67101ab0cf98d64",
+    "run_sha256": "bc101eaf55051c3a9c913a6dcf56fb396dbbb4dbc91d410971faadb4a9eef5d8",
+    "completed": 1789211221.1441348
+  },
+  "outputs/validation/speed_holdout_04/ours_beta_1p0": {
+    "method": "ours_beta_1p0",
+    "case": "speed_holdout_04",
+    "seconds": 42.54721299186349,
+    "request_sha256": "cf8c01b7ebdb64d3906cf5e2fadcd08641e35b434e5f00a9366ee80dd072fac5",
+    "video_sha256": "ab21aaf3b411c7ec118935929b46b5c0d1c4ea8a833595113d52b15b29bb2973",
+    "run_sha256": "f84e9f62c390802ae57cdda6594cffc4e503ad938f21cd429b3c7a11faddd8bb",
+    "completed": 1789211263.8136394
+  },
+  "outputs/comparison/holdout_01/native": {
+    "method": "native",
+    "case": "holdout_01",
+    "seconds": 94.83066118136048,
+    "request_sha256": "9d31abab1dbe20909a3b6b4c1f63b9e580fe0ab8a0d69c31047fba5b6f7b57a1",
+    "video_sha256": "042029c36b7adbc23dc871808c14a56b41bd66119240b75a24c48dbbc7736f7c",
+    "run_sha256": "c66cae7b28809035d74ebfd63f934b3a27275c34576a597d85373cbbbaff2239",
+    "completed": 1789211358.7547314
+  },
+  "outputs/comparison/holdout_01/ours_beta_0p1": {
+    "method": "ours_beta_0p1",
+    "case": "holdout_01",
+    "seconds": 63.74426858872175,
+    "request_sha256": "a9547a55111f1c59bc0a09d3657f8328d49bee45f882bed095e416a07b10f81c",
+    "video_sha256": "56568583491b57bea01c944b321abc1815ce199738632bbaa067980f14f6fdfe",
+    "run_sha256": "8ec4421d89d97083e0adc9042081477aa9cab4154e7b606bdc5eb8735f84fc43",
+    "completed": 1789211422.6237626
+  },
+  "outputs/comparison/holdout_01/ours_beta_1p0": {
+    "method": "ours_beta_1p0",
+    "case": "holdout_01",
+    "seconds": 41.48625284433365,
+    "request_sha256": "855993a32a3d2dee2af0e18c7dcf937b20d1d208b9387a8393a61659e892b82e",
+    "video_sha256": "0f6fc56fd6938991a3cae3ebf2e3cf52d1ab8f637e997e3cd38909e5adb7329a",
+    "run_sha256": "b856c04b6676c07ad030c9cc55a9040e92e9992ae80442aaa50a6a1201af6c7b",
+    "completed": 1789211464.2550066
+  },
+  "outputs/comparison/holdout_01/ours_beta_2p0": {
+    "method": "ours_beta_2p0",
+    "case": "holdout_01",
+    "seconds": 35.72926019504666,
+    "request_sha256": "c9a7384283caab7469bc65378b7a8ffe3d65a93fe3761df03f56df553d9d12a7",
+    "video_sha256": "9aff4d30aa29a36bce42d061f59949c297180de67490e7f86c079cf2285c6412",
+    "run_sha256": "d4649dd2a3ea13c4f9294c224dc503fba61314a5f219b6da2105994d65228b55",
+    "completed": 1789211500.161186
+  },
+  "outputs/comparison/holdout_01/ours_beta_3p0": {
+    "method": "ours_beta_3p0",
+    "case": "holdout_01",
+    "seconds": 33.56095031648874,
+    "request_sha256": "8c4e8b763b050b8ae25bdb03b94e9a1aa6eb3e7d2db45745cd864b50094cce70",
+    "video_sha256": "090786c6204137d525eb5cbba06a798a4e754620588d5e0118affc16be5a3db1",
+    "run_sha256": "d906d52ea9545afeb12fa157c270aedc24f0989b3b7e018c7b1e56fd2a728ca3",
+    "completed": 1789211533.8735025
+  },
+  "outputs/comparison/holdout_01/ours_beta_4p0": {
+    "method": "ours_beta_4p0",
+    "case": "holdout_01",
+    "seconds": 32.26544875279069,
+    "request_sha256": "1e77a89bc628ff23774729d749afccafb5d87eab31ec0cd5bb3f325034f3e536",
+    "video_sha256": "9bfdf4cbe560b15e3280b9023b6fb7c0bb25cc0565789c5c40613a28b50b95b1",
+    "run_sha256": "44a67c33cfafc61e995dc1ea6b3eb7d58f332eb354528f1821aa03362e7aedd8",
+    "completed": 1789211566.2675664
+  },
+  "outputs/replay/holdout_01/native": {
+    "method": "native",
+    "case": "holdout_01",
+    "seconds": 94.68943712115288,
+    "request_sha256": "9d31abab1dbe20909a3b6b4c1f63b9e580fe0ab8a0d69c31047fba5b6f7b57a1",
+    "video_sha256": "042029c36b7adbc23dc871808c14a56b41bd66119240b75a24c48dbbc7736f7c",
+    "run_sha256": "881411902f9812626105af97c0fda44898c2b4d80e70bbec559badc2f0824ad3",
+    "completed": 1789211661.1334512
+  }
+}

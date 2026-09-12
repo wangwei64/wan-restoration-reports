@@ -1,0 +1,129 @@
+{
+  "native": {
+    "method": "native"
+  },
+  "teacache_slow": {
+    "method": "tea",
+    "threshold": 0.03
+  },
+  "teacache_fast": {
+    "method": "tea",
+    "threshold": 0.05
+  },
+  "navicache_slow": {
+    "method": "navi",
+    "threshold": 0.04
+  },
+  "navicache_fast": {
+    "method": "navi",
+    "threshold": 0.07
+  },
+  "sencache_slow": {
+    "method": "sen",
+    "threshold": 0.5,
+    "K": 2
+  },
+  "sencache_fast": {
+    "method": "sen",
+    "threshold": 0.7,
+    "K": 4
+  },
+  "ours_quality": {
+    "method": "ours",
+    "beta": 0.262,
+    "wan_quality_label": 0.1,
+    "controller_overrides": {}
+  },
+  "ours_balanced": {
+    "method": "ours",
+    "beta": 1.732,
+    "wan_quality_label": 1.0,
+    "controller_overrides": {}
+  },
+  "ours_fast": {
+    "method": "ours",
+    "beta": 3.184,
+    "wan_quality_label": 2.0,
+    "controller_overrides": {}
+  },
+  "profiling_official": {
+    "method": "profiling",
+    "background_blocks": [
+      4,
+      7,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "warmup_steps": 6,
+    "refresh_interval": 6,
+    "final_step_full": false,
+    "parameter_basis": "Pinned upstream Wan defaults; cached-layer fraction mapped by nearest integer",
+    "upstream_commit": "fa9d1983418b481cc37eb69e7f6c5a3ec6e182a1",
+    "selection_uses_timing": false,
+    "selection_uses_quality": false
+  },
+  "ours_wan_speed_3": {
+    "method": "ours",
+    "beta": 2.969,
+    "controller_overrides": {},
+    "wan_speed_label": 3.0,
+    "target_speedup": 2.7150071392149053,
+    "calibration_speedup": 2.7292225800467325,
+    "relative_speed_error": 0.0052358760411723715
+  },
+  "ours_wan_speed_4": {
+    "method": "ours",
+    "beta": 3.809,
+    "controller_overrides": {},
+    "wan_speed_label": 4.0,
+    "target_speedup": 2.8098906546533327,
+    "calibration_speedup": 2.815589732035766,
+    "relative_speed_error": 0.0020282203412418376
+  },
+  "ours_beta_0p1": {
+    "method": "ours",
+    "beta": 0.1,
+    "controller_overrides": {},
+    "literal_ltx_beta": true
+  },
+  "ours_beta_1p0": {
+    "method": "ours",
+    "beta": 1.0,
+    "controller_overrides": {},
+    "literal_ltx_beta": true
+  },
+  "ours_beta_2p0": {
+    "method": "ours",
+    "beta": 2.0,
+    "controller_overrides": {},
+    "literal_ltx_beta": true
+  },
+  "ours_beta_3p0": {
+    "method": "ours",
+    "beta": 3.0,
+    "controller_overrides": {},
+    "literal_ltx_beta": true
+  },
+  "ours_beta_4p0": {
+    "method": "ours",
+    "beta": 4.0,
+    "controller_overrides": {},
+    "literal_ltx_beta": true
+  }
+}

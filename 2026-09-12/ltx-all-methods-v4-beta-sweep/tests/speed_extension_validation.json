@@ -1,0 +1,78 @@
+{
+  "stage": "complete",
+  "cpu_tests": 21,
+  "public_cli_presets": [
+    {
+      "method": "ours_wan_speed_3",
+      "video_sha256": "d4953e7781060e121426e3adff9bdfb18d793e06d9985f86f420ffae248aaaf5",
+      "request_sha256": "d1711fa39edb49f5e9445d3632ef6cbcd44a6ede1b6e16e7847e4056edd1978d",
+      "bit_exact": true
+    },
+    {
+      "method": "ours_wan_speed_4",
+      "video_sha256": "05ba3208e3cfea49a701b2e092a9d42d55a0571cfc03b96d23b3b6c6feea0f13",
+      "request_sha256": "ddeb19c2a5238442c93aa224b44a29f5756c425566690620f7eca032b132d5eb",
+      "bit_exact": true
+    },
+    {
+      "method": "ours_beta_0p1",
+      "video_sha256": "56568583491b57bea01c944b321abc1815ce199738632bbaa067980f14f6fdfe",
+      "request_sha256": "a9547a55111f1c59bc0a09d3657f8328d49bee45f882bed095e416a07b10f81c",
+      "bit_exact": true
+    },
+    {
+      "method": "ours_beta_4p0",
+      "video_sha256": "9bfdf4cbe560b15e3280b9023b6fb7c0bb25cc0565789c5c40613a28b50b95b1",
+      "request_sha256": "1e77a89bc628ff23774729d749afccafb5d87eab31ec0cd5bb3f325034f3e536",
+      "bit_exact": true
+    }
+  ],
+  "literal_betas_gpu_tested": [
+    0.1,
+    1.0,
+    2.0,
+    3.0,
+    4.0
+  ],
+  "planned_vbench_jobs": 111960,
+  "validation_restorer_sha256": "5d097973fb6ca95efa15b956e5afcc007e7551a62ce5172e503b7b06d603fab6",
+  "validation_restorer_origin": "Existing verified owned v3 weight supplied explicitly via LTX_RESTORER",
+  "source_sha256": {
+    "benchmark.py": "74f20732a2f84b384ce193660bb68ea126bfc9f4b2665280fc9af2b9dddb2b17",
+    "download_external_models.py": "6b27455117a9a55eb1da983edf448ab01d38416ce96fd9011c1f2dca4607779c",
+    "download_weights.py": "f5d813601c16394f78ca311f248eb7c6c1dc05a6d32cd031bc1c264a712b7839",
+    "evaluate_vbench.py": "d871eedbf8e1c2d36f58863f5c87bd09511a3083e8c4eac10b5afb835c763dbb",
+    "run.py": "ce848982b1419178af8f16520bd8fe4d97777cf1e909392d3cd1044a20907e43",
+    "runtime.py": "d00b7feba33644aa52fa4ebc105202e0d6bd4bca19eec68f30558f013670db51",
+    "score_pairs.py": "69c96ef24b2d1434b6c173fbc78c1b8f2d051b608bde26efb0d771d8480d4001",
+    "accelerators/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "accelerators/cache_adapters.py": "3a2ebc09d6dbe7881ccbb23dba3ba42d8636aebe317b7512a269b71aa77ef30e",
+    "accelerators/profiling_adapter.py": "fa19453410ff3340d708f1b10d594b1686eb552b679c3c1b1df600da43b83031",
+    "accelerators/teacache_adapter.py": "8cb6dc6b1a42050eabfb9a462da5c66bb5447ab5a3e4d98cb23c453e0608bc90",
+    "restore/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "restore/hardware.py": "311322befd2934da746638b85cb016871dba3226adb39bf5669eec01bc0ca9bf",
+    "restore/metrics.py": "17fac5a0ec11ffeff537e56fea467ebe8eaec4eb745dc2100dd24896b28a9797",
+    "restore/native.py": "8260d9ca196d9e3162c7c98d4666bdef140ad7dfc0209e39791ea8c1ea24bd9b",
+    "restore/pipeline.py": "71241381a8eed5f6ff937f0a8faf83211ef392908057ba1d571472f69ee31894",
+    "restore/policy.py": "3dbf2745709f8be9d8a53331260c9556c6528f375fd8e3b93db809efb0e05e40",
+    "restore/sparse.py": "5b32345517da47e2d9c51264c049141374c7bbefd88f5f23c775fb6f6843b41c",
+    "restore/video.py": "7e6b883506b9ef972f97ff6b365fedb380602dbbd8c59e8ce0a30c936be9b8ad",
+    "tests/test_planning.py": "934b6a42759505619ba6577ac60b517ef60067cae8a89db309beb9a1cd06fdbb",
+    "tests/test_profiling_upstream.py": "2f54da76d1d47bd8405f09e92767eb9c8cf8339074da7b5ebc12573d3571fc45",
+    "tests/test_resume_export.py": "6a3eec51938c6503e2b17217a15a902cdaa8c1603410eb24fda9d8dd698e2e97",
+    "tests/test_video_encoding.py": "c1120cb7ea75d69a79eb121414b451e1737384c847c5ecc7ebd25e90b82d0b0d",
+    "accelerators/vendor/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "accelerators/vendor/profilingdit/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "accelerators/vendor/profilingdit/cache.py": "6be994f10ecd7879cf51339016a571185edca0e999d7a4200cea1a82c861142b",
+    "restore/kernels/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "restore/kernels/context.py": "7209fc1b0fe912bf8cbc7ebfa6b8a673409fd521dbbff907dbe104219416eeb4",
+    "restore/kernels/ltx_arithmetic.py": "f3bc73316a1167da3ce0f2f02c83b62455fe7b83bba88bab21a99d876f06d9fc",
+    "restore/models/__init__.py": "28bb8dda7067a3d4905153f9a7a2f02dacbef8b360e6d34acf8494470eb34c19",
+    "restore/models/blocks.py": "d589e34b476c1a1b926956b1734a4bc78e14127bd1b8bb319a2c8e282d008d9f",
+    "restore/models/bundle.py": "dba7f81f783cbe56a3efd4c9cd7fc78b69e48cc9cf7149803bcfbda037765a11",
+    "restore/models/restorer.py": "fdd6026c4c8c925d1960090a1e4f4711561a76846ec4efb7f3c3d398f096eff6",
+    "configs/methods.json": "27ca2010ddec95893f1f9270844e4f48333f352b341361e50a73ece5a60d68c8",
+    "configs/generation.json": "37dccb338d32169ab0efd540f247ef5fc1806d9e2bb886d17c51e448d0d51bab"
+  },
+  "created": 1789212190.3894815
+}

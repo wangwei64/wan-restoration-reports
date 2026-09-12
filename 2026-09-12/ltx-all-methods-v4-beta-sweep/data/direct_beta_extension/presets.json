@@ -1,0 +1,32 @@
+{
+  "ours_beta_0p1": {
+    "method": "ours",
+    "beta": 0.1,
+    "controller_overrides": {},
+    "literal_ltx_beta": true
+  },
+  "ours_beta_1p0": {
+    "method": "ours",
+    "beta": 1.0,
+    "controller_overrides": {},
+    "literal_ltx_beta": true
+  },
+  "ours_beta_2p0": {
+    "method": "ours",
+    "beta": 2.0,
+    "controller_overrides": {},
+    "literal_ltx_beta": true
+  },
+  "ours_beta_3p0": {
+    "method": "ours",
+    "beta": 3.0,
+    "controller_overrides": {},
+    "literal_ltx_beta": true
+  },
+  "ours_beta_4p0": {
+    "method": "ours",
+    "beta": 4.0,
+    "controller_overrides": {},
+    "literal_ltx_beta": true
+  }
+}

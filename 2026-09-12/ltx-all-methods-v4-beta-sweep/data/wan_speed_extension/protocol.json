@@ -1,0 +1,152 @@
+{
+  "revision": 1,
+  "created": 1789206890.4464476,
+  "task": "Two additional restoration thresholds matching relative online speed of Wan beta 3 and 4",
+  "interpretation": "speed matching; prior three LTX quality-matched presets remain unchanged; no quality equivalence claim",
+  "reference": {
+    "file": "results/2026-09-11_wan_beta34/site/dist/report.json",
+    "sha256": "13ec3cb115926f4df953011e5014eadea74b70d9791612371340a62e30965bd6",
+    "cases": 9,
+    "targets": {
+      "beta3": {
+        "mean_seconds": 27.34554108687573,
+        "speedup_vs_native": 2.7150071392149053,
+        "metrics": {
+          "psnr_db": 29.185154308492404,
+          "ssim": 0.9092214936792646,
+          "lpips": 0.05316466887085257,
+          "temporal_delta_mae": 0.011828085562835136
+        },
+        "speedup_vs_beta2": 1.0354350470022773,
+        "time_reduction_vs_beta2_percent": 3.422237551729257
+      },
+      "beta4": {
+        "mean_seconds": 26.422145343489117,
+        "speedup_vs_native": 2.8098906546533327,
+        "metrics": {
+          "psnr_db": 28.47565256754766,
+          "ssim": 0.8994963732045194,
+          "lpips": 0.0646612846714048,
+          "temporal_delta_mae": 0.012574891068248285
+        },
+        "speedup_vs_beta2": 1.0716212197193549,
+        "time_reduction_vs_beta2_percent": 6.68344545641898
+      }
+    },
+    "timing": "text encoding through VAE and video encoding, excluding model loading and metrics",
+    "generation": {},
+    "not_same_prompt_cohort_as_ltx": true
+  },
+  "base_package": "ltx-all-methods-v3-official-20260912",
+  "base_commit": "00d209b2b123b058abb59295949223fb40915246",
+  "base_config_sha256": {
+    "configs/methods.json": "9246b3a9d40ff1f235c3a95eea54db9a394bf6e13dd082864378cad815be6a2e",
+    "configs/generation.json": "37dccb338d32169ab0efd540f247ef5fc1806d9e2bb886d17c51e448d0d51bab",
+    "configs/base_profile.json": "7e086315a083533ab352f11b874ec75693f777a8728fa8c45bfa407a5fbb705e",
+    "configs/calibration.json": "c2fd4c33e8202d6cce18a1f355eb4a2311e749daee285e59b492fbe9b097959b",
+    "weights/manifest.json": "96e4061ffa613463d60e5baefa336c4580956ab9337dbe6735867bedf65fdac6"
+  },
+  "generation": {
+    "height": 704,
+    "width": 1216,
+    "frames": 121,
+    "steps": 50,
+    "flow_scale": 0.1,
+    "dynamic_flow": true,
+    "fps": 30,
+    "negative_prompt": "worst quality, inconsistent motion, blurry, jittery, distorted",
+    "guidance_scale": 3.0,
+    "stg_scale": 1.0,
+    "rescaling_scale": 0.7,
+    "skip_block_list": [
+      19
+    ],
+    "decode_timestep": 0.05,
+    "decode_noise_scale": 0.025
+  },
+  "only_inference_change": "controller.budget",
+  "training": false,
+  "calibration_cases": [
+    {
+      "id": "cal_18",
+      "prompt": "A black and white border collie running at an easy pace along a sandy beach near the water. Small waves roll onto the sand as the camera tracks smoothly beside the dog. A single uninterrupted photographic shot with stable framing, consistent natural illumination, clear subject details, coherent movement and realistic textures. No cuts or abrupt camera motion.",
+      "seed": 364089
+    },
+    {
+      "id": "cal_19",
+      "prompt": "A woman in a green sweater turns a pottery bowl slowly on a wheel in a softly lit studio. Her hands guide the wet clay with careful continuous movements. A single uninterrupted photographic shot with stable framing, consistent natural illumination, clear subject details, coherent movement and realistic textures. No cuts or abrupt camera motion.",
+      "seed": 364206
+    },
+    {
+      "id": "cal_27",
+      "prompt": "A little green rowboat drifts beneath a stone arch bridge on a quiet canal. Reflections of the bridge ripple across the water as the camera moves steadily forward. Soft afternoon sunlight, detailed realistic textures and coherent motion.",
+      "seed": 946162
+    }
+  ],
+  "validation_cases": [
+    {
+      "id": "speed_holdout_01",
+      "seed": 964101,
+      "prompt": "A ginger kitten steps slowly over a folded blue blanket on a sofa, then sits down and looks toward a bright window. A fixed camera keeps the whole kitten visible, with natural light and continuous realistic movement."
+    },
+    {
+      "id": "speed_holdout_02",
+      "seed": 964238,
+      "prompt": "A woman wearing a yellow raincoat walks along a wet sidewalk carrying a closed red umbrella. A steady side camera follows her natural steps and the reflections in shallow puddles in soft overcast daylight."
+    },
+    {
+      "id": "speed_holdout_03",
+      "seed": 964375,
+      "prompt": "A close view of a chef carefully slicing a ripe cucumber on a wooden cutting board. Both hands and the knife remain visible as three slices fall gently to the side, in a single steady realistic shot."
+    },
+    {
+      "id": "speed_holdout_04",
+      "seed": 964512,
+      "prompt": "A small blue fishing boat moves steadily past a wooden pier on calm water. A fixed shore camera shows rippling reflections and the gentle wake in warm late afternoon light, without cuts."
+    }
+  ],
+  "initial_betas": [
+    1.732,
+    2.3,
+    3.184
+  ],
+  "selection": {
+    "statistic": "sum native online_seconds / sum method online_seconds on same calibration cases, averaging repeated timing per case",
+    "initial_repetitions": 2,
+    "max_total_betas": 7,
+    "beta_range": [
+      0.262,
+      12.0
+    ],
+    "refinement": "linear interpolation between measured speed brackets; capped expansion beyond measured range; at most two new betas per round, all calibration cases and both repetitions",
+    "relative_speed_tolerance": 0.01,
+    "distinct_ordered_betas": true,
+    "choose": "pair with minimum summed squared relative speed errors, tie by lower beta; no quality-based selection",
+    "validation_repetitions": 1,
+    "no_retuning_on_validation": true
+  },
+  "warmup": {
+    "case": "cal_18",
+    "method": "ours_fast",
+    "excluded_from_statistics": true
+  },
+  "timing_controls": "GPU exclusive via runtime TimingGuard; current encoder/settings; native repeated twice per calibration case; reverse method ordering on second repeat; preserve run and video hashes",
+  "quality": {
+    "implementation": "v3 score_pairs.CommonMetrics",
+    "ssim": "all 121 frames, torch area 832x480, FP64",
+    "lpips": "Alex, all frames, torch area 416x240",
+    "reference": "matching native LTX, same prompt, seed and generation"
+  },
+  "limitations": [
+    "Small calibration and held-out validation, not full VBench",
+    "WAN and LTX retain different native model generation settings; speed equivalence is operational and hardware/cohort dependent",
+    "Existing shared restorer and training provenance unchanged"
+  ],
+  "shutdown_enabled": false,
+  "comparison_case": {
+    "id": "holdout_01",
+    "prompt": "A fluffy orange cat walks across a sunlit room and gently brushes its tail against the leg of a wooden chair. A steady low camera follows the natural walking motion, with realistic fur and consistent warm light.",
+    "seed": 961101
+  },
+  "comparison_purpose": "Add two points to the existing single-case all-method plot; new native control, compare deterministic video to v3; not used in selection or four-case validation means"
+}

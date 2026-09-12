@@ -1,0 +1,52 @@
+{
+  "official_records": 946,
+  "unique_prompts": 944,
+  "methods": [
+    "native",
+    "teacache_slow",
+    "teacache_fast",
+    "navicache_slow",
+    "navicache_fast",
+    "sencache_slow",
+    "sencache_fast",
+    "ours_quality",
+    "ours_balanced",
+    "ours_fast",
+    "profiling_official",
+    "ours_wan_speed_3",
+    "ours_wan_speed_4",
+    "ours_beta_0p1",
+    "ours_beta_1p0",
+    "ours_beta_2p0",
+    "ours_beta_3p0",
+    "ours_beta_4p0"
+  ],
+  "samples": 5,
+  "flicker_samples": 25,
+  "seed": 20260912,
+  "total_jobs": 111960,
+  "shard": 0,
+  "shards": 1,
+  "selected_jobs": 111960,
+  "limit": null,
+  "generation": {
+    "height": 704,
+    "width": 1216,
+    "frames": 121,
+    "steps": 50,
+    "flow_scale": 0.1,
+    "dynamic_flow": true,
+    "fps": 30,
+    "negative_prompt": "worst quality, inconsistent motion, blurry, jittery, distorted",
+    "guidance_scale": 3.0,
+    "stg_scale": 1.0,
+    "rescaling_scale": 0.7,
+    "skip_block_list": [
+      19
+    ],
+    "decode_timestep": 0.05,
+    "decode_noise_scale": 0.025
+  },
+  "methods_config_sha256": "aa74ddd5637dc53fe5be08bec0d4f786910ffed51c03c77f517ac0cb83023bf0",
+  "vbench_source": "fd18b3d055cb0fc6f066ca90fe2c3c8cbb698490"
+}
