@@ -1,5 +1,0 @@
-{
-  "ltx_repo": "/path/to/LTX-Video",
-  "checkpoint": "/path/to/ltxv-2b-0.9.6-dev-04-25.safetensors",
-  "text_encoder": "/path/to/PixArt-XL-2-1024-MS"
-}
