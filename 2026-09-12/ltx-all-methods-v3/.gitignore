@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+weights/*.pt
+weights/*.download
+outputs/
+configs/paths.local.json
+.env
