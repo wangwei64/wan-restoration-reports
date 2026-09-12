@@ -1,0 +1,32 @@
+{
+  "files": {
+    "speed_sweep.py": {
+      "sha256": "fc7d2646dbda12f54fe3bcd57e36f3ac17725a20e0e2a287a51bbb67f6724110",
+      "bytes": 14087
+    },
+    "prepare.py": {
+      "sha256": "acb0bff4ab3a4deb2c91eaf619baf95658314bd7594ada19241283cc17729ebe",
+      "bytes": 3688
+    },
+    "test_speed_selection.py": {
+      "sha256": "364809e4d004d1cd476c3c5d94e269dabd767495673954b83a5c19bc80e0a863",
+      "bytes": 2561
+    },
+    "plot_speed_ssim.py": {
+      "sha256": "5c09986557a5abb64262e3e7babb5e37513f06656f6dea267759cfbb0d53efed",
+      "bytes": 7682
+    },
+    "protocol.json": {
+      "sha256": "4aa6b7c8b689cc912ef1fa24b5451ec0d23a49fdc52ee8a42d62afc96662360f",
+      "bytes": 13496
+    },
+    "run_speed_worker.py": {
+      "sha256": "e0898ae603e4bd27bb884412140a7ab64ea163bd7300f735a4f59e1100e303dc",
+      "bytes": 4671
+    },
+    "probe_remote.py": {
+      "sha256": "1004a2f2b9f3b1ca04435475308d6907e517addbcf7085e2207dae0e4a71afe5",
+      "bytes": 1459
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "tiers": {
+    "profiling_speed_fast": {
+      "candidate": "profile_speed_k24_i12_3",
+      "target_speedup": 2.1,
+      "measured_speedup": 2.0708077987565314,
+      "relative_target_error": 0.013901048211175548,
+      "target_met": true
+    }
+  },
+  "all_targets_met": true,
+  "selection_uses_quality": false,
+  "quality_gate": null,
+  "protocol_sha256": "4aa6b7c8b689cc912ef1fa24b5451ec0d23a49fdc52ee8a42d62afc96662360f",
+  "sweep_code_sha256": "fc7d2646dbda12f54fe3bcd57e36f3ac17725a20e0e2a287a51bbb67f6724110",
+  "presets": {
+    "profiling_speed_fast": {
+      "method": "profiling",
+      "background_blocks": [
+        2,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "max_interval": 12,
+      "min_interval": 3,
+      "target_speedup": 2.1,
+      "validation_speedup": 2.0708077987565314,
+      "speed_target_met": true,
+      "tier_basis": "closest measured validation speed; no quality threshold"
+    }
+  }
+}

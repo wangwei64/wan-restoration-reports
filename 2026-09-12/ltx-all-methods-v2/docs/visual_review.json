@@ -1,0 +1,13 @@
+{
+  "stage": "complete",
+  "png_sha256": "d0fc179ab1d9edbb7127ef3f3a87746541e44490076b07efaa4d9fbfb2b90b49",
+  "reviewed_at": 1789181390.8894196,
+  "review_method": "Rendered PNG inspected with view_image",
+  "checks": [
+    "Chinese text and captions readable with no clipping",
+    "Distinct method colors and same-method tier connections",
+    "One ProfilingDiT point at speedup 2.094994 and SSIM 0.922110",
+    "Native baseline at (1,1)",
+    "Single-case scope and WAN reference clearly labeled"
+  ]
+}

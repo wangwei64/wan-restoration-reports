@@ -1,0 +1,192 @@
+{
+  "stage": "complete",
+  "selection": {
+    "tiers": {
+      "profiling_speed_fast": {
+        "candidate": "profile_speed_k24_i12_3",
+        "target_speedup": 2.1,
+        "measured_speedup": 2.0708077987565314,
+        "relative_target_error": 0.013901048211175548,
+        "target_met": true
+      }
+    },
+    "all_targets_met": true,
+    "selection_uses_quality": false,
+    "quality_gate": null,
+    "protocol_sha256": "4aa6b7c8b689cc912ef1fa24b5451ec0d23a49fdc52ee8a42d62afc96662360f",
+    "sweep_code_sha256": "fc7d2646dbda12f54fe3bcd57e36f3ac17725a20e0e2a287a51bbb67f6724110",
+    "presets": {
+      "profiling_speed_fast": {
+        "method": "profiling",
+        "background_blocks": [
+          2,
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27
+        ],
+        "max_interval": 12,
+        "min_interval": 3,
+        "target_speedup": 2.1,
+        "validation_speedup": 2.0708077987565314,
+        "speed_target_met": true,
+        "tier_basis": "closest measured validation speed; no quality threshold"
+      }
+    }
+  },
+  "validation": [
+    {
+      "mode": "profile_speed_k16_i6_2",
+      "cases": 8,
+      "mean_seconds": 67.01575969252735,
+      "speedup": 1.4336033419232053,
+      "mean_ssim": 0.9356186020945968,
+      "mean_lpips": 0.03776221862928711,
+      "min_case_ssim": 0.8975882890599974,
+      "max_case_lpips": 0.050458464494421464
+    },
+    {
+      "mode": "profile_speed_k16_i12_3",
+      "cases": 8,
+      "mean_seconds": 63.12910280423239,
+      "speedup": 1.5218657131032205,
+      "mean_ssim": 0.8606408309804732,
+      "mean_lpips": 0.093469976843912,
+      "min_case_ssim": 0.7691321896840784,
+      "max_case_lpips": 0.13851757889444177
+    },
+    {
+      "mode": "profile_speed_k18_i6_2",
+      "cases": 8,
+      "mean_seconds": 63.270745031535625,
+      "speedup": 1.5184587601875732,
+      "mean_ssim": 0.9333100626164144,
+      "mean_lpips": 0.03950612211969396,
+      "min_case_ssim": 0.8946366963906776,
+      "max_case_lpips": 0.05304927557460533
+    },
+    {
+      "mode": "profile_speed_k18_i12_3",
+      "cases": 8,
+      "mean_seconds": 59.03576218243688,
+      "speedup": 1.6273867483887865,
+      "mean_ssim": 0.8549332035143522,
+      "mean_lpips": 0.09778447689349987,
+      "min_case_ssim": 0.7591090950459933,
+      "max_case_lpips": 0.14672563551378645
+    },
+    {
+      "mode": "profile_speed_k20_i6_2",
+      "cases": 8,
+      "mean_seconds": 59.655484741088,
+      "speedup": 1.6104808715192318,
+      "mean_ssim": 0.9347190184758513,
+      "mean_lpips": 0.03905618283320372,
+      "min_case_ssim": 0.8957785901600815,
+      "max_case_lpips": 0.0534286823216056
+    },
+    {
+      "mode": "profile_speed_k20_i12_3",
+      "cases": 8,
+      "mean_seconds": 54.802179171703756,
+      "speedup": 1.753105779894533,
+      "mean_ssim": 0.8572815315885359,
+      "mean_lpips": 0.09770233697865989,
+      "min_case_ssim": 0.7624376911986892,
+      "max_case_lpips": 0.1478304829725549
+    },
+    {
+      "mode": "profile_speed_k22_i6_2",
+      "cases": 8,
+      "mean_seconds": 55.95389432180673,
+      "speedup": 1.7170210978378144,
+      "mean_ssim": 0.9316350447604393,
+      "mean_lpips": 0.03970822163911398,
+      "min_case_ssim": 0.8951587684908165,
+      "max_case_lpips": 0.05232757163688171
+    },
+    {
+      "mode": "profile_speed_k22_i12_3",
+      "cases": 8,
+      "mean_seconds": 50.680600736290216,
+      "speedup": 1.8956763665181882,
+      "mean_ssim": 0.8500558557285112,
+      "mean_lpips": 0.09903869299941566,
+      "min_case_ssim": 0.7602200129628607,
+      "max_case_lpips": 0.1441603934715602
+    },
+    {
+      "mode": "profile_speed_k24_i6_2",
+      "cases": 8,
+      "mean_seconds": 52.248730280436575,
+      "speedup": 1.8387818525171418,
+      "mean_ssim": 0.9335595146032307,
+      "mean_lpips": 0.03823719851765012,
+      "min_case_ssim": 0.8982825358859438,
+      "max_case_lpips": 0.050577199563753505
+    },
+    {
+      "mode": "profile_speed_k24_i12_3",
+      "cases": 8,
+      "mean_seconds": 46.39446360711008,
+      "speedup": 2.0708077987565314,
+      "mean_ssim": 0.8539298268979821,
+      "mean_lpips": 0.0962377736375721,
+      "min_case_ssim": 0.7629533048667789,
+      "max_case_lpips": 0.14332064148808313
+    },
+    {
+      "mode": "profile_speed_k26_i6_2",
+      "cases": 8,
+      "mean_seconds": 48.63532335776836,
+      "speedup": 1.9753958732832002,
+      "mean_ssim": 0.9348684430688924,
+      "mean_lpips": 0.03791250799366942,
+      "min_case_ssim": 0.897068075417026,
+      "max_case_lpips": 0.050789138317600756
+    },
+    {
+      "mode": "profile_speed_k26_i12_3",
+      "cases": 8,
+      "mean_seconds": 42.34282825142145,
+      "speedup": 2.268956067040808,
+      "mean_ssim": 0.8590971017341545,
+      "mean_lpips": 0.09531722633429796,
+      "min_case_ssim": 0.7613472334143734,
+      "max_case_lpips": 0.14700099037698477
+    }
+  ],
+  "holdout": [
+    {
+      "mode": "profiling_speed_fast",
+      "cases": 8,
+      "mean_seconds": 46.339684256352484,
+      "speedup": 2.069191090914132,
+      "mean_ssim": 0.8736199378593423,
+      "mean_lpips": 0.10452273761284006,
+      "min_case_ssim": 0.669322357555282,
+      "max_case_lpips": 0.3701836519743785
+    }
+  ],
+  "full_vbench_completed": false,
+  "scope": "Speed-selected LTX adaptation; not official WAN settings"
+}

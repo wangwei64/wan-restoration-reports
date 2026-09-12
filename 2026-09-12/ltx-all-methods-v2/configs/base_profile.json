@@ -1,0 +1,31 @@
+{
+  "name": "ltx2b_wan_quality_tiers_v1",
+  "generation": {
+    "height": 704,
+    "width": 1216,
+    "frames": 121,
+    "steps": 50,
+    "flow_scale": 0.1,
+    "dynamic_flow": true
+  },
+  "controller": {
+    "warmup_ratio": 0.2,
+    "tolerance": 0.01,
+    "fused_context": true,
+    "fused_arithmetic": true,
+    "fused_rms": true,
+    "deduplicate": true,
+    "share_warmup": true,
+    "continuous_history": true,
+    "wan_evidence": true,
+    "history_integration": "native_euler",
+    "rms_after_warmup_fast": true
+  },
+  "model": "ltxv-2b-0.9.6-dev-04-25",
+  "guidance": {
+    "cfg": 3.0,
+    "stg": 1.0,
+    "rescaling": 0.7
+  },
+  "framework": "Wan restore-fast with native LTX Euler real steps"
+}
