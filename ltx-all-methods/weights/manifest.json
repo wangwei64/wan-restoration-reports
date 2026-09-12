@@ -1,0 +1,9 @@
+{
+  "restorer": {
+    "bytes": 295015102,
+    "sha256": "5d097973fb6ca95efa15b956e5afcc007e7551a62ce5172e503b7b06d603fab6",
+    "file": "restorer.pt",
+    "download_url": "https://github.com/wangwei64/wan-restoration-reports/releases/download/ltx-fixed-betas-v5-20260912/ltx-restorer.pt"
+  },
+  "published": true
+}
