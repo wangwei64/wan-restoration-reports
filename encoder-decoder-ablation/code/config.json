@@ -1,0 +1,170 @@
+{
+  "cases": [
+    {
+      "case": "H02",
+      "seed": 2026091401,
+      "key": "H02__2026091401",
+      "prompt": "A small blue bird turns its head on a branch among dense green leaves, soft daylight, a fixed camera.",
+      "full_directory": "/root/autodl-tmp/experiments/wan_confirm_20260914/runs/H02__2026091401/A0__q1.00",
+      "full_video": "/root/autodl-tmp/experiments/wan_confirm_20260914/runs/H02__2026091401/A0__q1.00/final.mp4",
+      "full_video_sha256": "97f62e757ce094e3a968074e7e75153c3d8c94f906731943dd800d306cb5ead7",
+      "native_video": "/root/autodl-tmp/experiments/wan_confirm_20260914/native/H02__2026091401/final.mp4",
+      "native_video_sha256": "db844fc5f1c9cf0aaef0a440b54a9080166da932251a43c39cf87733459dc90a",
+      "name_cn": "蓝鸟",
+      "cohort": "previous",
+      "full_replay_check": "/root/autodl-tmp/experiments/wan_refresh_fiveway_roi_20260914/validation/H02__2026091401/check.json"
+    },
+    {
+      "case": "H02",
+      "seed": 2026091402,
+      "key": "H02__2026091402",
+      "prompt": "A small blue bird turns its head on a branch among dense green leaves, soft daylight, a fixed camera.",
+      "full_directory": "/root/autodl-tmp/experiments/wan_confirm_20260914/runs/H02__2026091402/A0__q1.00",
+      "full_video": "/root/autodl-tmp/experiments/wan_confirm_20260914/runs/H02__2026091402/A0__q1.00/final.mp4",
+      "full_video_sha256": "4cf8f325aa26c1e1e8d0bd6c15f1dded42fc3254cef041c09ffa19e76e3a9c32",
+      "native_video": "/root/autodl-tmp/experiments/wan_confirm_20260914/native/H02__2026091402/final.mp4",
+      "native_video_sha256": "f869904f862527293fe68bba173e3426302745fac2d1a1a042d4b6f864d1308a",
+      "name_cn": "蓝鸟",
+      "cohort": "previous",
+      "full_replay_check": "/root/autodl-tmp/experiments/wan_refresh_fiveway_roi_20260914/validation/H02__2026091402/check.json"
+    },
+    {
+      "case": "E01",
+      "seed": 2026091401,
+      "key": "E01__2026091401",
+      "prompt": "A small red toy sailboat drifts slowly across a pond with rippling water and reflected reeds, soft daylight, a fixed camera.",
+      "name_cn": "水面小船",
+      "cohort": "added",
+      "full_directory": "/root/autodl-tmp/experiments/wan_expanded_20260914/runs/E01__2026091401/A0__q1.00",
+      "full_video": "/root/autodl-tmp/experiments/wan_expanded_20260914/runs/E01__2026091401/A0__q1.00/final.mp4",
+      "full_video_sha256": "3fe795c6f109cfe44a0453fcc47beb10f65210e250ffa134c137d4103a13a1c1",
+      "native_video": "/root/autodl-tmp/experiments/wan_expanded_20260914/native/E01__2026091401/final.mp4",
+      "native_video_sha256": "0e8b98ac4431bd78436187d3f5c0904e4b36060b09f09c3e497facfd3bd49bfd",
+      "full_replay_check": "/root/autodl-tmp/experiments/wan_expanded_20260914/validation/E01__2026091401/matched_full_replay/check.json"
+    },
+    {
+      "case": "E01",
+      "seed": 2026091402,
+      "key": "E01__2026091402",
+      "prompt": "A small red toy sailboat drifts slowly across a pond with rippling water and reflected reeds, soft daylight, a fixed camera.",
+      "name_cn": "水面小船",
+      "cohort": "added",
+      "full_directory": "/root/autodl-tmp/experiments/wan_expanded_20260914/runs/E01__2026091402/A0__q1.00",
+      "full_video": "/root/autodl-tmp/experiments/wan_expanded_20260914/runs/E01__2026091402/A0__q1.00/final.mp4",
+      "full_video_sha256": "1778559b77f7ca7d14b85b8eb77b9ed9f94bc87dac99b69a5d03267fec5ef143",
+      "native_video": "/root/autodl-tmp/experiments/wan_expanded_20260914/native/E01__2026091402/final.mp4",
+      "native_video_sha256": "9f52aa320116ee1ed25249a53151e3fe856d4c6c18d13bacce0b42f2a603a8dd",
+      "full_replay_check": "/root/autodl-tmp/experiments/wan_expanded_20260914/validation/E01__2026091402/matched_full_replay/check.json"
+    },
+    {
+      "case": "E02",
+      "seed": 2026091401,
+      "key": "E02__2026091401",
+      "prompt": "A brown dog walks slowly across a grassy garden, its fur moving gently and leaves swaying in the background, soft daylight, a fixed camera.",
+      "name_cn": "行走的狗",
+      "cohort": "added",
+      "full_directory": "/root/autodl-tmp/experiments/wan_expanded_20260914/runs/E02__2026091401/A0__q1.00",
+      "full_video": "/root/autodl-tmp/experiments/wan_expanded_20260914/runs/E02__2026091401/A0__q1.00/final.mp4",
+      "full_video_sha256": "470519d4c570352513274b60a654b8410caf60063a5b4cc98cc28d0485f2c2fe",
+      "native_video": "/root/autodl-tmp/experiments/wan_expanded_20260914/native/E02__2026091401/final.mp4",
+      "native_video_sha256": "55cec29bb0c10e73e4dffb08b805557853e66831524c4f1da8558b7aeb35314c",
+      "full_replay_check": "/root/autodl-tmp/experiments/wan_expanded_20260914/validation/E02__2026091401/matched_full_replay/check.json"
+    },
+    {
+      "case": "E02",
+      "seed": 2026091402,
+      "key": "E02__2026091402",
+      "prompt": "A brown dog walks slowly across a grassy garden, its fur moving gently and leaves swaying in the background, soft daylight, a fixed camera.",
+      "name_cn": "行走的狗",
+      "cohort": "added",
+      "full_directory": "/root/autodl-tmp/experiments/wan_expanded_20260914/runs/E02__2026091402/A0__q1.00",
+      "full_video": "/root/autodl-tmp/experiments/wan_expanded_20260914/runs/E02__2026091402/A0__q1.00/final.mp4",
+      "full_video_sha256": "57e4c3ccbddf59ff5e6d0a88792f13daaa5cdfee13d4106d512a841d3b10b96c",
+      "native_video": "/root/autodl-tmp/experiments/wan_expanded_20260914/native/E02__2026091402/final.mp4",
+      "native_video_sha256": "a8f22b2f960b3209f381f6de9d5e78b2a78abcc591c7bbb72699b4fe72cd777f",
+      "full_replay_check": "/root/autodl-tmp/experiments/wan_expanded_20260914/validation/E02__2026091402/matched_full_replay/check.json"
+    },
+    {
+      "case": "E03",
+      "seed": 2026091401,
+      "key": "E03__2026091401",
+      "prompt": "A close-up of blue and white patterned fabric fluttering gently in a breeze, fine woven threads, folds and changing highlights, a fixed camera.",
+      "name_cn": "飘动织物",
+      "cohort": "added",
+      "full_directory": "/root/autodl-tmp/experiments/wan_expanded_20260914/runs/E03__2026091401/A0__q1.00",
+      "full_video": "/root/autodl-tmp/experiments/wan_expanded_20260914/runs/E03__2026091401/A0__q1.00/final.mp4",
+      "full_video_sha256": "c4ca7561d4558487655a292298bf8d2e2dc33b46e4eb82802a2f4e296944a2b3",
+      "native_video": "/root/autodl-tmp/experiments/wan_expanded_20260914/native/E03__2026091401/final.mp4",
+      "native_video_sha256": "e2d1e98edcfafdfe6ae565d69d400671ccaa9f252fa7aac230374db65a275df0",
+      "full_replay_check": "/root/autodl-tmp/experiments/wan_expanded_20260914/validation/E03__2026091401/matched_full_replay/check.json"
+    },
+    {
+      "case": "E03",
+      "seed": 2026091402,
+      "key": "E03__2026091402",
+      "prompt": "A close-up of blue and white patterned fabric fluttering gently in a breeze, fine woven threads, folds and changing highlights, a fixed camera.",
+      "name_cn": "飘动织物",
+      "cohort": "added",
+      "full_directory": "/root/autodl-tmp/experiments/wan_expanded_20260914/runs/E03__2026091402/A0__q1.00",
+      "full_video": "/root/autodl-tmp/experiments/wan_expanded_20260914/runs/E03__2026091402/A0__q1.00/final.mp4",
+      "full_video_sha256": "f7e51fe5b4a0a417868209a82464c76dd0083922fd1566955c36d33da5759403",
+      "native_video": "/root/autodl-tmp/experiments/wan_expanded_20260914/native/E03__2026091402/final.mp4",
+      "native_video_sha256": "03fa5258f0fe3946eee73a1e0cec53490460c313fe59f5953c757e8bdc2d8370",
+      "full_replay_check": "/root/autodl-tmp/experiments/wan_expanded_20260914/validation/E03__2026091402/matched_full_replay/check.json"
+    }
+  ],
+  "profile": {
+    "height": 480,
+    "width": 832,
+    "num_frames": 41,
+    "fps": 16,
+    "steps": 50,
+    "warmup_steps": 10,
+    "shift": 2.0,
+    "guidance_scale": 5.0,
+    "refinement_budget": 2.0,
+    "quality_tolerance": 0.01,
+    "default_seed": 20260828,
+    "negative_prompt": "色调艳丽，过曝，静态，细节模糊不清，字幕，风格，作品，画作，画面，静止，整体发灰，最差质量，低质量，JPEG压缩残留，丑陋的，残缺的，多余的手指，画得不好的手部，画得不好的脸部，畸形的，毁容的，形态畸形的肢体，手指融合，静止不动的画面，杂乱的背景，三条腿，背景人很多，倒着走"
+  },
+  "metrics": [
+    "psnr_db",
+    "ssim",
+    "lpips"
+  ],
+  "encoder_policies": [
+    "random",
+    "roi",
+    "uniform_coverage",
+    "detail_random",
+    "detail_tiebreak",
+    "subject_random",
+    "subject_tiebreak",
+    "ours"
+  ],
+  "decoder_arms": [
+    "S0_C0_A0",
+    "S1_C0_A0",
+    "S0_C1_A0",
+    "S1_C1_A0",
+    "S0_C0_A1",
+    "S1_C0_A1",
+    "S0_C1_A1",
+    "ours"
+  ],
+  "schedule_offsets": [
+    101,
+    202,
+    303
+  ],
+  "roi_offset": 404,
+  "remote_root": "/root/autodl-tmp/experiments/wan_encoder_decoder_unified_20260916",
+  "source_manifests": [
+    "/root/autodl-tmp/experiments/wan_selected_multiprompt_20260915/evaluation_summary.json",
+    "/root/autodl-tmp/experiments/wan_cue_multiprompt_20260915/evaluation_summary.json",
+    "/root/autodl-tmp/experiments/wan_decoder_kv_multi_20260916/results.json"
+  ],
+  "logical_conditions": 120,
+  "raw_conditions": 216,
+  "scope": "Fixed four prompts, both generation seeds. Average3 paired schedules within each encoder policy/sample except ROI404 and Ours; then average samples. Decoder fixed Full masks; encoder fixed Full counts. K/V interpolation A; latent alignment always on. Shared canonical Ours and native references. Keep all outcomes; no threshold experiment."
+}

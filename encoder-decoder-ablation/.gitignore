@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+code/runs/
+code/incomplete/
+code/prefix/
+*.mp4
+*.safetensors

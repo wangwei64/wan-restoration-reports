@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "raw_rows": 216,
+  "logical_conditions": 120,
+  "shared_ours_exact": true,
+  "samples": 8
+}

@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "raw_conditions": 216,
+  "logical_conditions": 120,
+  "shared_ours_records": 8,
+  "all_python_compiles": true
+}

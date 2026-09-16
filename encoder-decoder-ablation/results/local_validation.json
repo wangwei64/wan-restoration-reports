@@ -1,0 +1,253 @@
+{
+  "passed": true,
+  "raw_rows": 216,
+  "new_rows": 36,
+  "logical_conditions": 120,
+  "shared_ours": 8,
+  "source_hashes_verified": true,
+  "means_recomputed": true,
+  "ours_pairwise": {
+    "encoder": {
+      "random": {
+        "lpips": {
+          "win": 8,
+          "tie": 0,
+          "loss": 0
+        },
+        "ssim": {
+          "win": 8,
+          "tie": 0,
+          "loss": 0
+        },
+        "psnr_db": {
+          "win": 8,
+          "tie": 0,
+          "loss": 0
+        }
+      },
+      "roi": {
+        "lpips": {
+          "win": 8,
+          "tie": 0,
+          "loss": 0
+        },
+        "ssim": {
+          "win": 8,
+          "tie": 0,
+          "loss": 0
+        },
+        "psnr_db": {
+          "win": 8,
+          "tie": 0,
+          "loss": 0
+        }
+      },
+      "uniform_coverage": {
+        "lpips": {
+          "win": 8,
+          "tie": 0,
+          "loss": 0
+        },
+        "ssim": {
+          "win": 8,
+          "tie": 0,
+          "loss": 0
+        },
+        "psnr_db": {
+          "win": 8,
+          "tie": 0,
+          "loss": 0
+        }
+      },
+      "detail_random": {
+        "lpips": {
+          "win": 8,
+          "tie": 0,
+          "loss": 0
+        },
+        "ssim": {
+          "win": 8,
+          "tie": 0,
+          "loss": 0
+        },
+        "psnr_db": {
+          "win": 8,
+          "tie": 0,
+          "loss": 0
+        }
+      },
+      "detail_tiebreak": {
+        "lpips": {
+          "win": 7,
+          "tie": 0,
+          "loss": 1
+        },
+        "ssim": {
+          "win": 7,
+          "tie": 0,
+          "loss": 1
+        },
+        "psnr_db": {
+          "win": 7,
+          "tie": 0,
+          "loss": 1
+        }
+      },
+      "subject_random": {
+        "lpips": {
+          "win": 8,
+          "tie": 0,
+          "loss": 0
+        },
+        "ssim": {
+          "win": 8,
+          "tie": 0,
+          "loss": 0
+        },
+        "psnr_db": {
+          "win": 8,
+          "tie": 0,
+          "loss": 0
+        }
+      },
+      "subject_tiebreak": {
+        "lpips": {
+          "win": 7,
+          "tie": 0,
+          "loss": 1
+        },
+        "ssim": {
+          "win": 8,
+          "tie": 0,
+          "loss": 0
+        },
+        "psnr_db": {
+          "win": 8,
+          "tie": 0,
+          "loss": 0
+        }
+      }
+    },
+    "decoder": {
+      "S0_C0_A0": {
+        "lpips": {
+          "win": 8,
+          "tie": 0,
+          "loss": 0
+        },
+        "ssim": {
+          "win": 8,
+          "tie": 0,
+          "loss": 0
+        },
+        "psnr_db": {
+          "win": 8,
+          "tie": 0,
+          "loss": 0
+        }
+      },
+      "S1_C0_A0": {
+        "lpips": {
+          "win": 8,
+          "tie": 0,
+          "loss": 0
+        },
+        "ssim": {
+          "win": 8,
+          "tie": 0,
+          "loss": 0
+        },
+        "psnr_db": {
+          "win": 8,
+          "tie": 0,
+          "loss": 0
+        }
+      },
+      "S0_C1_A0": {
+        "lpips": {
+          "win": 8,
+          "tie": 0,
+          "loss": 0
+        },
+        "ssim": {
+          "win": 8,
+          "tie": 0,
+          "loss": 0
+        },
+        "psnr_db": {
+          "win": 8,
+          "tie": 0,
+          "loss": 0
+        }
+      },
+      "S1_C1_A0": {
+        "lpips": {
+          "win": 8,
+          "tie": 0,
+          "loss": 0
+        },
+        "ssim": {
+          "win": 8,
+          "tie": 0,
+          "loss": 0
+        },
+        "psnr_db": {
+          "win": 8,
+          "tie": 0,
+          "loss": 0
+        }
+      },
+      "S0_C0_A1": {
+        "lpips": {
+          "win": 8,
+          "tie": 0,
+          "loss": 0
+        },
+        "ssim": {
+          "win": 8,
+          "tie": 0,
+          "loss": 0
+        },
+        "psnr_db": {
+          "win": 8,
+          "tie": 0,
+          "loss": 0
+        }
+      },
+      "S1_C0_A1": {
+        "lpips": {
+          "win": 8,
+          "tie": 0,
+          "loss": 0
+        },
+        "ssim": {
+          "win": 8,
+          "tie": 0,
+          "loss": 0
+        },
+        "psnr_db": {
+          "win": 8,
+          "tie": 0,
+          "loss": 0
+        }
+      },
+      "S0_C1_A1": {
+        "lpips": {
+          "win": 4,
+          "tie": 4,
+          "loss": 0
+        },
+        "ssim": {
+          "win": 4,
+          "tie": 4,
+          "loss": 0
+        },
+        "psnr_db": {
+          "win": 4,
+          "tie": 4,
+          "loss": 0
+        }
+      }
+    }
+  }
+}
