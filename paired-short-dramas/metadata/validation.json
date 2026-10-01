@@ -317,12 +317,27 @@
     "checked": true,
     "ok": true
   },
-  "browser_playback_test": "pending after deployment",
+  "browser_playback_test": {
+    "status": "passed",
+    "pair": "cn-jiang",
+    "modes": [
+      "4 matching clips",
+      "cropped full scene",
+      "original public first episodes"
+    ],
+    "video_instances_tested": 12,
+    "observations": "Both players started; readyState 3/4, paused false and no media errors. Captions off. Returned to paused first clip. This is playback-start testing, not a full-duration human watch.",
+    "interface": "Codex in-app browser, public HTTPS deployment"
+  },
   "issues": [],
   "visual_review": {
     "pair": "cn-jiang",
     "scope": "full scene and all 4 clips, samples at 6%, 50%, 94%, original timeline and crop review",
     "result": "No burned subtitles or added character-name titles in final sampled crops; not exhaustive every-frame guarantee",
     "contact_sheet": "previews/cn-jiang-crop-review.jpg"
+  },
+  "public_range_check": {
+    "mp4_count": 56,
+    "passed": true
   }
 }
