@@ -192,9 +192,23 @@
   "original_sha256_verified": true,
   "max_file_below_100_MiB": true,
   "javascript_syntax": "passed",
-  "browser_playback_test": "pending after deployment",
+  "browser_playback_test": {
+    "date": "2026-10-01",
+    "result": "passed",
+    "environment": "Codex in-app browser, public HTTPS GitHub Pages URL",
+    "clips": "First clip in each of four pairs: both video elements readyState=4, paused=false, no media error. First pair time progression and decoded video dimensions also checked.",
+    "full_and_original": "First pair full scene and original public episode: both playing, readyState=4, no media error.",
+    "controls": "Four-case switching, clip dropdown and clip/full/original mode switching verified in rendered page.",
+    "default_captions": "off; screenshot confirms no overlay subtitles in first pair",
+    "coverage_limit": "Actual browser playback sampled; all 44 MP4 URLs separately passed HTTP 206 range checks. This is not exhaustive viewing of every video."
+  },
   "issues": [],
   "static_local_links": "passed",
   "public_metadata_scrub": "passed",
-  "playback_control_unit_checks": "passed: clip/full/original modes, four-case filtering, unequal duration handling and shared seek; DOM stubs, not browser playback."
+  "playback_control_unit_checks": "passed: clip/full/original modes, four-case filtering, unequal duration handling and shared seek; DOM stubs, not browser playback.",
+  "public_http_video_range_checks": {
+    "count": 44,
+    "passed": true,
+    "report": "metadata/deployment.json"
+  }
 }

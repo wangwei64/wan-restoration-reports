@@ -1,5 +1,7 @@
 # REAL | AI · 中国短剧同故事配对
 
+[打开在线对照网站](https://wangwei64.github.io/wan-restoration-reports/paired-short-dramas/)
+
 本次新增 4 组配对、14 对 clips：
 1. 都重生了谁还装富二代 / 都重生了，谁还装富二代啊：4 对。
 2. 老太片场跑龙套，养活古代一家人 / 古今两界跑龙套，老太我养活了全家：4 对。
