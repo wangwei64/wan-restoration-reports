@@ -1,59 +1,179 @@
 {
   "date": "2026-10-01",
-  "pair_count": 5,
-  "clip_pair_count": 18,
-  "original_mp4_count": 10,
-  "derived_mp4_count": 46,
+  "pair_count": 8,
+  "clip_pair_count": 25,
+  "original_mp4_count": 15,
+  "derived_mp4_count": 66,
   "checks": [
+    {
+      "path": "full/weak-night-dialogue__full__real.mp4",
+      "decode_ok": true,
+      "error": ""
+    },
+    {
+      "path": "full/weak-night-dialogue__full__ai.mp4",
+      "decode_ok": true,
+      "error": ""
+    },
+    {
+      "path": "clips/weak-night-dialogue__woman__real.mp4",
+      "decode_ok": true,
+      "error": ""
+    },
+    {
+      "path": "clips/weak-night-dialogue__woman__ai.mp4",
+      "decode_ok": true,
+      "error": ""
+    },
+    {
+      "path": "clips/weak-night-dialogue__exchange__real.mp4",
+      "decode_ok": true,
+      "error": ""
+    },
+    {
+      "path": "clips/weak-night-dialogue__exchange__ai.mp4",
+      "decode_ok": true,
+      "error": ""
+    },
+    {
+      "path": "clips/weak-night-dialogue__man__real.mp4",
+      "decode_ok": true,
+      "error": ""
+    },
+    {
+      "path": "clips/weak-night-dialogue__man__ai.mp4",
+      "decode_ok": true,
+      "error": ""
+    },
+    {
+      "path": "full/weak-indoor-woman__full__real.mp4",
+      "decode_ok": true,
+      "error": ""
+    },
+    {
+      "path": "full/weak-indoor-woman__full__ai.mp4",
+      "decode_ok": true,
+      "error": ""
+    },
+    {
+      "path": "clips/weak-indoor-woman__speaking__real.mp4",
+      "decode_ok": true,
+      "error": ""
+    },
+    {
+      "path": "clips/weak-indoor-woman__speaking__ai.mp4",
+      "decode_ok": true,
+      "error": ""
+    },
+    {
+      "path": "clips/weak-indoor-woman__reaction__real.mp4",
+      "decode_ok": true,
+      "error": ""
+    },
+    {
+      "path": "clips/weak-indoor-woman__reaction__ai.mp4",
+      "decode_ok": true,
+      "error": ""
+    },
+    {
+      "path": "full/weak-seated-men__full__real.mp4",
+      "decode_ok": true,
+      "error": ""
+    },
+    {
+      "path": "full/weak-seated-men__full__ai.mp4",
+      "decode_ok": true,
+      "error": ""
+    },
+    {
+      "path": "clips/weak-seated-men__male-speaking__real.mp4",
+      "decode_ok": true,
+      "error": ""
+    },
+    {
+      "path": "clips/weak-seated-men__male-speaking__ai.mp4",
+      "decode_ok": true,
+      "error": ""
+    },
+    {
+      "path": "clips/weak-seated-men__gesture__real.mp4",
+      "decode_ok": true,
+      "error": ""
+    },
+    {
+      "path": "clips/weak-seated-men__gesture__ai.mp4",
+      "decode_ok": true,
+      "error": ""
+    },
     {
       "path": "full/cn-jiang__full__real.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "903fe1fedcd856913dd9cd1f6fe1dc1011bb9ea102d71968026e8c7245f99c82",
+      "reused_unchanged": true
     },
     {
       "path": "full/cn-jiang__full__ai.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "19ae4539ffe40060226d9dc37178591a2c8c1e8e89ca2cf48bd5d161c7b02a14",
+      "reused_unchanged": true
     },
     {
       "path": "clips/cn-jiang__flowers__real.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "084013197d3c7e724b0c3576cad9d18c3a42dedaf540a3cd2e2ac618ffa059fd",
+      "reused_unchanged": true
     },
     {
       "path": "clips/cn-jiang__flowers__ai.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "d823c1bd3948b75b69790e98c279a654735a91f07518c54bdbd8e0648276ed56",
+      "reused_unchanged": true
     },
     {
       "path": "clips/cn-jiang__marriage__real.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "b82b89f5c919508c04da7ba79e3525947d070b1f2043a9d1341d640500409c41",
+      "reused_unchanged": true
     },
     {
       "path": "clips/cn-jiang__marriage__ai.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "4503303aa8fdc7ad55a4b824cbfdc11d24c29dbf3674e1b8bee9b29cbc2367ce",
+      "reused_unchanged": true
     },
     {
       "path": "clips/cn-jiang__phone__real.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "9e26bd673709c636091a4304294d7645e4847c941a826ad3515801cd643ec66f",
+      "reused_unchanged": true
     },
     {
       "path": "clips/cn-jiang__phone__ai.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "3c764cef0ff5231ab962c2f6b26983f946088e5525973fa344ca791ba2275873",
+      "reused_unchanged": true
     },
     {
       "path": "clips/cn-jiang__agreement__real.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "41ddf28b000ea46b518a76f1695909c988ee15345813d226a4c66827261c86b7",
+      "reused_unchanged": true
     },
     {
       "path": "clips/cn-jiang__agreement__ai.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "d282487b7be1481bc1152d3eb320994adb582a90e37d152301b067085ad2d40c",
+      "reused_unchanged": true
     },
     {
       "path": "full/cn-fuerdai__full__real.mp4",
@@ -309,7 +429,7 @@
     }
   ],
   "decode_check_origin": "Local decode validation; unchanged files retain earlier checks verified by SHA256.",
-  "copied_media_and_subtitles_count": 219,
+  "copied_media_and_subtitles_count": 317,
   "copied_bytes_unchanged": true,
   "original_sha256_verified": true,
   "max_file_below_100_MiB": true,
@@ -317,27 +437,22 @@
     "checked": true,
     "ok": true
   },
-  "browser_playback_test": {
-    "status": "passed",
-    "pair": "cn-jiang",
-    "modes": [
-      "4 matching clips",
-      "cropped full scene",
-      "original public first episodes"
-    ],
-    "video_instances_tested": 12,
-    "observations": "Both players started; readyState 3/4, paused false and no media errors. Captions off. Returned to paused first clip. This is playback-start testing, not a full-duration human watch.",
-    "interface": "Codex in-app browser, public HTTPS deployment"
-  },
+  "browser_playback_test": "pending after deployment",
   "issues": [],
+  "preview_controls": "passed: 8 pairs; 3 weak and 5 same-story filters; no automatic time correction in weak pairs; unequal endings; seek; clip/full/original paths",
   "visual_review": {
-    "pair": "cn-jiang",
-    "scope": "full scene and all 4 clips, samples at 6%, 50%, 94%, original timeline and crop review",
-    "result": "No burned subtitles or added character-name titles in final sampled crops; not exhaustive every-frame guarantee",
-    "contact_sheet": "previews/cn-jiang-crop-review.jpg"
-  },
-  "public_range_check": {
-    "mp4_count": 56,
-    "passed": true
+    "scope": "Earlier seed/Chinese checks retained; new 3 weak groups, full scenes and all 7 clips at 6%, 50%, 94%; final contact sheets reviewed",
+    "result": "No burned subtitles seen in inspected cropped frames. Some clips contain edits, tight faces or natural scene text; not every frame was OCR checked.",
+    "evidence": [
+      "previews/cn-fuerdai-crop-review.jpg",
+      "previews/cn-laotai-crop-review.jpg",
+      "previews/cn-yuni-photo-crop-review.jpg",
+      "previews/cn-dongzhi-photo-crop-review.jpg",
+      "previews/cn-jiang-crop-review.jpg",
+      "previews/weak-night-dialogue-crop-review.jpg",
+      "previews/weak-indoor-woman-crop-review.jpg",
+      "previews/weak-seated-men-crop-review.jpg"
+    ],
+    "excluded_styles": "Original silver-haired Yuni and Dongzhi AI versions retained in sources/candidates only because of animation-like style; selected alternate versions identified separately"
   }
 }

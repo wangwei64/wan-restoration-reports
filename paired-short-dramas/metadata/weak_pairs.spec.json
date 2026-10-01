@@ -1,0 +1,463 @@
+[
+  {
+    "id": "weak-night-dialogue",
+    "title": "弱对应 · 夜间酒吧男女对话",
+    "kind": "scene_analogue",
+    "dataset_subset": "weak_scene",
+    "evidence_grade": "B",
+    "priority": 4,
+    "split_group": "weak-night-dialogue",
+    "match_strength": "weak",
+    "pairing_relation": {
+      "same_ip": false,
+      "same_story": false,
+      "same_characters": false,
+      "same_dialogue": false,
+      "frame_alignment": false
+    },
+    "aligned_evaluation_eligible": false,
+    "core_eligible": false,
+    "match": {
+      "temporal": "无共同时间轴；各自独立截取，不做逐帧同步",
+      "dialogue": "不对应：不同角色、故事与台词",
+      "scene": "仅按人物景别、动作或拍摄环境进行弱配对"
+    },
+    "notes": "REAL《人前不熟，人后熟透》：何田田 / 赵冠宇；AI《她玩火》：童喻 / 霍放。不同故事，以夜间酒吧、男女正反打与半身/面部特写比较。霓虹光与暖光并不一致，不能当作相同镜头重制。AI 画风较写实，具体制作方与模型尚待补证。",
+    "verification": "真人平台页列何田田饰诗悦、赵冠宇饰秦昭，已检查实际画面。AI 候选由平台归为漫剧，多个公开发布/评论明确称《她玩火》为 AI 剧，童喻/霍放剧情与下载视频一致；未独立取得制作方声明或工程，保留 B 级来源。来源等级与弱对应程度分开。",
+    "sources": [
+      {
+        "label": "REAL 公开首集与演员表",
+        "url": "https://hongguoduanju.com/player/7595841916575435801"
+      },
+      {
+        "label": "AI 候选公开首集",
+        "url": "https://hongguoduanju.com/player/7680034186463284249"
+      },
+      {
+        "label": "《她玩火》公开 AI 剧标注及角色剧情",
+        "url": "https://www.sina.cn/news/detail/5339044959752114.html"
+      },
+      {
+        "label": "平台检索：漫剧分类与剧情",
+        "url": "https://hongguoduanju.com/search/她玩火"
+      }
+    ],
+    "style": "photorealistic",
+    "style_label": "写实风格 · 相似场景弱对应",
+    "model": null,
+    "audio_relation": "unrelated_independent_audio",
+    "subtitle_policy": "裁去底部硬字幕；外挂字幕默认关闭；不做生成式去字。",
+    "pixel_aligned": false,
+    "full": {
+      "real": {
+        "source": "sources/weak-renqian-real.mp4",
+        "source_start": 198,
+        "source_end": 243.5,
+        "crop_xywh": [
+          0,
+          20,
+          720,
+          800
+        ],
+        "scope": "完整已选连续场景；跨作品独立窗口，非完整剧集"
+      },
+      "ai": {
+        "source": "sources/weak-wanhuo-ai.mp4",
+        "source_start": 78.7,
+        "source_end": 92.8,
+        "crop_xywh": [
+          0,
+          20,
+          720,
+          800
+        ],
+        "scope": "完整已选连续场景；跨作品独立窗口，非完整剧集"
+      }
+    },
+    "clips": [
+      {
+        "id": "woman",
+        "title": "女性近景 · 侧向目光与说话",
+        "real": {
+          "source": "sources/weak-renqian-real.mp4",
+          "source_start": 32.5,
+          "source_end": 38.5,
+          "crop_xywh": [
+            0,
+            20,
+            720,
+            800
+          ]
+        },
+        "ai": {
+          "source": "sources/weak-wanhuo-ai.mp4",
+          "source_start": 64.5,
+          "source_end": 68,
+          "crop_xywh": [
+            0,
+            20,
+            720,
+            800
+          ]
+        },
+        "dialogue": "REAL：诗悦在酒吧持杯与面前的人交谈。AI：回忆中的休息区，童喻听同伴谈霍家二少。没有相同台词，房间与光照也不同。",
+        "note": "跨作品相似场景，不存在相同角色或对白。两个窗口均按原速；时间仅定位各自原文件。源压缩、光线、服装、机位和景别差异可能影响真实性判断。",
+        "match_level": {
+          "temporal": "弱对应：独立时间窗口，没有事件同步",
+          "dialogue": "不匹配；两侧字幕分别保存",
+          "scene": "中：夜间室内女性半身/近景、侧向目光；光线颜色与背景不同"
+        }
+      },
+      {
+        "id": "exchange",
+        "title": "男女交谈 · 对话中的正反打",
+        "real": {
+          "source": "sources/weak-renqian-real.mp4",
+          "source_start": 210,
+          "source_end": 222,
+          "crop_xywh": [
+            0,
+            20,
+            720,
+            800
+          ]
+        },
+        "ai": {
+          "source": "sources/weak-wanhuo-ai.mp4",
+          "source_start": 80,
+          "source_end": 89.5,
+          "crop_xywh": [
+            0,
+            20,
+            720,
+            800
+          ]
+        },
+        "dialogue": "REAL：诗悦与秦昭的关系试探。AI：霍放追问童喻冒充其女友的理由。仅对话形式相近。",
+        "note": "跨作品相似场景，不存在相同角色或对白。两个窗口均按原速；时间仅定位各自原文件。源压缩、光线、服装、机位和景别差异可能影响真实性判断。",
+        "match_level": {
+          "temporal": "弱对应：独立时间窗口，没有事件同步",
+          "dialogue": "不匹配；两侧字幕分别保存",
+          "scene": "中：近距离男女对话、正反打、眼神变化；动作与站位不同"
+        }
+      },
+      {
+        "id": "man",
+        "title": "男性近景 · 低头与说话",
+        "real": {
+          "source": "sources/weak-renqian-real.mp4",
+          "source_start": 239,
+          "source_end": 243.5,
+          "crop_xywh": [
+            0,
+            20,
+            720,
+            800
+          ]
+        },
+        "ai": {
+          "source": "sources/weak-wanhuo-ai.mp4",
+          "source_start": 90.2,
+          "source_end": 92.8,
+          "crop_xywh": [
+            0,
+            20,
+            720,
+            800
+          ]
+        },
+        "dialogue": "REAL：秦昭俯身交谈。AI：霍放回应童喻的身份质疑。对白与说话节奏不对应。",
+        "note": "跨作品相似场景，不存在相同角色或对白。两个窗口均按原速；时间仅定位各自原文件。源压缩、光线、服装、机位和景别差异可能影响真实性判断。",
+        "match_level": {
+          "temporal": "弱对应：独立时间窗口，没有事件同步",
+          "dialogue": "不匹配；两侧字幕分别保存",
+          "scene": "中：黑衣男性面部近景、低头与抬眼；真人有眼镜、AI 无眼镜"
+        }
+      }
+    ]
+  },
+  {
+    "id": "weak-indoor-woman",
+    "title": "弱对应 · 室内女性半身谈事",
+    "kind": "scene_analogue",
+    "dataset_subset": "weak_scene",
+    "evidence_grade": "A",
+    "priority": 4,
+    "split_group": "weak-indoor-woman",
+    "match_strength": "weak",
+    "pairing_relation": {
+      "same_ip": false,
+      "same_story": false,
+      "same_characters": false,
+      "same_dialogue": false,
+      "frame_alignment": false
+    },
+    "aligned_evaluation_eligible": false,
+    "core_eligible": true,
+    "match": {
+      "temporal": "无共同时间轴；各自独立截取，不做逐帧同步",
+      "dialogue": "不对应：不同角色、故事与台词",
+      "scene": "仅按人物景别、动作或拍摄环境进行弱配对"
+    },
+    "notes": "REAL《夫人她专治不服》选取黑衣女性室内陈述、以及白衬衫坐姿反应；AI《总裁是我前女友》选取办公室交谈。只按女性半身/近景与目光动作比较；站坐姿、年龄、布景与剧情不同。REAL 为李柯以饰沈青瓷，AI 是另一作品的人物。",
+    "verification": "REAL 来源页列李柯以、王培延等演员；AI 作品 ID 7688352674999176254 在平台 AI 剧分类中，并有同名 AI 真人剧发布标注。已检查两侧实际视频和裁剪代表帧；具体生成模型未查明。A 为来源证据，不代表这组匹配强。",
+    "sources": [
+      {
+        "label": "REAL 公开首集与演员表",
+        "url": "https://hongguoduanju.com/player/7537251022595427390"
+      },
+      {
+        "label": "AI 公开首集",
+        "url": "https://hongguoduanju.com/player/7688352674999176254"
+      },
+      {
+        "label": "平台 AI 剧分类（已保存包含此作品的快照）",
+        "url": "https://hongguoduanju.com/category/ai-drama"
+      },
+      {
+        "label": "抖音同名 AI 真人剧发布标注",
+        "url": "https://www.douyin.com/video/7689688830370221362"
+      }
+    ],
+    "style": "photorealistic",
+    "style_label": "写实风格 · 相似场景弱对应",
+    "model": null,
+    "audio_relation": "unrelated_independent_audio",
+    "subtitle_policy": "裁去底部硬字幕；外挂字幕默认关闭；不做生成式去字。",
+    "pixel_aligned": false,
+    "full": {
+      "real": {
+        "source": "sources/weak-furen-real.mp4",
+        "source_start": 38.6,
+        "source_end": 51,
+        "crop_xywh": [
+          0,
+          20,
+          720,
+          800
+        ],
+        "scope": "完整已选连续场景；跨作品独立窗口，非完整剧集"
+      },
+      "ai": {
+        "source": "sources/weak-zongcai-ai.mp4",
+        "source_start": 61,
+        "source_end": 76,
+        "crop_xywh": [
+          0,
+          20,
+          720,
+          800
+        ],
+        "scope": "完整已选连续场景；跨作品独立窗口，非完整剧集"
+      }
+    },
+    "clips": [
+      {
+        "id": "speaking",
+        "title": "半身谈话 · 嘴部、肩颈与视线",
+        "real": {
+          "source": "sources/weak-furen-real.mp4",
+          "source_start": 38.6,
+          "source_end": 48.8,
+          "crop_xywh": [
+            0,
+            20,
+            720,
+            800
+          ]
+        },
+        "ai": {
+          "source": "sources/weak-zongcai-ai.mp4",
+          "source_start": 61,
+          "source_end": 65.8,
+          "crop_xywh": [
+            0,
+            20,
+            720,
+            800
+          ]
+        },
+        "dialogue": "REAL：沈青瓷谈及回国与拿回公司。AI：女总裁提及过去的约定。没有逐句对应。",
+        "note": "跨作品相似场景，不存在相同角色或对白。两个窗口均按原速；时间仅定位各自原文件。源压缩、光线、服装、机位和景别差异可能影响真实性判断。",
+        "match_level": {
+          "temporal": "弱对应：独立时间窗口，没有事件同步",
+          "dialogue": "不匹配；两侧字幕分别保存",
+          "scene": "中：黑衣女性室内半身/近景说话；真人站立，AI 坐在办公椅上，布景和用光不同"
+        }
+      },
+      {
+        "id": "reaction",
+        "title": "交谈反应 · 轻微转头与停顿",
+        "real": {
+          "source": "sources/weak-furen-real.mp4",
+          "source_start": 77,
+          "source_end": 79.7,
+          "crop_xywh": [
+            0,
+            20,
+            720,
+            800
+          ]
+        },
+        "ai": {
+          "source": "sources/weak-zongcai-ai.mp4",
+          "source_start": 53.3,
+          "source_end": 55.4,
+          "crop_xywh": [
+            0,
+            20,
+            720,
+            800
+          ]
+        },
+        "dialogue": "两侧为不同谈话中的神态与目光反应；字幕仅用于理解各自上下文。",
+        "note": "跨作品相似场景，不存在相同角色或对白。两个窗口均按原速；时间仅定位各自原文件。源压缩、光线、服装、机位和景别差异可能影响真实性判断。",
+        "match_level": {
+          "temporal": "弱对应：独立时间窗口，没有事件同步",
+          "dialogue": "不匹配；两侧字幕分别保存",
+          "scene": "中低：女性侧向视线与轻微表情；REAL 白衬衫坐姿，AI 黑色高领，时长较短"
+        }
+      }
+    ]
+  },
+  {
+    "id": "weak-seated-men",
+    "title": "弱对应 · 社交场合男性坐姿交谈",
+    "kind": "scene_analogue",
+    "dataset_subset": "weak_scene",
+    "evidence_grade": "A",
+    "priority": 4,
+    "split_group": "cn-fuerdai",
+    "match_strength": "weak",
+    "pairing_relation": {
+      "same_ip": false,
+      "same_story": false,
+      "same_characters": false,
+      "same_dialogue": false,
+      "frame_alignment": false
+    },
+    "aligned_evaluation_eligible": false,
+    "core_eligible": true,
+    "match": {
+      "temporal": "无共同时间轴；各自独立截取，不做逐帧同步",
+      "dialogue": "不对应：不同角色、故事与台词",
+      "scene": "仅按人物景别、动作或拍摄环境进行弱配对"
+    },
+    "notes": "REAL《都重生了谁还装富二代》的客厅聚会，AI《结账时我摊牌了》的家庭饭局。两侧均有男性坐姿谈话、听话反应与手势，故事和角色完全不同。REAL 原片与已有《富二代》强对应组共享，二者应在同一数据划分中；这不是新增真人独立来源。",
+    "verification": "REAL 来源已由平台演员表与原视频核验；AI 作品 ID 7688338785091718206 在平台 AI 剧分类中。已检查实际人物画面，选用较自然的男性谈话镜头；未取得具体模型。A 为来源证据，场景对应仍为弱。",
+    "sources": [
+      {
+        "label": "REAL 公开首集与演员表",
+        "url": "https://hongguoduanju.com/player/7677441477533781017"
+      },
+      {
+        "label": "AI 公开首集",
+        "url": "https://hongguoduanju.com/player/7688338785091718206"
+      },
+      {
+        "label": "平台 AI 剧分类（已保存包含此作品的快照）",
+        "url": "https://hongguoduanju.com/category/ai-drama"
+      }
+    ],
+    "style": "photorealistic",
+    "style_label": "写实风格 · 相似场景弱对应",
+    "model": null,
+    "audio_relation": "unrelated_independent_audio",
+    "subtitle_policy": "裁去底部硬字幕；AI 连续场景与正反打另裁去右侧角色名；外挂字幕默认关闭；不做生成式去字。",
+    "pixel_aligned": false,
+    "full": {
+      "real": {
+        "source": "sources/fuerdai-real.mp4",
+        "source_start": 31,
+        "source_end": 61,
+        "crop_xywh": [
+          0,
+          20,
+          720,
+          800
+        ],
+        "scope": "完整已选连续场景；跨作品独立窗口，非完整剧集"
+      },
+      "ai": {
+        "source": "sources/weak-jiezhang-ai.mp4",
+        "source_start": 23.5,
+        "source_end": 39,
+        "crop_xywh": [
+          0,
+          20,
+          560,
+          800
+        ],
+        "scope": "完整已选连续场景；跨作品独立窗口，非完整剧集"
+      }
+    },
+    "clips": [
+      {
+        "id": "male-speaking",
+        "title": "男性半身 · 社交谈话",
+        "real": {
+          "source": "sources/fuerdai-real.mp4",
+          "source_start": 31,
+          "source_end": 34.5,
+          "crop_xywh": [
+            0,
+            20,
+            720,
+            800
+          ]
+        },
+        "ai": {
+          "source": "sources/weak-jiezhang-ai.mp4",
+          "source_start": 34.1,
+          "source_end": 39,
+          "crop_xywh": [
+            0,
+            20,
+            720,
+            800
+          ]
+        },
+        "dialogue": "REAL：聚会中围绕身份与消费话题交谈。AI：许彦表示亲戚来旅游的费用全包。没有相同台词。",
+        "note": "跨作品相似场景，不存在相同角色或对白。两个窗口均按原速；时间仅定位各自原文件。源压缩、光线、服装、机位和景别差异可能影响真实性判断。",
+        "match_level": {
+          "temporal": "弱对应：独立时间窗口，没有事件同步",
+          "dialogue": "不匹配；两侧字幕分别保存",
+          "scene": "中：室内男性坐姿、半身说话与表情；一侧沙发聚会，一侧餐桌饭局"
+        }
+      },
+      {
+        "id": "gesture",
+        "title": "男性正反打 · 面部与手势",
+        "real": {
+          "source": "sources/fuerdai-real.mp4",
+          "source_start": 51,
+          "source_end": 61,
+          "crop_xywh": [
+            0,
+            20,
+            720,
+            800
+          ]
+        },
+        "ai": {
+          "source": "sources/weak-jiezhang-ai.mp4",
+          "source_start": 30.2,
+          "source_end": 34.2,
+          "crop_xywh": [
+            0,
+            20,
+            560,
+            800
+          ]
+        },
+        "dialogue": "REAL：朋友试探身份，主角回应。AI：长辈表示要帮许彦把关婚事。只比较交谈姿态。",
+        "note": "跨作品相似场景，不存在相同角色或对白。两个窗口均按原速；时间仅定位各自原文件。源压缩、光线、服装、机位和景别差异可能影响真实性判断。",
+        "match_level": {
+          "temporal": "弱对应：独立时间窗口，没有事件同步",
+          "dialogue": "不匹配；两侧字幕分别保存",
+          "scene": "中低：男性对话与手势，年龄、角色数量、桌面环境和剪辑均不同"
+        }
+      }
+    ]
+  }
+]

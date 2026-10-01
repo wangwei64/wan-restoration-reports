@@ -15,4 +15,4 @@
 
 [打开左右对照网站](https://wangwei64.github.io/wan-restoration-reports/paired-short-dramas/) · [数据与说明](paired-short-dramas/)
 
-5 组同故事短剧、18 对匹配片段；保留来源、时间窗、裁剪参数、证据等级和字幕。
+8 组配对、25 对片段（5 组同故事 + 3 组相似场景弱对应）；保留来源、时间窗、裁剪参数、证据等级和字幕。

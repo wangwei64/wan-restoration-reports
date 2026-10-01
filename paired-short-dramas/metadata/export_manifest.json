@@ -181,6 +181,76 @@
       "bytes": 631204
     },
     {
+      "path": "clips/weak-indoor-woman__reaction__ai.mp4",
+      "sha256": "63f04ab62d9ccbbe1cdfa7c45fde4fc1496e23da490d7dca36e82acb0fffa900",
+      "bytes": 399502
+    },
+    {
+      "path": "clips/weak-indoor-woman__reaction__real.mp4",
+      "sha256": "7d77ba26b25d7409f06792c2c1a65ffccbfa454deabbcf0abdd784a924f1b04d",
+      "bytes": 287411
+    },
+    {
+      "path": "clips/weak-indoor-woman__speaking__ai.mp4",
+      "sha256": "d952d2fcda7256daf89169a2ce2fb7d0db5e01a69935aaa36096413afdd6089b",
+      "bytes": 761082
+    },
+    {
+      "path": "clips/weak-indoor-woman__speaking__real.mp4",
+      "sha256": "14de35a1bff10713276cc8ffa1a14ff4e07c39d2bb97259669a0b586c8c053db",
+      "bytes": 1089409
+    },
+    {
+      "path": "clips/weak-night-dialogue__exchange__ai.mp4",
+      "sha256": "9d6a6392a7b3466df27aa3e05d2384661500d18cc59d8b401ed679839e54cf5f",
+      "bytes": 1533029
+    },
+    {
+      "path": "clips/weak-night-dialogue__exchange__real.mp4",
+      "sha256": "a7da0d30dfad939bf0b0eb6bd361e9856c115ff8a7a0abe6bf080cfd7a5fd0fa",
+      "bytes": 2339728
+    },
+    {
+      "path": "clips/weak-night-dialogue__man__ai.mp4",
+      "sha256": "252729a7d1845e6925b343e3dd16ae57f1a4e1f8e3632d2b8d85408dbcf4bd79",
+      "bytes": 435164
+    },
+    {
+      "path": "clips/weak-night-dialogue__man__real.mp4",
+      "sha256": "2aaf43f3b1c8ffae19412994d7aa4dc91583178c7f5bdb608d60d6eeb7ee2109",
+      "bytes": 909865
+    },
+    {
+      "path": "clips/weak-night-dialogue__woman__ai.mp4",
+      "sha256": "aec8ab730cb1bda26ae4b66b1fbec19075760252dfb878a69ba6bc995456f747",
+      "bytes": 516756
+    },
+    {
+      "path": "clips/weak-night-dialogue__woman__real.mp4",
+      "sha256": "9061ba6ae724dfcab2142879292a16e6cdffeca87684bd4a59e5d9d5cfdc8df5",
+      "bytes": 1261344
+    },
+    {
+      "path": "clips/weak-seated-men__gesture__ai.mp4",
+      "sha256": "2eaf22c9e3dfa66f368b21829477af1bb93ea17dfae2fbc40f74b37bdb4139d1",
+      "bytes": 683005
+    },
+    {
+      "path": "clips/weak-seated-men__gesture__real.mp4",
+      "sha256": "975aced081cea7a89ad126415334dbbd4122f96b387ed6e49b1ec457d8d398dc",
+      "bytes": 1952784
+    },
+    {
+      "path": "clips/weak-seated-men__male-speaking__ai.mp4",
+      "sha256": "52cb14547e39f9eeeffbbfa8369da2be594e488e60c5943c00dac9d5afed3846",
+      "bytes": 1044222
+    },
+    {
+      "path": "clips/weak-seated-men__male-speaking__real.mp4",
+      "sha256": "578454834abae267d0494e2d1ff3360900d2f0a9f067f2a4a40d7dc1306987fb",
+      "bytes": 800190
+    },
+    {
       "path": "full/cn-dongzhi-photo__full__ai.mp4",
       "sha256": "108c12748c46b0e99b0c6d48622f781c4f62af5fee1c7f633061aeced586c3fc",
       "bytes": 21333801
@@ -229,6 +299,36 @@
       "path": "full/cn-yuni-photo__full__real.mp4",
       "sha256": "cd1e892c5c25b3e40cd48914993cc0eae4ff6820787cc9885931de6085373eca",
       "bytes": 7404515
+    },
+    {
+      "path": "full/weak-indoor-woman__full__ai.mp4",
+      "sha256": "1b1c3e78742a604833ef6a9549b490989ba5fe2007bb3af9a427c9fec39a9f6b",
+      "bytes": 2162333
+    },
+    {
+      "path": "full/weak-indoor-woman__full__real.mp4",
+      "sha256": "504946607059c36ba3a11fd40bd9b146433ad87cf7f28f770ac76b96ae591e7b",
+      "bytes": 1298344
+    },
+    {
+      "path": "full/weak-night-dialogue__full__ai.mp4",
+      "sha256": "7733bb30a0d88e938914b9f23858f201c69ea2871435769e36cbdd504c4d543d",
+      "bytes": 2302197
+    },
+    {
+      "path": "full/weak-night-dialogue__full__real.mp4",
+      "sha256": "ce178d7d40b421adbf479798fd5414ce17ac40a30670c90893a191faa8272ec4",
+      "bytes": 8086132
+    },
+    {
+      "path": "full/weak-seated-men__full__ai.mp4",
+      "sha256": "780462ec10dd15b5b3f24cdfab2d4984977e1d0efb18dbf8dca8fe1868b9d7e5",
+      "bytes": 2362838
+    },
+    {
+      "path": "full/weak-seated-men__full__real.mp4",
+      "sha256": "a5bdb48c577b523a1ae6d17f9f2924dde4b412160a3fa343e34128d291aff1fd",
+      "bytes": 6324209
     },
     {
       "path": "previews/cn-dongzhi-photo-crop-review.jpg",
@@ -486,6 +586,121 @@
       "bytes": 16519
     },
     {
+      "path": "previews/weak-indoor-woman-crop-review.jpg",
+      "sha256": "8601d800fc7b45f11d49ef9a65dbb5fd5c7d74ea3095dd6d9fd652cefba6a451",
+      "bytes": 124366
+    },
+    {
+      "path": "previews/weak-indoor-woman__full__ai.jpg",
+      "sha256": "2b3739ca95ed66bd6197b756848b66a9655d2d8c819d435ca4ad03810756a1fa",
+      "bytes": 24038
+    },
+    {
+      "path": "previews/weak-indoor-woman__full__real.jpg",
+      "sha256": "51a14e5cccc99585674a6c3110edd273bcd7fbf6684b0deb23596a464a836748",
+      "bytes": 25650
+    },
+    {
+      "path": "previews/weak-indoor-woman__reaction__ai.jpg",
+      "sha256": "9041b1d53315ce38816b61c4c05f595544dfc6434bcc042a60d556cd8ed4a161",
+      "bytes": 22362
+    },
+    {
+      "path": "previews/weak-indoor-woman__reaction__real.jpg",
+      "sha256": "4bf9d82c63668d5b7523d03396a5b7449803ff79da87ddfd3b4f1f9561e55765",
+      "bytes": 26938
+    },
+    {
+      "path": "previews/weak-indoor-woman__speaking__ai.jpg",
+      "sha256": "2b3739ca95ed66bd6197b756848b66a9655d2d8c819d435ca4ad03810756a1fa",
+      "bytes": 24038
+    },
+    {
+      "path": "previews/weak-indoor-woman__speaking__real.jpg",
+      "sha256": "51a14e5cccc99585674a6c3110edd273bcd7fbf6684b0deb23596a464a836748",
+      "bytes": 25650
+    },
+    {
+      "path": "previews/weak-night-dialogue-crop-review.jpg",
+      "sha256": "76bd633a94df006e8110c6e819c3d1aa5916c300dc6c498d5429945b45809a5e",
+      "bytes": 162865
+    },
+    {
+      "path": "previews/weak-night-dialogue__exchange__ai.jpg",
+      "sha256": "0491f3050da3d5c56f620dab6a92682eeb28f3fb226da33b74bb9459dad30f27",
+      "bytes": 23203
+    },
+    {
+      "path": "previews/weak-night-dialogue__exchange__real.jpg",
+      "sha256": "7700413d6ecf20d308c6be2014e0a7b6897a816387c9e822fd213a28be89106b",
+      "bytes": 25453
+    },
+    {
+      "path": "previews/weak-night-dialogue__full__ai.jpg",
+      "sha256": "a155de95f2c5294ed9eeb381fcff4042d4a72824b16070369981ed731d66202a",
+      "bytes": 22164
+    },
+    {
+      "path": "previews/weak-night-dialogue__full__real.jpg",
+      "sha256": "24e9ec0c6020fc03ecec182a7562fab7c7644b5596f54541a48afacabc4af443",
+      "bytes": 19345
+    },
+    {
+      "path": "previews/weak-night-dialogue__man__ai.jpg",
+      "sha256": "af79d3b90f00aaffc14fabee8dbcbce79877a99fe0c80b2913fdd69d88992ca7",
+      "bytes": 21157
+    },
+    {
+      "path": "previews/weak-night-dialogue__man__real.jpg",
+      "sha256": "72fe7f5bec29a6095692d671a2c80b3eeac1431af66287ed21c4f1e1ac1ccfa6",
+      "bytes": 27435
+    },
+    {
+      "path": "previews/weak-night-dialogue__woman__ai.jpg",
+      "sha256": "796c0ae41216e67bd72f0847859ed782fadb1bc2cffaeec2c0c8403686525924",
+      "bytes": 22821
+    },
+    {
+      "path": "previews/weak-night-dialogue__woman__real.jpg",
+      "sha256": "ab2b5546bce39af38ec843123cb5e3c883fdbdd5b2ff0417bbf2debcd82ee766",
+      "bytes": 18368
+    },
+    {
+      "path": "previews/weak-seated-men-crop-review.jpg",
+      "sha256": "abf3b53b5f8dd529b11021b0abcaff291a5973d213a5e4dd4cea6528d8a1461e",
+      "bytes": 153507
+    },
+    {
+      "path": "previews/weak-seated-men__full__ai.jpg",
+      "sha256": "0ab09958da7db0afc561830e7f86d2d6f08b4b9d9a6576d7caf2cffea2477aa1",
+      "bytes": 17669
+    },
+    {
+      "path": "previews/weak-seated-men__full__real.jpg",
+      "sha256": "93f12a0801b4a45f4775f9e3c1fad454a35dd5bd05b3d95b6386be9325d23e70",
+      "bytes": 26899
+    },
+    {
+      "path": "previews/weak-seated-men__gesture__ai.jpg",
+      "sha256": "cbcc61db21bf14b81355bc85cc2e7b15f5b73c9df609b7bff5214518dbe88049",
+      "bytes": 19238
+    },
+    {
+      "path": "previews/weak-seated-men__gesture__real.jpg",
+      "sha256": "a5ec8f9b133b9291b5fee1f816630ac5640bae02a8824323cf5da6aa55070d47",
+      "bytes": 26977
+    },
+    {
+      "path": "previews/weak-seated-men__male-speaking__ai.jpg",
+      "sha256": "fb7f623ed7ec67ca9564d289f88aeeb2b46db08f02fdbf9aa5c3e0c8d2e22772",
+      "bytes": 28885
+    },
+    {
+      "path": "previews/weak-seated-men__male-speaking__real.jpg",
+      "sha256": "93f12a0801b4a45f4775f9e3c1fad454a35dd5bd05b3d95b6386be9325d23e70",
+      "bytes": 26899
+    },
+    {
       "path": "sources/dongzhi-alt-ai.mp4",
       "sha256": "8c08c9fe4deee00031a30807004c344c637e3217dabbe90fb1337dfdce8a1cae",
       "bytes": 18475541
@@ -524,6 +739,31 @@
       "path": "sources/laotai-real.mp4",
       "sha256": "08c9d349803758bb82b800276ef50728a6bff2705798e090918eacb422fd40eb",
       "bytes": 24223195
+    },
+    {
+      "path": "sources/weak-furen-real.mp4",
+      "sha256": "644bf7ac66ef9d4c8c20d3e4f25c08d30d86bec53e58bfc189b4a56256f9166b",
+      "bytes": 20098675
+    },
+    {
+      "path": "sources/weak-jiezhang-ai.mp4",
+      "sha256": "731094571f712a753068c66cdc64b5f3c77b4eafadd5d8ec85e5b1f8b0a8995b",
+      "bytes": 9850087
+    },
+    {
+      "path": "sources/weak-renqian-real.mp4",
+      "sha256": "bee7be5bd5323d6a8c6a8e876b2b9f9bc579981d6a0d354e56343336c2a03134",
+      "bytes": 30347243
+    },
+    {
+      "path": "sources/weak-wanhuo-ai.mp4",
+      "sha256": "973b2b826fe31f68bb45ee16c735edcb98b5573fa160c76ef72a93f548b730b3",
+      "bytes": 22616764
+    },
+    {
+      "path": "sources/weak-zongcai-ai.mp4",
+      "sha256": "7a306fb0ec3c6353208be2eee2c55d4ff88fe80f6b48bd4c3021c3989117d93b",
+      "bytes": 8449791
     },
     {
       "path": "sources/yuni-alt-ai-preview.mp4",
@@ -1076,6 +1316,256 @@
       "bytes": 1894
     },
     {
+      "path": "subtitles/weak-furen-real.source.srt",
+      "sha256": "21d664217c194737cc8e21375692a975f98ec448f23ee04f22400bcc87a63509",
+      "bytes": 1653
+    },
+    {
+      "path": "subtitles/weak-furen-real.source.vtt",
+      "sha256": "3a14dcb47ac62d9cd4d1238b094067ffa3b0c6e988223bed1d53f1ad6801c349",
+      "bytes": 1583
+    },
+    {
+      "path": "subtitles/weak-indoor-woman__full__ai.srt",
+      "sha256": "53100d36743a4e4f62318f990164a9347eab9e0fdc4cb5bb91a91dae6b785a28",
+      "bytes": 292
+    },
+    {
+      "path": "subtitles/weak-indoor-woman__full__ai.vtt",
+      "sha256": "3cfe803643a3a4c7e0cee758ae8745be5b19e3d0eecb17bbdf33027a3d403ffa",
+      "bytes": 290
+    },
+    {
+      "path": "subtitles/weak-indoor-woman__full__real.srt",
+      "sha256": "1010199eb76643bf3fb7740253cbd821677d9ca2670d22a384fb28c80ff88bd4",
+      "bytes": 307
+    },
+    {
+      "path": "subtitles/weak-indoor-woman__full__real.vtt",
+      "sha256": "d13a5b0a83a10efb0aa97e8b2f06937cc7836587aac63c8934d1ff9140251c7a",
+      "bytes": 305
+    },
+    {
+      "path": "subtitles/weak-indoor-woman__reaction__ai.srt",
+      "sha256": "4be038daa181d23d51f1baa97f14aea7e8dc6d7ea3f5615eeff83d503b313ab1",
+      "bytes": 57
+    },
+    {
+      "path": "subtitles/weak-indoor-woman__reaction__ai.vtt",
+      "sha256": "882479e647dd508c430a6ec8905594a9bd84cc6283d87cf71bcbea22ed06fa67",
+      "bytes": 63
+    },
+    {
+      "path": "subtitles/weak-indoor-woman__reaction__real.srt",
+      "sha256": "1e77b9f111f13ec738824d1f0f11724c4ad0398e978a01be979c4880b88b56f1",
+      "bytes": 124
+    },
+    {
+      "path": "subtitles/weak-indoor-woman__reaction__real.vtt",
+      "sha256": "d6c978360febe446dcbfadb9fe996f18c62a72c9ab35862de089bbad8794748d",
+      "bytes": 128
+    },
+    {
+      "path": "subtitles/weak-indoor-woman__speaking__ai.srt",
+      "sha256": "1892a6962131f66e4e6d629661b740f74b735d29e71e4ccd88da542805f8febb",
+      "bytes": 118
+    },
+    {
+      "path": "subtitles/weak-indoor-woman__speaking__ai.vtt",
+      "sha256": "49b80c8d9d65214621287fd795de92368d7dcb0a75379a978916692f3bc3920b",
+      "bytes": 122
+    },
+    {
+      "path": "subtitles/weak-indoor-woman__speaking__real.srt",
+      "sha256": "4617a42468a354afb8625835452cfb6e71d28fed4008761186060e4d0f9db61d",
+      "bytes": 307
+    },
+    {
+      "path": "subtitles/weak-indoor-woman__speaking__real.vtt",
+      "sha256": "91a9c96fb3b1f28229b35aa961ac926cd04becfb0fb156344d826ed52dc4d07f",
+      "bytes": 305
+    },
+    {
+      "path": "subtitles/weak-jiezhang-ai.source.srt",
+      "sha256": "3fbfc03629ee57f2a4deb7cef930592d93697c6e93e7ec784c888db922ce4ae0",
+      "bytes": 2602
+    },
+    {
+      "path": "subtitles/weak-jiezhang-ai.source.vtt",
+      "sha256": "4ae8ff974bd76c7be9d200b070b44d81af3c4e2a56083afdc38a3df23eabaff9",
+      "bytes": 2475
+    },
+    {
+      "path": "subtitles/weak-night-dialogue__exchange__ai.srt",
+      "sha256": "b0f88c86fd64b1e9ccdb3debaaead690f47b2b1b7b09b18d71e7f5c34c452d89",
+      "bytes": 308
+    },
+    {
+      "path": "subtitles/weak-night-dialogue__exchange__ai.vtt",
+      "sha256": "8bd798ccbdbf7c8db58e5e909bc96cada0433d0fc67bdbec18822ecbcd5ab428",
+      "bytes": 304
+    },
+    {
+      "path": "subtitles/weak-night-dialogue__exchange__real.srt",
+      "sha256": "a199c42dd38ebdea4b15b7d174e9683bf5f69be21954f688fbbcb1c4a666133f",
+      "bytes": 134
+    },
+    {
+      "path": "subtitles/weak-night-dialogue__exchange__real.vtt",
+      "sha256": "a8b63ee019ec3489f1ea1118923927f43cb1c18f0b080a9cdd6d1b54cd8db7bb",
+      "bytes": 136
+    },
+    {
+      "path": "subtitles/weak-night-dialogue__full__ai.srt",
+      "sha256": "521029c20d691ea8a4a75ac0dcac16637facb86f0c496021324f89f349ffdf9c",
+      "bytes": 464
+    },
+    {
+      "path": "subtitles/weak-night-dialogue__full__ai.vtt",
+      "sha256": "5ce433fe01d9e9d3894e0ea51ca56c80d08bf6d39a27c06ded0419e3cb81be6e",
+      "bytes": 454
+    },
+    {
+      "path": "subtitles/weak-night-dialogue__full__real.srt",
+      "sha256": "19a28701bda2692eefe4a6c9cf7d48a0e7ab7b21f2ebd0e182f770012f25c920",
+      "bytes": 427
+    },
+    {
+      "path": "subtitles/weak-night-dialogue__full__real.vtt",
+      "sha256": "4fe768cd6b8035a645936d3fc0deab34325b25b207e2180236f201d7d9927bc0",
+      "bytes": 417
+    },
+    {
+      "path": "subtitles/weak-night-dialogue__man__ai.srt",
+      "sha256": "20256fa8bbec749d5d673519e34e09b097c48dfe471f692fee8c94c035df1416",
+      "bytes": 109
+    },
+    {
+      "path": "subtitles/weak-night-dialogue__man__ai.vtt",
+      "sha256": "dd7c6f6a9f3f47920409d79c89b842d9a2c7fc240509c2d25ee5b54035290f4a",
+      "bytes": 113
+    },
+    {
+      "path": "subtitles/weak-night-dialogue__man__real.srt",
+      "sha256": "f99a22036f6987e55cc1ff283c2752340e1cd2bf85749ac27a05f31260965f11",
+      "bytes": 154
+    },
+    {
+      "path": "subtitles/weak-night-dialogue__man__real.vtt",
+      "sha256": "a1b1e52fc58b45f472264f268d04308c1e1647f30f10eeb8d2c7bb4eecaed331",
+      "bytes": 156
+    },
+    {
+      "path": "subtitles/weak-night-dialogue__woman__ai.srt",
+      "sha256": "86beeaf531802935baf3f703d634fa046630bb5494dcd6d51de023779a7a960a",
+      "bytes": 182
+    },
+    {
+      "path": "subtitles/weak-night-dialogue__woman__ai.vtt",
+      "sha256": "ce716128babd474eedca17959795d4ec3ff628b42d77fa764e1c9b1039ee7299",
+      "bytes": 184
+    },
+    {
+      "path": "subtitles/weak-night-dialogue__woman__real.srt",
+      "sha256": "822f4fa622e57bc66c74eb36a4537e54a4a9644d856840c8bf2fb7305a46ab84",
+      "bytes": 78
+    },
+    {
+      "path": "subtitles/weak-night-dialogue__woman__real.vtt",
+      "sha256": "649c8c978c8bcd116cd5f118f86d08a6042fafa7b7e11496fd30941b810b91f6",
+      "bytes": 84
+    },
+    {
+      "path": "subtitles/weak-renqian-real.source.srt",
+      "sha256": "e509ed7d6d4c9fb06101604e35dc52b5217ca9ac2dffcdd818dc9d6b636d0272",
+      "bytes": 2326
+    },
+    {
+      "path": "subtitles/weak-renqian-real.source.vtt",
+      "sha256": "c57cd31cafb6762c316c00143e389d669da1959796509ce022dc74eafdcfe796",
+      "bytes": 2211
+    },
+    {
+      "path": "subtitles/weak-seated-men__full__ai.srt",
+      "sha256": "ad12fac3883ac581c2bdc1a36f91ba069d441239e68c520e0bb6badd8b47e6ba",
+      "bytes": 722
+    },
+    {
+      "path": "subtitles/weak-seated-men__full__ai.vtt",
+      "sha256": "c71a65c728c57d0161ffbcfd75c6fa2615e9155b4db71d4aee1e2437ddf00bff",
+      "bytes": 697
+    },
+    {
+      "path": "subtitles/weak-seated-men__full__real.srt",
+      "sha256": "5621aca96ac9d78616b9ecaab95bb72464c48ff7e6cb6b0e0c0ce4d1f3b1e0e7",
+      "bytes": 529
+    },
+    {
+      "path": "subtitles/weak-seated-men__full__real.vtt",
+      "sha256": "2ea076039e5f8c9843c20434d877debc4dde1e0418ad5a07cb038210668547c1",
+      "bytes": 516
+    },
+    {
+      "path": "subtitles/weak-seated-men__gesture__ai.srt",
+      "sha256": "05a343e8cfa58aae723b0ae2155e8b054b3fd4454437686b656c9e461f0bd3e2",
+      "bytes": 189
+    },
+    {
+      "path": "subtitles/weak-seated-men__gesture__ai.vtt",
+      "sha256": "2f1d43886363b7bf469a6c6c8d848f82ceb36b6ea135f13ffbb5d34658c7bb02",
+      "bytes": 189
+    },
+    {
+      "path": "subtitles/weak-seated-men__gesture__real.srt",
+      "sha256": "c6bddc6df14fa7128d5fe21c25311d18a3f979072c78df14fb708ad9ff82e507",
+      "bytes": 213
+    },
+    {
+      "path": "subtitles/weak-seated-men__gesture__real.vtt",
+      "sha256": "0e83dc3201b58c8de68b1c04ef058b7b04b8b6c4e5c850e3f9647c695961d95e",
+      "bytes": 213
+    },
+    {
+      "path": "subtitles/weak-seated-men__male-speaking__ai.srt",
+      "sha256": "2ef41fe89e3dcad7ee449637a2650fce4ac4f5161e2069d91afdcdc09178eabb",
+      "bytes": 258
+    },
+    {
+      "path": "subtitles/weak-seated-men__male-speaking__ai.vtt",
+      "sha256": "180c2c362a831038df32aae082182fb5b0cf3c8be2c6dd250694a87f32afed39",
+      "bytes": 256
+    },
+    {
+      "path": "subtitles/weak-seated-men__male-speaking__real.srt",
+      "sha256": "48c47a2a79dde45ef7d50c4ce491005ab4e13026e25c47d84d55c0deffb74843",
+      "bytes": 39
+    },
+    {
+      "path": "subtitles/weak-seated-men__male-speaking__real.vtt",
+      "sha256": "06be12a4872c66a9ccab091caa8507eb56a9ae644fb72c4f3f8020b6b5a0a99e",
+      "bytes": 45
+    },
+    {
+      "path": "subtitles/weak-wanhuo-ai.source.srt",
+      "sha256": "3f89721f2262399cda57ad414e5718403c0318c931b230edeb70f2536023d7f8",
+      "bytes": 2223
+    },
+    {
+      "path": "subtitles/weak-wanhuo-ai.source.vtt",
+      "sha256": "723645f642268e960506ad87f56273a258aca88c87b506e7381719972ff5a29d",
+      "bytes": 2123
+    },
+    {
+      "path": "subtitles/weak-zongcai-ai.source.srt",
+      "sha256": "4a10a158f0935815f1b870a8d51ccfa3b35c5377783d571fe20caeeda3bee52a",
+      "bytes": 1372
+    },
+    {
+      "path": "subtitles/weak-zongcai-ai.source.vtt",
+      "sha256": "c4e60af288117f755a095be3e973c69bf696d98940c354b4d00dae0b569b0b5b",
+      "bytes": 1314
+    },
+    {
       "path": "subtitles/yuni-alt-ai-preview.source.srt",
       "sha256": "9b32b621c621c04bde3dbbc25a56fea2ad0bbf652ca5722eb21a3467b77dd6c4",
       "bytes": 1258
@@ -1096,5 +1586,5 @@
       "bytes": 1943
     }
   ],
-  "total_bytes": 387370195
+  "total_bytes": 516228096
 }

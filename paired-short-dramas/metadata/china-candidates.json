@@ -177,5 +177,26 @@
     "status": "selected",
     "url": "https://hongguoduanju.com/player/7667217841568877593",
     "reason": "公开标题明确 AI，真人演员表、角色、剧情与对白对应；已下载、裁剪、纳入 4 对片段。"
+  },
+  {
+    "title": "《人前不熟，人后熟透》 / 《她玩火》",
+    "status": "selected_weak_scene_B",
+    "real_url": "https://hongguoduanju.com/player/7595841916575435801",
+    "ai_url": "https://hongguoduanju.com/player/7680034186463284249",
+    "reason": "跨作品夜场人像与对话，非同 IP/对白。《她玩火》有公开 AI 发布标注和平台漫剧分类；制作方未独立追溯，保留 B 级。"
+  },
+  {
+    "title": "《夫人她专治不服》 / 《总裁是我前女友》",
+    "status": "selected_weak_scene_A",
+    "real_url": "https://hongguoduanju.com/player/7537251022595427390",
+    "ai_url": "https://hongguoduanju.com/player/7688352674999176254",
+    "reason": "跨作品室内女性半身，服装/景别/姿态相似，故事与对白不同；AI 在平台 AI 剧分类。"
+  },
+  {
+    "title": "《都重生了谁还装富二代》 / 《结账时我摊牌了》",
+    "status": "selected_weak_scene_A",
+    "real_url": "https://hongguoduanju.com/player/7677441477533781017",
+    "ai_url": "https://hongguoduanju.com/player/7688338785091718206",
+    "reason": "客厅聚会与家庭饭局的男性坐姿弱对应，非同故事；AI 在平台 AI 剧分类。真人原片与旧富二代组共享，使用同一 split_group。"
   }
 ]
