@@ -1,0 +1,97 @@
+[
+  {
+    "title": "《古今两界跑龙套，老太我养活了全家》AI /《老太片场跑龙套，养活古代一家人》真人",
+    "status": "downloaded_paired",
+    "url": "https://hongguoduanju.com/player/7640812040776338457",
+    "real": "sources/laotai-real.mp4",
+    "ai": "sources/laotai-ai.mp4",
+    "reason": "两侧公开首集已下载；同为王莲花古今穿梭、影视城跑龙套养家故事。可配现代街边惊讶、与人问答、道具互动。AI 仿真人，已目视核验。未取得两制作方的版权合同，关系按故事/人物核对记录。"
+  },
+  {
+    "title": "《都重生了，谁还装富二代啊》AI /《都重生了谁还装富二代》真人",
+    "status": "downloaded_paired",
+    "url": "https://m.thepaper.cn/newsDetail_forward_34072486",
+    "real": "sources/fuerdai-real.mp4",
+    "ai": "sources/fuerdai-ai-ep1.mp4",
+    "reason": "DataEye 明确指出改编关系；红果真人版列皮德胜饰陆川，华西都市报采访 AI 制作方。两侧首集已下载，开场同为富人聚会身份被拆穿；现代室内半身人物、酒杯与手机。"
+  },
+  {
+    "title": "《予你深情侵入余生》AI /《他深情侵入》真人",
+    "status": "verified_relation_style_rejected",
+    "url": "https://m.thepaper.cn/newsDetail_forward_34072486",
+    "real": "sources/yuni-real.mp4",
+    "reason": "同故事关系有行业报道及制作方项目页；但不鸣文化这一版具有银发男主、夸张眼睛与显著 3D 动画感，不进入默认写实配对子集。未入选原片保留在本地研究档案中。另以写实版本《深情侵入，予你余生》建立配对，单独标记版本与证据。"
+  },
+  {
+    "title": "《他深情侵入》真人 /《深情侵入，予你余生》AI 仿真人版本",
+    "status": "downloaded_paired_B",
+    "url": "https://hongguoduanju.com/player/7680116148855131160",
+    "real": "sources/yuni-real.mp4",
+    "ai": "sources/yuni-alt-ai-preview.mp4",
+    "reason": "两版平台简介角色均为容寄侨、段宴，重生及假恩人故事一致。真人演员、视频可核验；AI 属性由公开页面观众所称“真人Ai/仿真人”、虚拟剧目录和画面交叉支持，尚未找到该 108 集版本的制作方声明，证据为 B。不得把不鸣文化作者声明转用于此版本。"
+  },
+  {
+    "title": "《那年冬至》真人 /《予你那年冬至》AI",
+    "status": "verified_relation_style_rejected",
+    "url": "https://www.sina.cn/news/detail/5341694327525677.html",
+    "real": "sources/dongzhi-real.mp4",
+    "reason": "新增同故事候选，角色南昭宁、京烁，闪婚与轮椅男主；两侧已下载。原 AI 版动画感明显，不进入默认写实子集。另找到同名《那年冬至》AI 创作版，源画面有 AI 声明，可与真人版比较。"
+  },
+  {
+    "title": "《那年冬至》真人 /《那年冬至》AI 创作版",
+    "status": "downloaded_paired",
+    "url": "https://hongguoduanju.com/player/7680921705845361688",
+    "real": "sources/dongzhi-real.mp4",
+    "ai": "sources/dongzhi-alt-ai.mp4",
+    "reason": "同名、同角色、同闪婚剧情，源画面明确“AI创作生成”。半身对话与轮椅人物可比；AI 女主面部明显美化，列为次优写实补充。与《予你那年冬至》626 段版本不是同一视频版本。"
+  },
+  {
+    "title": "《羊面兰心》AI /《羊与兰》真人",
+    "status": "real_downloaded_ai_missing",
+    "url": "https://wl.nanjing.gov.cn/wyjxh/wypljxh/xhzx/202606/t20260626_5866815.html",
+    "reason": "南京市文联文章详细比较两版故事与陈兰/沈知兰改名；红果真人版演员页与首集已保存。尚未找到可核验的《羊面兰心》AI 视频，不能列成可播放双侧配对。"
+  },
+  {
+    "title": "《反派亲妈：反派漂亮亲妈十斤反骨》AI /《末世亲子较量记》《家有萌宝有点凶》真人",
+    "status": "additional_same_ip_lead",
+    "url": "https://m.thepaper.cn/newsDetail_forward_34072486",
+    "reason": "DataEye 报道三者改编自黑麦威士忌《反派儿子你跪下，妈求你点事》；真人版分别于2024、2025上线。现代家庭题材有价值，但尚未核验 AI 是否为写实画风、两侧片源及可比时间窗。"
+  },
+  {
+    "title": "《聚宝仙盆之杂灵根才是真BOSS》AI /《聚宝仙盆，凡人杂役仙人路》《聚宝仙盆》真人",
+    "status": "additional_same_ip_lead",
+    "url": "https://m.thepaper.cn/newsDetail_forward_34072486",
+    "reason": "DataEye 报道均改编自香果味奶茶《仙界闭关小能手》。仙侠，低于现代场景优先级；未核验可用双侧视频。"
+  },
+  {
+    "title": "《一时冲动，七世不祥》作者 AI 版 /《七时吉祥》真人长剧",
+    "status": "additional_same_ip_lead",
+    "url": "https://weibo.com/ttarticle/p/show?id=2309405323146659496111",
+    "ai_url": "https://www.douyin.com/video/7650101468988493083",
+    "reason": "影视独舌记录原作者九鹭非香与雾恩制作 AI 版本，2023 真人长剧同原著。属于同 IP 长剧/短片对照候选；尚未下载检查画风和镜头。"
+  },
+  {
+    "title": "《皇家金牌县令》真人 /《我在古代当县令》AI",
+    "status": "additional_same_ip_lead",
+    "url": "https://wl.nanjing.gov.cn/wyjxh/wypljxh/xhzx/202606/t20260626_5866815.html",
+    "reason": "文联评论提供跨形式改编线索；古装，实际媒体和 AI 写实程度未验证。"
+  },
+  {
+    "title": "《湘君》与《弟弟，别乱叫姐夫》多形态改编",
+    "status": "rights_announced_not_verified_pair",
+    "url": "https://www.pingwest.com/w/314937",
+    "reason": "报道为 AI 真人剧和真人短剧双授权；版权售出不代表两版均已上线。真人《姐，他真是我姐夫》有报道，AI 版成片及对应名称未查明。"
+  },
+  {
+    "title": "《万妖图录传》AI / 真人版",
+    "status": "real_in_production",
+    "url": "https://m.thepaper.cn/newsDetail_forward_34072486",
+    "reason": "9月报道真人版计划9月20日开机、11月上线。截至本次检索日2026-10-01，不按已上线双版本计数。"
+  },
+  {
+    "title": "《咱家剑宗团宠小师妹》AI / 真人版",
+    "status": "production_lead_only",
+    "url": "https://weibo.com/2/detail/5348770044969622",
+    "reason": "真人化消息线索；没有完成两侧上线、媒体与场景核验，不计入数据集。"
+  }
+]
