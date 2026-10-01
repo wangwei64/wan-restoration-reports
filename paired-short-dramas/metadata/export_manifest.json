@@ -71,6 +71,46 @@
       "bytes": 2709149
     },
     {
+      "path": "clips/cn-jiang__agreement__ai.mp4",
+      "sha256": "d282487b7be1481bc1152d3eb320994adb582a90e37d152301b067085ad2d40c",
+      "bytes": 1138179
+    },
+    {
+      "path": "clips/cn-jiang__agreement__real.mp4",
+      "sha256": "41ddf28b000ea46b518a76f1695909c988ee15345813d226a4c66827261c86b7",
+      "bytes": 743677
+    },
+    {
+      "path": "clips/cn-jiang__flowers__ai.mp4",
+      "sha256": "d823c1bd3948b75b69790e98c279a654735a91f07518c54bdbd8e0648276ed56",
+      "bytes": 1446517
+    },
+    {
+      "path": "clips/cn-jiang__flowers__real.mp4",
+      "sha256": "084013197d3c7e724b0c3576cad9d18c3a42dedaf540a3cd2e2ac618ffa059fd",
+      "bytes": 2357032
+    },
+    {
+      "path": "clips/cn-jiang__marriage__ai.mp4",
+      "sha256": "4503303aa8fdc7ad55a4b824cbfdc11d24c29dbf3674e1b8bee9b29cbc2367ce",
+      "bytes": 1520970
+    },
+    {
+      "path": "clips/cn-jiang__marriage__real.mp4",
+      "sha256": "b82b89f5c919508c04da7ba79e3525947d070b1f2043a9d1341d640500409c41",
+      "bytes": 2086971
+    },
+    {
+      "path": "clips/cn-jiang__phone__ai.mp4",
+      "sha256": "3c764cef0ff5231ab962c2f6b26983f946088e5525973fa344ca791ba2275873",
+      "bytes": 1714340
+    },
+    {
+      "path": "clips/cn-jiang__phone__real.mp4",
+      "sha256": "9e26bd673709c636091a4304294d7645e4847c941a826ad3515801cd643ec66f",
+      "bytes": 2016844
+    },
+    {
       "path": "clips/cn-laotai__bottle__ai.mp4",
       "sha256": "b964e1b5d2af0d80e806081753f3d3f5c7bfe27adaae710a3312a96274de830c",
       "bytes": 1268859
@@ -161,6 +201,16 @@
       "bytes": 10904616
     },
     {
+      "path": "full/cn-jiang__full__ai.mp4",
+      "sha256": "19ae4539ffe40060226d9dc37178591a2c8c1e8e89ca2cf48bd5d161c7b02a14",
+      "bytes": 2962865
+    },
+    {
+      "path": "full/cn-jiang__full__real.mp4",
+      "sha256": "903fe1fedcd856913dd9cd1f6fe1dc1011bb9ea102d71968026e8c7245f99c82",
+      "bytes": 4657010
+    },
+    {
       "path": "full/cn-laotai__full__ai.mp4",
       "sha256": "c16f3ec641359927c202a67441b44de5765937f85e27a9678a68330c893e3d34",
       "bytes": 22442943
@@ -179,6 +229,11 @@
       "path": "full/cn-yuni-photo__full__real.mp4",
       "sha256": "cd1e892c5c25b3e40cd48914993cc0eae4ff6820787cc9885931de6085373eca",
       "bytes": 7404515
+    },
+    {
+      "path": "previews/cn-dongzhi-photo-crop-review.jpg",
+      "sha256": "9972bbb8b7fb3d64a08329ca4012b268b0df04ff200e2c892ce97f387e3c6632",
+      "bytes": 146328
     },
     {
       "path": "previews/cn-dongzhi-photo__couple__ai.jpg",
@@ -219,6 +274,11 @@
       "path": "previews/cn-dongzhi-photo__response__real.jpg",
       "sha256": "28fee2ceea8bf227f677ec439bf71d8bf78369f36ea0f93f251bd05caf02b910",
       "bytes": 17389
+    },
+    {
+      "path": "previews/cn-fuerdai-crop-review.jpg",
+      "sha256": "80038f1a74d7bf57e0677b592bd82dfc00bcf159c704080cc3a989de643a9d48",
+      "bytes": 177965
     },
     {
       "path": "previews/cn-fuerdai__drink__ai.jpg",
@@ -271,6 +331,66 @@
       "bytes": 27534
     },
     {
+      "path": "previews/cn-jiang-crop-review.jpg",
+      "sha256": "14ac6dbde8539ea02d01f4576c5dae4e0e61167abb5b13d811e5681601369a6f",
+      "bytes": 287578
+    },
+    {
+      "path": "previews/cn-jiang__agreement__ai.jpg",
+      "sha256": "007f9ef671542a48e7d74b9c9367304034f8fabc75f638bd456e4a81f31ddd5a",
+      "bytes": 25692
+    },
+    {
+      "path": "previews/cn-jiang__agreement__real.jpg",
+      "sha256": "ab2cfc39af23c9f555f001f81e1eaf9463e6a4b1cf70eb881e71c61b19cdc6f8",
+      "bytes": 39482
+    },
+    {
+      "path": "previews/cn-jiang__flowers__ai.jpg",
+      "sha256": "cbb9f8247b99e0929b8f9311c903c920db842134893aa10dc904faeba5f35160",
+      "bytes": 34837
+    },
+    {
+      "path": "previews/cn-jiang__flowers__real.jpg",
+      "sha256": "c3ba93a9a19855718b1cb5c3ac5a0148a4a7f39d4795f5948705c454603001de",
+      "bytes": 27085
+    },
+    {
+      "path": "previews/cn-jiang__full__ai.jpg",
+      "sha256": "cbb9f8247b99e0929b8f9311c903c920db842134893aa10dc904faeba5f35160",
+      "bytes": 34837
+    },
+    {
+      "path": "previews/cn-jiang__full__real.jpg",
+      "sha256": "c3ba93a9a19855718b1cb5c3ac5a0148a4a7f39d4795f5948705c454603001de",
+      "bytes": 27085
+    },
+    {
+      "path": "previews/cn-jiang__marriage__ai.jpg",
+      "sha256": "d400c4d0365c3d1b3dec171bf2b6717284772f5d8a708998c42fa14739340f8d",
+      "bytes": 31900
+    },
+    {
+      "path": "previews/cn-jiang__marriage__real.jpg",
+      "sha256": "fd17d04d85bd34c91d5fcb936b7da522ee037b0ed2037b2b1c8e2945c045eb67",
+      "bytes": 23975
+    },
+    {
+      "path": "previews/cn-jiang__phone__ai.jpg",
+      "sha256": "bc2ae916e4c12b48f2a6a9fa73e812f37d845ab8ab17d50aac96b4dbae941191",
+      "bytes": 31105
+    },
+    {
+      "path": "previews/cn-jiang__phone__real.jpg",
+      "sha256": "e058ed24ba5e8fc61eb1b15b08c04d8fb9c2e3d1eba816d36488be5ede639217",
+      "bytes": 37001
+    },
+    {
+      "path": "previews/cn-laotai-crop-review.jpg",
+      "sha256": "84bb35e922e2a322b1c16ed79f3f9730127f4a56264d0a8046831198c339a8b5",
+      "bytes": 231684
+    },
+    {
       "path": "previews/cn-laotai__bottle__ai.jpg",
       "sha256": "952ac4e16414908933588413339363d45e2d8b8baf59478cee342c904979794c",
       "bytes": 42298
@@ -321,6 +441,11 @@
       "bytes": 35216
     },
     {
+      "path": "previews/cn-yuni-photo-crop-review.jpg",
+      "sha256": "bc827f6f731a745e870a40f846c2bb55a64ef162dff4a1eefb7871b32a2d2abb",
+      "bytes": 132229
+    },
+    {
       "path": "previews/cn-yuni-photo__full__ai.jpg",
       "sha256": "ac42e931a7a56b3a5ab580d3f995f02f1dfe01f1965ee03ae88ef191012b1bcf",
       "bytes": 20883
@@ -369,6 +494,16 @@
       "path": "sources/dongzhi-real.mp4",
       "sha256": "0c4b30a167c053f85517128e0b9433895d403c2079825a0fb71b91b10194e9d7",
       "bytes": 19545270
+    },
+    {
+      "path": "sources/expand-jiang-ai.mp4",
+      "sha256": "eca4173d50b4f953eb8d09f3435aea15b9fb1877288732970fecdfeb7ea0f54c",
+      "bytes": 16540523
+    },
+    {
+      "path": "sources/expand-jiang-real.mp4",
+      "sha256": "601fb6a787c4ad54017c180f4931bb39dffe1881a239fdd6f417c8e3e807828d",
+      "bytes": 25375347
     },
     {
       "path": "sources/fuerdai-ai-ep1.mp4",
@@ -581,6 +716,106 @@
       "bytes": 234
     },
     {
+      "path": "subtitles/cn-jiang__agreement__ai.srt",
+      "sha256": "0f10d0ea64fbdf74d20af33205c214340ec2a690074ccf3e2ef428290fa239a9",
+      "bytes": 209
+    },
+    {
+      "path": "subtitles/cn-jiang__agreement__ai.vtt",
+      "sha256": "2ca2072c959d007180e368dc91b63d50bd84faeafa889982bd7974cef87f754a",
+      "bytes": 209
+    },
+    {
+      "path": "subtitles/cn-jiang__agreement__real.srt",
+      "sha256": "15faea708ad6bb7a545a027e736fbe1368c44c61ba3635463d0b789360edf3f9",
+      "bytes": 177
+    },
+    {
+      "path": "subtitles/cn-jiang__agreement__real.vtt",
+      "sha256": "981edfa87fbc9d69f5a3942f32d57b0c1ed8df4a520d8aec790690d37dc57bab",
+      "bytes": 177
+    },
+    {
+      "path": "subtitles/cn-jiang__flowers__ai.srt",
+      "sha256": "3b19d598378d5b213fa1d0c5cdf2eb8cd3654c31994959dc2c2319633318bd81",
+      "bytes": 159
+    },
+    {
+      "path": "subtitles/cn-jiang__flowers__ai.vtt",
+      "sha256": "91e5fa0af9ba0be098a7387f04d15ee79ab0d2a48da7a0b3a18e45c00db414c1",
+      "bytes": 163
+    },
+    {
+      "path": "subtitles/cn-jiang__flowers__real.srt",
+      "sha256": "58bd878da495d296477ee3ffae692ea15d1e65e5ebf030ba3d0d5e998c37f89a",
+      "bytes": 299
+    },
+    {
+      "path": "subtitles/cn-jiang__flowers__real.vtt",
+      "sha256": "3842cb8ff6f946097730259603a8bd51960c893b02dcbfd0a66dd7faaffdca1d",
+      "bytes": 295
+    },
+    {
+      "path": "subtitles/cn-jiang__full__ai.srt",
+      "sha256": "367e8fb11ad05bf42e64635bdb870ce50ae8a8c3fc15f1bc35e974902d687ae9",
+      "bytes": 415
+    },
+    {
+      "path": "subtitles/cn-jiang__full__ai.vtt",
+      "sha256": "b61dcf1d8f916af21da342763be5f0d2c4239ad5f1f92c1b31152f932878a65a",
+      "bytes": 411
+    },
+    {
+      "path": "subtitles/cn-jiang__full__real.srt",
+      "sha256": "ea9db6e4fa5912c47cd31664c240aea9747748d598e2fd280f78e87e46bbc6a8",
+      "bytes": 547
+    },
+    {
+      "path": "subtitles/cn-jiang__full__real.vtt",
+      "sha256": "6609f36ccdf423008380f7fa776006c49eab29e70ec2a1b11d57a3f6594829f0",
+      "bytes": 534
+    },
+    {
+      "path": "subtitles/cn-jiang__marriage__ai.srt",
+      "sha256": "a10ea27c47e6b4a05c08611441777390f39b3cbeeff727c5602d163fcf690704",
+      "bytes": 255
+    },
+    {
+      "path": "subtitles/cn-jiang__marriage__ai.vtt",
+      "sha256": "a3db2cac53ef5483a946dabc9ef45b8b5728da0a6d824283d46db3a629d55abd",
+      "bytes": 255
+    },
+    {
+      "path": "subtitles/cn-jiang__marriage__real.srt",
+      "sha256": "6b81995417c5f30c3f3bc39673752ca4e3f4052c697287e995f30647394bd5e3",
+      "bytes": 246
+    },
+    {
+      "path": "subtitles/cn-jiang__marriage__real.vtt",
+      "sha256": "17ce21a53ba6757143d39d8b9a5c53f9d91a8d001129b2b1f6cdd26297012a38",
+      "bytes": 246
+    },
+    {
+      "path": "subtitles/cn-jiang__phone__ai.srt",
+      "sha256": "24991ac50805261945fcd75b3fbd04d47d576382c596d2b04c68b3121dadd693",
+      "bytes": 451
+    },
+    {
+      "path": "subtitles/cn-jiang__phone__ai.vtt",
+      "sha256": "d2fc3d6b65498fa62b0b31804bbe55e37e430bee2d31e6186d0c052a210fc473",
+      "bytes": 443
+    },
+    {
+      "path": "subtitles/cn-jiang__phone__real.srt",
+      "sha256": "0fcc2c5209a9db25dea03371c6642b212ffdbb2a7766b7107d3b69d1d935d697",
+      "bytes": 399
+    },
+    {
+      "path": "subtitles/cn-jiang__phone__real.vtt",
+      "sha256": "06c773cf7c4c29b1c288952cf02d66020b9d0c2e39a6be67f871a6f1b4900f24",
+      "bytes": 393
+    },
+    {
       "path": "subtitles/cn-laotai__bottle__ai.srt",
       "sha256": "19bcaa37c2a32ce9fc68731e2c5c0cb5ff4e2096be7dca97c7beceed416ff0b1",
       "bytes": 116
@@ -781,6 +1016,26 @@
       "bytes": 3572
     },
     {
+      "path": "subtitles/expand-jiang-ai.source.srt",
+      "sha256": "c5c968dafec713247b17f7b255cf44d718025170a327768aa664f8c74826e40e",
+      "bytes": 1846
+    },
+    {
+      "path": "subtitles/expand-jiang-ai.source.vtt",
+      "sha256": "fcc9748ef6edef924aa71c183f21437a5d89441ebab415b645d40b542082237b",
+      "bytes": 1773
+    },
+    {
+      "path": "subtitles/expand-jiang-real.source.srt",
+      "sha256": "eed561c6b58a14fded2ddba66cc385efb093b34bba0561641ad0a9d068c17371",
+      "bytes": 1990
+    },
+    {
+      "path": "subtitles/expand-jiang-real.source.vtt",
+      "sha256": "18b470777796db04be91fc80ea3aa13ca522f17f71acb182c6a3fa133beded41",
+      "bytes": 1896
+    },
+    {
       "path": "subtitles/fuerdai-ai-ep1.source.srt",
       "sha256": "da86f0bf5a7898f29d5280a519cb6f123595f2a2c2c19e8ff4b70ffd0ab716ce",
       "bytes": 3530
@@ -841,5 +1096,5 @@
       "bytes": 1943
     }
   ],
-  "total_bytes": 323507349
+  "total_bytes": 387370195
 }

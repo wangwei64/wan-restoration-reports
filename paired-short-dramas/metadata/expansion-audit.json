@@ -1,0 +1,114 @@
+[
+  {
+    "title": "穿书富家妯娌，我和闺蜜齐上阵闯豪门",
+    "status": "excluded_style",
+    "url": "https://hongguoduanju.com/player/7671610565436902425",
+    "reason": "同名/IP 线索较强，但实际视频为明显 3D 动画人物。",
+    "review": "downloaded_video_representative_frames",
+    "date": "2026-10-01"
+  },
+  {
+    "title": "言言当家：反派漂亮亲妈十斤反骨",
+    "status": "excluded_style",
+    "url": "https://hongguoduanju.com/player/7680405270110981145",
+    "reason": "实际视频含大头卡通儿童及明显 3D 人物。",
+    "review": "downloaded_video_representative_frames",
+    "date": "2026-10-01"
+  },
+  {
+    "title": "反派漂亮亲妈十斤反骨",
+    "status": "excluded_style",
+    "url": "https://hongguoduanju.com/player/7676363540432702526",
+    "reason": "已看视频，多镜头为明显 3D / 娃娃脸。",
+    "review": "downloaded_video_representative_frames",
+    "date": "2026-10-01"
+  },
+  {
+    "title": "少爷他老是犯贱，夫人她专治不服",
+    "status": "excluded_style",
+    "url": "https://hongguoduanju.com/player/7665175325935946776",
+    "reason": "已看视频，3D 动画风较强，不符合本轮写实优先。",
+    "review": "downloaded_video_representative_frames",
+    "date": "2026-10-01"
+  },
+  {
+    "title": "人前不熟，人后沦陷",
+    "status": "excluded_style",
+    "url": "https://hongguoduanju.com/player/7686695165699820569",
+    "reason": "已看视频，人物比例和皮肤呈娃娃/动画感。",
+    "review": "downloaded_video_representative_frames",
+    "date": "2026-10-01"
+  },
+  {
+    "title": "兰羊劫",
+    "status": "excluded_style",
+    "url": "https://hongguoduanju.com/player/7658249959648545816",
+    "reason": "相近复仇故事，但视频为明显 3D 人物。",
+    "review": "downloaded_video_representative_frames",
+    "date": "2026-10-01"
+  },
+  {
+    "title": "我和闺蜜是炮灰女配",
+    "status": "excluded_style",
+    "url": "https://hongguoduanju.com/player/7667967734306573336",
+    "reason": "实际人物为大眼娃娃/3D 风格。",
+    "review": "downloaded_video_representative_frames",
+    "date": "2026-10-01"
+  },
+  {
+    "title": "生活在东江边的姐姐",
+    "status": "excluded_style",
+    "url": "https://hongguoduanju.com/player/7675695579065748542",
+    "reason": "站前对话等实际画面仍有明显 3D 动画人物感。",
+    "review": "downloaded_video_representative_frames",
+    "date": "2026-10-01"
+  },
+  {
+    "title": "初次尝鲜！",
+    "status": "excluded_style",
+    "url": "https://hongguoduanju.com/player/7660550671300578329",
+    "reason": "同题材候选，实际为夸张 3D 人物与卡通效果。",
+    "review": "downloaded_video_representative_frames",
+    "date": "2026-10-01"
+  },
+  {
+    "title": "初次尝鲜",
+    "status": "excluded_style",
+    "url": "https://hongguoduanju.com/player/7680402180162997272",
+    "reason": "部分镜头接近摄影，但人物仍有明显娃娃脸与 3D 感。",
+    "review": "downloaded_video_representative_frames",
+    "date": "2026-10-01"
+  },
+  {
+    "title": "初次尝鲜，傅总他又争又抢",
+    "status": "hold_style_and_provenance",
+    "url": "https://hongguoduanju.com/player/7679064719017118744",
+    "reason": "部分镜头接近摄影，角色林媛/傅冥修与真人容微月/傅乘舟不同；仍有美化/动画感，未确认具体生成链，暂不加入。",
+    "review": "downloaded_video_representative_frames",
+    "date": "2026-10-01"
+  },
+  {
+    "title": "莞城往事",
+    "status": "hold_story_and_provenance",
+    "url": "https://hongguoduanju.com/player/7660539855947975705",
+    "reason": "影像较写实，但同名真人版为王大力寻亲，AI 候选为陈阳/苏芸务工，并非已证实同一故事。此具体版本 AI 制作来源待补，不用《莞城往事1998》的报道替代证据。",
+    "review": "downloaded_video_representative_frames",
+    "date": "2026-10-01"
+  },
+  {
+    "title": "羊汤烬",
+    "status": "hold_provenance",
+    "url": "https://hongguoduanju.com/player/7658566919376620606",
+    "reason": "实际较写实，与《羊与兰》有烤羊/复仇情节相似；未确认此版本 AI 制作来源及同 IP 关系，且古装优先级较低。",
+    "review": "downloaded_video_representative_frames",
+    "date": "2026-10-01"
+  },
+  {
+    "title": "江先生，别太野AI版",
+    "status": "selected",
+    "url": "https://hongguoduanju.com/player/7667217841568877593",
+    "reason": "公开标题明确 AI，真人演员表、角色、剧情与对白对应；已下载、裁剪、纳入 4 对片段。",
+    "review": "downloaded_video_representative_frames",
+    "date": "2026-10-01"
+  }
+]

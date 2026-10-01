@@ -1,214 +1,328 @@
 {
   "date": "2026-10-01",
-  "pair_count": 4,
-  "clip_pair_count": 14,
-  "original_mp4_count": 8,
-  "derived_mp4_count": 36,
+  "pair_count": 5,
+  "clip_pair_count": 18,
+  "original_mp4_count": 10,
+  "derived_mp4_count": 46,
   "checks": [
+    {
+      "path": "full/cn-jiang__full__real.mp4",
+      "decode_ok": true,
+      "error": ""
+    },
+    {
+      "path": "full/cn-jiang__full__ai.mp4",
+      "decode_ok": true,
+      "error": ""
+    },
+    {
+      "path": "clips/cn-jiang__flowers__real.mp4",
+      "decode_ok": true,
+      "error": ""
+    },
+    {
+      "path": "clips/cn-jiang__flowers__ai.mp4",
+      "decode_ok": true,
+      "error": ""
+    },
+    {
+      "path": "clips/cn-jiang__marriage__real.mp4",
+      "decode_ok": true,
+      "error": ""
+    },
+    {
+      "path": "clips/cn-jiang__marriage__ai.mp4",
+      "decode_ok": true,
+      "error": ""
+    },
+    {
+      "path": "clips/cn-jiang__phone__real.mp4",
+      "decode_ok": true,
+      "error": ""
+    },
+    {
+      "path": "clips/cn-jiang__phone__ai.mp4",
+      "decode_ok": true,
+      "error": ""
+    },
+    {
+      "path": "clips/cn-jiang__agreement__real.mp4",
+      "decode_ok": true,
+      "error": ""
+    },
+    {
+      "path": "clips/cn-jiang__agreement__ai.mp4",
+      "decode_ok": true,
+      "error": ""
+    },
     {
       "path": "full/cn-fuerdai__full__real.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "ff3cb51253149a5a7672ed56dfbaf3666e9479a53cb94d14136ea3bcd472431a",
+      "reused_unchanged": true
     },
     {
       "path": "full/cn-fuerdai__full__ai.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "b687631a1565aa977d6ef7a34595248afed7b8cd52a267b9ca2735d8ac5cb548",
+      "reused_unchanged": true
     },
     {
       "path": "clips/cn-fuerdai__reaction__real.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "d2297a79c6942ce38dd8b975eafaa493f492d5187cb776c15c61abeb0be2af62",
+      "reused_unchanged": true
     },
     {
       "path": "clips/cn-fuerdai__reaction__ai.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "8dd97368597c873b07cb47a0586661042d48aeb1262abe33ebbdb023df78408a",
+      "reused_unchanged": true
     },
     {
       "path": "clips/cn-fuerdai__phone__real.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "a5d7faac7a80645d7181d2383536f3f6785df8c307e8d965eda9f414849221e4",
+      "reused_unchanged": true
     },
     {
       "path": "clips/cn-fuerdai__phone__ai.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "0db68abd08412743adcb192812a3fb411e79ac47a83dca78ccdd21428c02fc09",
+      "reused_unchanged": true
     },
     {
       "path": "clips/cn-fuerdai__seated__real.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "b86ff3b9becb136494f7d9236e5c1f1ebb29b578179aa6f3222ff6ee3b22b187",
+      "reused_unchanged": true
     },
     {
       "path": "clips/cn-fuerdai__seated__ai.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "fbaa0068a4ee8d79b30cd947e1dde4990c428ae7d933afc7f7a3502b62d9342a",
+      "reused_unchanged": true
     },
     {
       "path": "clips/cn-fuerdai__drink__real.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "64d0279bda8e5a55c843dc4a7ca5411f7fa5e04e2c53667d1073e254e229c4ef",
+      "reused_unchanged": true
     },
     {
       "path": "clips/cn-fuerdai__drink__ai.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "32d5db6831a044624e1251a4583c2dd864658d60652f26194b11d2855fd9cce6",
+      "reused_unchanged": true
     },
     {
       "path": "full/cn-laotai__full__real.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "5e42b7524d17292bfc74b99a4dd43aa02092e6f43a9e072a0948ead7fdb77779",
+      "reused_unchanged": true
     },
     {
       "path": "full/cn-laotai__full__ai.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "c16f3ec641359927c202a67441b44de5765937f85e27a9678a68330c893e3d34",
+      "reused_unchanged": true
     },
     {
       "path": "clips/cn-laotai__surprised__real.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "ed0df391831b5b31545e48b842e17d4ecb1ee10c10a08d479a48dc9034ad4910",
+      "reused_unchanged": true
     },
     {
       "path": "clips/cn-laotai__surprised__ai.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "9363edbe4ee59f05a69c15bb330edbc0afeee9714bed4fd95d0f7fb71574d770",
+      "reused_unchanged": true
     },
     {
       "path": "clips/cn-laotai__conversation__real.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "1514cbd983e291c7755f7ce9e7e990bb48803bcc8cd0569dede89d3718f4c451",
+      "reused_unchanged": true
     },
     {
       "path": "clips/cn-laotai__conversation__ai.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "7a4028ca8bbbc09c52d0a3cf3f23f797cd6d85a66681376a0e48728c39c00a2a",
+      "reused_unchanged": true
     },
     {
       "path": "clips/cn-laotai__food__real.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "3f701afc9ea4c33e2d64cb12edecc8743b68999f1de17ec23fad2c254aa816c1",
+      "reused_unchanged": true
     },
     {
       "path": "clips/cn-laotai__food__ai.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "6d15c2e0673d7d599a7a06aea35ec37d9fe7606d55e60e871aa6b7d25a308c20",
+      "reused_unchanged": true
     },
     {
       "path": "clips/cn-laotai__bottle__real.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "c83c2de045ed68691ff50ff164d8fff22b274d65cd280c23ce8996770432a4c0",
+      "reused_unchanged": true
     },
     {
       "path": "clips/cn-laotai__bottle__ai.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "b964e1b5d2af0d80e806081753f3d3f5c7bfe27adaae710a3312a96274de830c",
+      "reused_unchanged": true
     },
     {
       "path": "full/cn-yuni-photo__full__real.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "cd1e892c5c25b3e40cd48914993cc0eae4ff6820787cc9885931de6085373eca",
+      "reused_unchanged": true
     },
     {
       "path": "full/cn-yuni-photo__full__ai.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "314c1d129c61ab2971d8ef301f07a24943a99024ea84837224901b22e6abcb23",
+      "reused_unchanged": true
     },
     {
       "path": "clips/cn-yuni-photo__recognition__real.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "bbcd99c8254130b9d750ab460f2f73efe3b63b738a3fb2933d05af55ae04f622",
+      "reused_unchanged": true
     },
     {
       "path": "clips/cn-yuni-photo__recognition__ai.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "4010c9f9cca8f546f15b86dda42dc7a32fdeb1a7286e7ed49c381a1be1392f8f",
+      "reused_unchanged": true
     },
     {
       "path": "clips/cn-yuni-photo__man__real.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "7c7a3fed747fc850494bb27d4a71f1e14554944b6d9ce62acbf745b3c16a3856",
+      "reused_unchanged": true
     },
     {
       "path": "clips/cn-yuni-photo__man__ai.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "d6423815f0bf2cb39126ee6f7f21f0bb43406e805eaee782950ba21e46ff0c0b",
+      "reused_unchanged": true
     },
     {
       "path": "clips/cn-yuni-photo__memory__real.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "cca4d65873322eaf48f5a1e50ebcf11dc193e7687fbf5e2ba6db9ce95f031689",
+      "reused_unchanged": true
     },
     {
       "path": "clips/cn-yuni-photo__memory__ai.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "145db785161f90968c1607ee91bf8982a45ce639a153a2ea57113268b5c29473",
+      "reused_unchanged": true
     },
     {
       "path": "full/cn-dongzhi-photo__full__real.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "d8f7292ecddb654ba363491d82d825bbc21454c1f1228c9db2d104b16948d908",
+      "reused_unchanged": true
     },
     {
       "path": "full/cn-dongzhi-photo__full__ai.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "108c12748c46b0e99b0c6d48622f781c4f62af5fee1c7f633061aeced586c3fc",
+      "reused_unchanged": true
     },
     {
       "path": "clips/cn-dongzhi-photo__future__real.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "cad2983a3c60041965c82903d5cf5a981d27886aa4173992949de1dc9bd1864a",
+      "reused_unchanged": true
     },
     {
       "path": "clips/cn-dongzhi-photo__future__ai.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "2de583faa5b269b2d64236010b5511a87226180d5dc9ecf9ab85c8f5de754364",
+      "reused_unchanged": true
     },
     {
       "path": "clips/cn-dongzhi-photo__couple__real.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "c83816dcfb8d544b40437ff5353ec49a9ff3a9c65fda63b58812225eeb7a9943",
+      "reused_unchanged": true
     },
     {
       "path": "clips/cn-dongzhi-photo__couple__ai.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "505c83e42c726f825a553caf700d4ad942a307601bb55626cc3528c896296845",
+      "reused_unchanged": true
     },
     {
       "path": "clips/cn-dongzhi-photo__response__real.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "cbd6744a9e57a891c7bc60861c6d5af4643f90f687df7b56356b80d61a3a9b00",
+      "reused_unchanged": true
     },
     {
       "path": "clips/cn-dongzhi-photo__response__ai.mp4",
       "decode_ok": true,
-      "error": ""
+      "error": "",
+      "sha256": "bb392222bdf74bcbded4c89472775f745dc7b8dc285d6e0963f20a9c117a8d25",
+      "reused_unchanged": true
     }
   ],
-  "decode_check_origin": "Prior local dataset validation; identical SHA256 bytes copied for publication.",
-  "copied_media_and_subtitles_count": 168,
+  "decode_check_origin": "Local decode validation; unchanged files retain earlier checks verified by SHA256.",
+  "copied_media_and_subtitles_count": 219,
   "copied_bytes_unchanged": true,
   "original_sha256_verified": true,
   "max_file_below_100_MiB": true,
-  "javascript_syntax": "passed",
-  "browser_playback_test": {
-    "date": "2026-10-01",
-    "result": "passed",
-    "environment": "Codex in-app browser, public HTTPS GitHub Pages URL",
-    "clips": "First clip in each of four pairs: both video elements readyState=4, paused=false, no media error. First pair time progression and decoded video dimensions also checked.",
-    "full_and_original": "First pair full scene and original public episode: both playing, readyState=4, no media error.",
-    "controls": "Four-case switching, clip dropdown and clip/full/original mode switching verified in rendered page.",
-    "default_captions": "off; screenshot confirms no overlay subtitles in first pair",
-    "coverage_limit": "Actual browser playback sampled; all 44 MP4 URLs separately passed HTTP 206 range checks. This is not exhaustive viewing of every video."
+  "javascript_syntax": {
+    "checked": true,
+    "ok": true
   },
+  "browser_playback_test": "pending after deployment",
   "issues": [],
-  "static_local_links": "passed",
-  "public_metadata_scrub": "passed",
-  "playback_control_unit_checks": "passed: clip/full/original modes, four-case filtering, unequal duration handling and shared seek; DOM stubs, not browser playback.",
-  "public_http_video_range_checks": {
-    "count": 44,
-    "passed": true,
-    "report": "metadata/deployment.json"
+  "visual_review": {
+    "pair": "cn-jiang",
+    "scope": "full scene and all 4 clips, samples at 6%, 50%, 94%, original timeline and crop review",
+    "result": "No burned subtitles or added character-name titles in final sampled crops; not exhaustive every-frame guarantee",
+    "contact_sheet": "previews/cn-jiang-crop-review.jpg"
   }
 }
