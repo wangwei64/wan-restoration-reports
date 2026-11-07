@@ -1,0 +1,40 @@
+{
+  "samples": 4,
+  "path": "/root/autodl-tmp/experiments/sencache_ltx096_mixkit8_20261107/sensitivity_ltx_096_n004.npz",
+  "sha256": "4f7f0bffc40877b5041a10cbfc97f26e538f52938b819ba56629f6054653fa2d",
+  "sources": [
+    {
+      "case": "mixkit_51600",
+      "sha256": "fb3682e967f1493b752d5a2a21d33eba143792dfe1ebd877ee1c6ea7ae4e405f"
+    },
+    {
+      "case": "mixkit_4401",
+      "sha256": "b72006b80c3286ce18b3b1372be90813c9ad8f2a7de450caac9e91702bb6f6e2"
+    },
+    {
+      "case": "mixkit_1479",
+      "sha256": "a0d4836b99cb4d48959248a2956907b84c8428a53f2bbab23297e1327ca904bf"
+    },
+    {
+      "case": "mixkit_40524",
+      "sha256": "e0d94c31c911b0c7f735c2c6d069198842f676a98b69602c9a2653eadbdfcecf"
+    }
+  ],
+  "protocol_sha256": "5097366ca61371ccadec031f305ff4da94feaeff96308dc8635e9dc4c8f6c1cb",
+  "finite": true,
+  "steps": 50,
+  "mean_J_x": 5.4002298223972325,
+  "mean_J_t": 8.786288664340972,
+  "relative_sem_median_by_component": [
+    0.09351600067500211,
+    0.11177527841812761
+  ],
+  "relative_sem_max_by_component": [
+    0.4686652123485308,
+    0.1879449452978659
+  ],
+  "prefix_half_vs_full_relative_l2_by_component": [
+    0.0768533424538235,
+    0.10208734328692876
+  ]
+}

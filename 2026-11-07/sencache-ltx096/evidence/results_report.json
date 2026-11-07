@@ -1,0 +1,128 @@
+{
+  "validation_passed": true,
+  "calibration_samples": 8,
+  "validation_cases": 12,
+  "native_mean_seconds": 95.24627980607329,
+  "methods": {
+    "old": {
+      "samples": 12,
+      "mean_seconds": 47.29397662091651,
+      "speedup_ratio_of_total_times": 2.0139198817963027,
+      "mean_full_steps": 22.833333333333332,
+      "mean_lpips": 0.029461473474130237,
+      "mean_ssim": 0.9222681172875212,
+      "mean_psnr": 27.75866533220913
+    },
+    "new": {
+      "samples": 12,
+      "mean_seconds": 44.44699727474168,
+      "speedup_ratio_of_total_times": 2.1429182092397454,
+      "mean_full_steps": 21.25,
+      "mean_lpips": 0.036679246612970735,
+      "mean_ssim": 0.9188817576692093,
+      "mean_psnr": 27.55000404766128
+    }
+  },
+  "paired_differences": [
+    {
+      "id": "holdout_01",
+      "new_minus_old_lpips": 0.0022006056402340407,
+      "new_minus_old_ssim": -0.0026858181847045914,
+      "new_minus_old_psnr": 0.0960019360013824,
+      "new_minus_old_seconds": -1.7428139100084081
+    },
+    {
+      "id": "holdout_02",
+      "new_minus_old_lpips": 0.007748975857230257,
+      "new_minus_old_ssim": -0.0029927110971774695,
+      "new_minus_old_psnr": -0.5911729133753312,
+      "new_minus_old_seconds": -3.7736815150128677
+    },
+    {
+      "id": "holdout_03",
+      "new_minus_old_lpips": 0.00299249364694288,
+      "new_minus_old_ssim": -0.0021189117651267964,
+      "new_minus_old_psnr": 0.20876911117746388,
+      "new_minus_old_seconds": -1.5907103649806231
+    },
+    {
+      "id": "holdout_04",
+      "new_minus_old_lpips": 0.003775007445519127,
+      "new_minus_old_ssim": -0.008269322472950313,
+      "new_minus_old_psnr": -0.7643944358955963,
+      "new_minus_old_seconds": -3.661932861083187
+    },
+    {
+      "id": "vb_064",
+      "new_minus_old_lpips": 0.008861239691657467,
+      "new_minus_old_ssim": -0.00806365350863425,
+      "new_minus_old_psnr": -0.5001098633317191,
+      "new_minus_old_seconds": -1.2560372930020094
+    },
+    {
+      "id": "vb_065",
+      "new_minus_old_lpips": 0.01685100325868149,
+      "new_minus_old_ssim": -0.014401336539027199,
+      "new_minus_old_psnr": -1.2103964405135201,
+      "new_minus_old_seconds": -5.19990823592525
+    },
+    {
+      "id": "vb_066",
+      "new_minus_old_lpips": 0.005460486939746486,
+      "new_minus_old_ssim": -0.007688859093130773,
+      "new_minus_old_psnr": -0.32928158080506265,
+      "new_minus_old_seconds": -1.9488263740204275
+    },
+    {
+      "id": "vb_067",
+      "new_minus_old_lpips": 0.029468653738991296,
+      "new_minus_old_ssim": 0.010239241121798415,
+      "new_minus_old_psnr": -0.2075953626460283,
+      "new_minus_old_seconds": -2.2912501870887354
+    },
+    {
+      "id": "vb_068",
+      "new_minus_old_lpips": 0.0044984906019011825,
+      "new_minus_old_ssim": -0.0015517876717375811,
+      "new_minus_old_psnr": -0.22114528007572076,
+      "new_minus_old_seconds": -5.02575163799338
+    },
+    {
+      "id": "vb_069",
+      "new_minus_old_lpips": 0.0034106861923105455,
+      "new_minus_old_ssim": -0.0020002530694750442,
+      "new_minus_old_psnr": 0.12243170728556407,
+      "new_minus_old_seconds": -2.206185105955228
+    },
+    {
+      "id": "vb_070",
+      "new_minus_old_lpips": 0.00026526836262754164,
+      "new_minus_old_ssim": -0.0026040094206397635,
+      "new_minus_old_psnr": -0.17702117830640773,
+      "new_minus_old_seconds": -3.5615821549436077
+    },
+    {
+      "id": "vb_071",
+      "new_minus_old_lpips": 0.0010803662902436964,
+      "new_minus_old_ssim": 0.00150110628106348,
+      "new_minus_old_psnr": 1.0699788859107535,
+      "new_minus_old_seconds": -1.9050725140841678
+    }
+  ],
+  "half_vs_full_profile_relative_l2": [
+    0.03069744699391433,
+    0.025873812567213918
+  ],
+  "table_sha256": "c79f1cb81b506f946c3ed6e0f68199ad58f58ddc5639c7f1ac40f92d6c3d6a9b",
+  "protocol_sha256": "5097366ca61371ccadec031f305ff4da94feaeff96308dc8635e9dc4c8f6c1cb",
+  "original_table_unchanged": true,
+  "interpretation": "Twelve paired cases with fixed thresholds. This is a small validation and not a full VBench benchmark or a matched-speed comparison.",
+  "limitations": [
+    "Source and number match the SenCache paper (eight Mixkit videos); the authors exact clip identities were not found in the public paper, repository or released sensitivity files. These are our prespecified eight clips.",
+    "Shape, frame count, fps and native noise schedule match our evaluated LTX 0.9.6 setup, not the papers LTX 0.9.1 experiment settings.",
+    "The published result supporting eight samples is motivation, not a guarantee of convergence on this checkpoint and shape.",
+    "The12 paired test cases are a limited validation, not a replacement for the complete benchmark in the paper.",
+    "Old/new tables differ in clip identities, shape, schedule and checkpoint version; this is not a version-only causal ablation.",
+    "No threshold selection or clip selection uses evaluation outcomes; a lower or higher quality outcome is retained."
+  ]
+}

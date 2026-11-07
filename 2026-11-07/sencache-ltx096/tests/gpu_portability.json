@@ -1,0 +1,80 @@
+{
+  "passed": true,
+  "case_id": "holdout_01",
+  "generation": {
+    "height": 704,
+    "width": 1216,
+    "frames": 121,
+    "steps": 50,
+    "flow_scale": 0.1,
+    "dynamic_flow": true,
+    "fps": 30,
+    "negative_prompt": "worst quality, inconsistent motion, blurry, jittery, distorted",
+    "guidance_scale": 3.0,
+    "stg_scale": 1.0,
+    "rescaling_scale": 0.7,
+    "skip_block_list": [
+      19
+    ],
+    "decode_timestep": 0.05,
+    "decode_noise_scale": 0.025
+  },
+  "hardware": {
+    "gpu_name": "NVIDIA A800-SXM4-80GB",
+    "gpu_uuid": "GPU-12601ae6-4305-93c8-504b-b51023632b5b",
+    "compute_capability": [
+      8,
+      0
+    ],
+    "total_memory_bytes": 85093777408,
+    "software": {
+      "torch": "2.5.1+cu124",
+      "diffusers": "0.33.1",
+      "transformers": "4.49.0",
+      "triton": "3.1.0",
+      "av": "14.2.0",
+      "lpips": "0.1.4",
+      "numpy": "1.26.4"
+    }
+  },
+  "code_identity": {
+    "code_sha256": "f51b85dc9b6032a9862cb43a5200e9c960b1c5d79849328afce754760a36dbef",
+    "checkpoint_sha256": "e6fb3fe995e23c1f2457bc26c554789a8d74718c17f1853baab33939bd8dfb56",
+    "text_encoder_manifest_sha256": "b892b4a4aedfc239aef6d6681fd07883cd36bc1517e4626c513377035aee65c8",
+    "text_encoder_storage": "text_encoder",
+    "external_source_sha256": "0401e0831df887e2405e56ff9d2757df9b3be986db6edc2a832134e451824677"
+  },
+  "results": [
+    {
+      "method": "native",
+      "latent_bit_exact": true,
+      "video_bit_exact": true,
+      "sigma_grid_identical": true,
+      "full_steps": 50,
+      "cache_decisions_identical": true,
+      "sensitivity_sha256": null,
+      "resume_verified": true
+    },
+    {
+      "method": "sencache_original091",
+      "latent_bit_exact": true,
+      "video_bit_exact": true,
+      "sigma_grid_identical": true,
+      "full_steps": 22,
+      "cache_decisions_identical": true,
+      "sensitivity_sha256": "42cd631394ab1174f595bdfa3052312b65482720b367c7fbb5767742acd36b14",
+      "resume_verified": true
+    },
+    {
+      "method": "sencache_ltx096",
+      "latent_bit_exact": true,
+      "video_bit_exact": true,
+      "sigma_grid_identical": true,
+      "full_steps": 21,
+      "cache_decisions_identical": true,
+      "sensitivity_sha256": "c79f1cb81b506f946c3ed6e0f68199ad58f58ddc5639c7f1ac40f92d6c3d6a9b",
+      "resume_verified": true
+    }
+  ],
+  "scope": "One complete 121-frame case replayed for native, original table, recalibrated table. Not a full benchmark or a new quality comparison."
+}

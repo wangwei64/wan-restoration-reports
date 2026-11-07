@@ -1,0 +1,23 @@
+{
+  "native": {
+    "method": "native"
+  },
+  "sencache_ltx096": {
+    "method": "sen_official",
+    "threshold_start": 0.01,
+    "threshold_main": 0.7,
+    "K": 4,
+    "sensitivity_file": "data/sensitivity_ltx_096.npz",
+    "sensitivity_sha256": "c79f1cb81b506f946c3ed6e0f68199ad58f58ddc5639c7f1ac40f92d6c3d6a9b",
+    "sensitivity_source": "Native LTX 0.9.6, eight real Mixkit clips; this project recalibration"
+  },
+  "sencache_original091": {
+    "method": "sen_official",
+    "threshold_start": 0.01,
+    "threshold_main": 0.7,
+    "K": 4,
+    "sensitivity_file": "data/sensitivity_ltx.npz",
+    "sensitivity_sha256": "42cd631394ab1174f595bdfa3052312b65482720b367c7fbb5767742acd36b14",
+    "sensitivity_source": "Official published LTX 0.9.1 table, reused with native 0.9.6"
+  }
+}

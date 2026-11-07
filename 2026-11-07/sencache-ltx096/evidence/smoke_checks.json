@@ -1,0 +1,20 @@
+{
+  "finite_difference_linear_model": true,
+  "sigma_to_table_time_chain_rule": true,
+  "zero_threshold_native_bit_exact": true,
+  "conditional_branch": {
+    "relative_l2": 0.007448408752679825,
+    "isolated_batch": 1,
+    "native_positive_branch": 1,
+    "timestep_shape": [
+      1,
+      1
+    ],
+    "token_shape": [
+      1,
+      192,
+      128
+    ]
+  },
+  "script_sha256": "5d5d7be3b66fda7577f8fa714615d772eefdc28a8bc2a41565ed98140776b878"
+}

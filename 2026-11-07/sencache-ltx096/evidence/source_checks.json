@@ -1,0 +1,101 @@
+{
+  "all_passed": true,
+  "videos": [
+    {
+      "id": "mixkit_51600",
+      "shape": [
+        1080,
+        1920
+      ],
+      "frames": 485,
+      "fps": 23.976023976023978,
+      "sha256_verified": true,
+      "selected_unique_frames": 121,
+      "temporal_sampling": "Upstream linspace policy; repeated indices allowed for clips shorter than121 frames"
+    },
+    {
+      "id": "mixkit_4401",
+      "shape": [
+        1080,
+        1920
+      ],
+      "frames": 594,
+      "fps": 30.0,
+      "sha256_verified": true,
+      "selected_unique_frames": 121,
+      "temporal_sampling": "Upstream linspace policy; repeated indices allowed for clips shorter than121 frames"
+    },
+    {
+      "id": "mixkit_1479",
+      "shape": [
+        1080,
+        1920
+      ],
+      "frames": 359,
+      "fps": 23.976023976023978,
+      "sha256_verified": true,
+      "selected_unique_frames": 121,
+      "temporal_sampling": "Upstream linspace policy; repeated indices allowed for clips shorter than121 frames"
+    },
+    {
+      "id": "mixkit_40524",
+      "shape": [
+        1080,
+        1920
+      ],
+      "frames": 375,
+      "fps": 24.0,
+      "sha256_verified": true,
+      "selected_unique_frames": 121,
+      "temporal_sampling": "Upstream linspace policy; repeated indices allowed for clips shorter than121 frames"
+    },
+    {
+      "id": "mixkit_43483",
+      "shape": [
+        1080,
+        1920
+      ],
+      "frames": 120,
+      "fps": 23.976023976023978,
+      "sha256_verified": true,
+      "selected_unique_frames": 120,
+      "temporal_sampling": "Upstream linspace policy; repeated indices allowed for clips shorter than121 frames"
+    },
+    {
+      "id": "mixkit_572",
+      "shape": [
+        1080,
+        1920
+      ],
+      "frames": 840,
+      "fps": 23.976023976023978,
+      "sha256_verified": true,
+      "selected_unique_frames": 121,
+      "temporal_sampling": "Upstream linspace policy; repeated indices allowed for clips shorter than121 frames"
+    },
+    {
+      "id": "mixkit_4251",
+      "shape": [
+        1080,
+        1920
+      ],
+      "frames": 287,
+      "fps": 30.0,
+      "sha256_verified": true,
+      "selected_unique_frames": 121,
+      "temporal_sampling": "Upstream linspace policy; repeated indices allowed for clips shorter than121 frames"
+    },
+    {
+      "id": "mixkit_2854",
+      "shape": [
+        1080,
+        1920
+      ],
+      "frames": 241,
+      "fps": 29.97002997002997,
+      "sha256_verified": true,
+      "selected_unique_frames": 121,
+      "temporal_sampling": "Upstream linspace policy; repeated indices allowed for clips shorter than121 frames"
+    }
+  ]
+}

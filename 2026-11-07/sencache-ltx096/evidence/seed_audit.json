@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "protocol_sha256": "5097366ca61371ccadec031f305ff4da94feaeff96308dc8635e9dc4c8f6c1cb",
+  "calibration_vae_and_noise_seeds": [
+    20260828,
+    20260829,
+    20260830
+  ],
+  "calibration_video_generation": "None: real Mixkit videos",
+  "fresh_validation_generation_seeds": [
+    11070064,
+    11070065,
+    11070066,
+    11070067,
+    11070068,
+    11070069,
+    11070070,
+    11070071
+  ],
+  "historical_validation_generation_seeds": [
+    961101,
+    961238,
+    961375,
+    961512
+  ],
+  "reference_test_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "published_benchmark_default_plan": {
+    "base_seed": 20260912,
+    "samples": 5,
+    "flicker_samples": 25,
+    "unique_seeds": 6220
+  },
+  "overlaps": {
+    "fresh_validation": [],
+    "historical_holdout": [],
+    "test_seed0_and_common_indices": [],
+    "published_benchmark_default_plan": []
+  },
+  "paired_validation": "Native, official091 and recalibrated096 share the same seed within each validation case.",
+  "scope": "This fixed calibration and validation protocol, known test_seed0, and published benchmark default plan. A future test protocol must preserve this exclusion."
+}

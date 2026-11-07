@@ -1,0 +1,364 @@
+"""Independent, resumable native LTX 0.9.6 sensitivity measurement.
+
+Implements upstream finite differences on eight real Mixkit videos, with
+the upstream uniform temporal sampling and antialiased spatial resize.
+"""
+import argparse
+import gc
+import hashlib
+import json
+import math
+import os
+from pathlib import Path
+import sys
+import time
+import traceback
+
+ROOT = Path(__file__).resolve().parent
+PACKAGE = Path('/root/autodl-tmp/ltx-official-rerun-20260919/package')
+sys.path.insert(0, str(PACKAGE))
+from runtime import Runner, TimingGuard, read, save, sha
+
+def status(stage, **kw):
+    value = {'stage':stage, 'pid':os.getpid(), 'updated':time.time(), **kw}
+    save(ROOT/'status.json', value)
+    print(json.dumps(value, ensure_ascii=False), flush=True)
+
+def load_latent(folder):
+    import torch
+    return torch.load(folder/'latents.pt', map_location='cpu', weights_only=False)['snapshots']['final']
+
+def artifact_key(case, generation, table):
+    d = {'case':case, 'generation':generation, 'protocol':sha(ROOT/'protocol.json'),
+         'source':sha(ROOT/'calibrate.py'), 'table':sha(table) if table else None}
+    return hashlib.sha256(json.dumps(d, sort_keys=True).encode()).hexdigest()
+
+def generate(runner, case, folder, generation, table=None, zero=False, check_branch=False):
+    import torch
+    from accelerators.official_adapters import SenCacheOfficialLTX
+    key = artifact_key(case, generation, table) + ('_zero' if zero else '')
+    done = folder/'complete.json'
+    if done.exists():
+        d = read(done)
+        assert d['key'] == key and d['run_sha256'] == sha(folder/'run.json')
+        assert d['video_sha256'] == sha(folder/'video.mp4')
+        return read(folder/'run.json')
+    if folder.exists():
+        partial = folder.parent/'partial_runs'/f'{folder.name}_{time.time_ns()}'
+        partial.parent.mkdir(parents=True, exist_ok=True); folder.rename(partial)
+    model = runner.adapter.pipe.transformer
+    cache = None
+    original = model.forward
+    branch = {}
+    if check_branch:
+        def forward(*args, **kwargs):
+            result = original(*args, **kwargs)
+            if not branch:
+                raw = args[0] if args else kwargs['hidden_states']
+                assert raw.shape[0] == 3
+                one = {}
+                for k,v in kwargs.items():
+                    if k == 'hidden_states': continue
+                    if k == 'skip_layer_mask': one[k] = None
+                    elif torch.is_tensor(v) and v.ndim and v.shape[0] == 3: one[k] = v[1:2]
+                    else: one[k] = v
+                isolated = original(raw[1:2], **one)[0]
+                target = result[0][1:2]
+                rel = float(torch.linalg.vector_norm((isolated-target).float()) / torch.linalg.vector_norm(target.float()).clamp_min(1e-12))
+                assert rel < .01, f'Conditional branch mismatch: {rel}'
+                branch.update(relative_l2=rel, isolated_batch=1, native_positive_branch=1,
+                              timestep_shape=list(one['timestep'].shape), token_shape=list(raw[1:2].shape))
+            return result
+        model.forward = forward
+    if table:
+        cache = SenCacheOfficialLTX(model, str(table), generation['steps'],
+                                   0. if zero else .01, 0. if zero else .7, 4)
+    guard = TimingGuard(runner.gpu_uuid)
+    try:
+        with guard:
+            run = runner.adapter.generate(case['prompt'],case['seed'],folder,capture=(),decode=True,**generation)
+        guard.verify()
+        if cache: run.update(cache.report())
+        run.update(sensitivity_path=str(table) if table else None,
+                   sensitivity_sha256=sha(table) if table else None,
+                   protocol_sha256=sha(ROOT/'protocol.json'), exclusive_gpu_verified=True,
+                   conditional_branch_check=branch or None)
+        if table:
+            run['sensitivity_source'] = 'recalibrated native 0.9.6' if table.parent == ROOT else 'official published 0.9.1'
+        save(folder/'run.json',run)
+        assert torch.isfinite(load_latent(folder)).all()
+        save(done, {'key':key,'run_sha256':sha(folder/'run.json'),'video_sha256':sha(folder/'video.mp4')})
+        return run
+    finally:
+        if cache: cache.close()
+        model.forward = original
+
+def analytic_check():
+    """Check finite-difference definitions and sigma/table time units."""
+    import torch
+    x = torch.tensor([[1.,2.,3.]],device='cuda'); v=torch.tensor([[.2,.4,.6]],device='cuda')
+    a=2.; b=torch.tensor([[.5,1.,1.5]],device='cuda'); t=.8; tn=.6
+    f=lambda z,s:a*z+b*s
+    xn=x+(tn-t)*v
+    jx=torch.linalg.vector_norm(f(xn,t)-f(x,t))/torch.linalg.vector_norm(xn-x)
+    jt=torch.linalg.vector_norm(f(x,tn)-f(x,t))/(1000*abs(tn-t))
+    assert torch.allclose(jx,torch.tensor(a,device='cuda'),atol=1e-5)
+    assert torch.allclose(jt,torch.linalg.vector_norm(b)/1000,atol=1e-7)
+    assert torch.allclose(jt*(1000*abs(tn-t)),torch.linalg.vector_norm(f(x,tn)-f(x,t)),atol=1e-6)
+    return {'finite_difference_linear_model':True,'sigma_to_table_time_chain_rule':True}
+
+def encode_video(runner, case, folder, generation):
+    import av
+    import numpy as np
+    import torch
+    from ltx_video.models.autoencoders.vae_encode import vae_encode
+    from torchvision.transforms import Resize
+    target=folder/'encoded.pt'; meta=folder/'encoded.json'
+    if target.exists() and meta.exists():
+        m=read(meta)
+        assert m['video_sha256']==case['video_sha256']==sha(folder/'video.mp4') and m['sha256']==sha(target)
+        assert m['protocol_sha256']==sha(ROOT/'protocol.json')
+        return torch.load(target,map_location='cuda',weights_only=True)['latents']
+    assert sha(folder/'video.mp4')==case['video_sha256']
+    with av.open(str(folder/'video.mp4')) as stream:
+        source_fps=float(stream.streams.video[0].average_rate)
+        total_frames=sum(1 for _ in stream.decode(video=0))
+    assert total_frames>=2, total_frames
+    indices=np.linspace(0,total_frames-1,generation['frames'],dtype=int)
+    selected=set(indices.tolist())
+    resize=Resize((generation['height'],generation['width']),antialias=True)
+    frames={}
+    with av.open(str(folder/'video.mp4')) as stream:
+        for i,frame in enumerate(stream.decode(video=0)):
+            if i in selected:
+                rgb=torch.from_numpy(frame.to_ndarray(format='rgb24')).permute(2,0,1)
+                frames[i]=resize(rgb)
+    # Preserve repeated linspace indices for short clips, exactly as upstream
+    # VideoReader.get_batch(indices), rather than dropping duplicate indices.
+    pixels=torch.stack([frames[int(i)] for i in indices])
+    assert pixels.shape==(generation['frames'],3,generation['height'],generation['width'])
+    media=pixels.permute(1,0,2,3).unsqueeze(0).to('cuda',dtype=torch.float32)
+    media=media.div(127.5).sub(1.).to(runner.adapter.pipe.vae.dtype)
+    del frames,rgb,pixels
+    torch.manual_seed(case['vae_seed']);torch.cuda.manual_seed_all(case['vae_seed'])
+    started=time.perf_counter()
+    clean=vae_encode(media,runner.adapter.pipe.vae,vae_per_channel_normalize=True)
+    del media
+    expected=(1,128,(generation['frames']-1)//8+1,generation['height']//32,generation['width']//32)
+    assert tuple(clean.shape)==expected,(clean.shape,expected)
+    assert torch.isfinite(clean).all()
+    torch.save({'latents':clean.cpu()},target)
+    save(meta,{'sha256':sha(target),'video_sha256':sha(folder/'video.mp4'),'shape':list(clean.shape),
+               'vae_seed':case['vae_seed'],'seconds':time.perf_counter()-started,'per_channel_normalization':True,
+               'protocol_sha256':sha(ROOT/'protocol.json'),'source_total_frames':total_frames,
+               'source_fps':source_fps,'sampled_frame_indices':indices.tolist(),
+               'preprocessing':'Uniform linspace frame indices over full clip; torchvision Resize bilinear antialias=True on uint8 RGB, matching upstream; normalize to [-1,1]'})
+    return clean
+
+def measure(runner, case, folder, generation, run):
+    import numpy as np
+    import torch
+    from ltx_video.models.autoencoders.vae_encode import latent_to_pixel_coords
+    result=folder/'sensitivity.npz'; meta=folder/'sensitivity.json'
+    if result.exists() and meta.exists():
+        m=read(meta);assert m['sha256']==sha(result) and m['protocol_sha256']==sha(ROOT/'protocol.json')
+        return m
+    started=time.perf_counter(); pipe=runner.adapter.pipe
+    clean=encode_video(runner,case,folder,generation)
+    xclean,coords=pipe.patchifier.patchify(latents=clean)
+    coords=latent_to_pixel_coords(coords,pipe.vae,causal_fix=pipe.transformer.config.causal_temporal_positioning).float()
+    coords[:,0]/=generation['fps']
+    del clean
+    embedding,mask,_,_=pipe.encode_prompt(case['prompt'],do_classifier_free_guidance=False,device=torch.device('cuda'))
+    model=pipe.transformer
+    kwargs={'indices_grid':coords,'encoder_hidden_states':embedding.to(model.dtype),
+            'encoder_attention_mask':mask,'skip_layer_mask':None,'return_dict':False}
+    sigmas=np.asarray(run['sigmas'],dtype=np.float64)
+    assert len(sigmas)==51 and np.all(np.diff(sigmas)<0) and sigmas[-1]==0
+    pipe.scheduler.set_timesteps(timesteps=sigmas[:-1].tolist(),device='cuda')
+    def f(z,t):
+        # The native model internally applies its timestep multiplier. Do not
+        # pass sigma*1000 into the model or truncate native sigma to an integer.
+        timestep=torch.full((1,1),float(t),device='cuda',dtype=torch.float32)
+        return model(z.to(model.dtype),timestep=timestep,**kwargs)[0].float()
+    xs=xclean.float(); jxs=[];jts=[];diagnostics=[]
+    generator=torch.Generator('cuda').manual_seed(case['noise_seed'])
+    for i,(t,tn) in enumerate(zip(sigmas[:-1],sigmas[1:])):
+        noise=torch.randn(xs.shape,device='cuda',dtype=torch.float32,generator=generator)
+        x=(1.-float(t))*xs+float(t)*noise
+        ft=f(x,t)
+        # Use actual native deterministic solver, matching upstream conditional
+        # one-step perturbation rather than using guided trajectories for J_x.
+        timestep=torch.tensor([[float(t)]],device='cuda',dtype=torch.float32)
+        xn=pipe.scheduler.step(ft,timestep,x,return_dict=False,stochastic_sampling=False)[0]
+        manual=x-(float(t)-float(tn))*ft
+        assert torch.allclose(xn,manual,rtol=2e-5,atol=2e-5), 'Scheduler/time pair mismatch'
+        fx=f(xn,t); ft_next=f(x,tn)
+        dx=torch.linalg.vector_norm(xn-x)
+        assert float(dx)>1e-8
+        jx=float(torch.linalg.vector_norm(fx-ft)/dx)
+        jt=float(torch.linalg.vector_norm(ft_next-ft)/(1000.*abs(float(tn-t))))
+        assert math.isfinite(jx) and math.isfinite(jt) and jx>=0 and jt>=0
+        jxs.append(jx);jts.append(jt)
+        diagnostics.append({'step':i+1,'sigma':float(t),'next_sigma':float(tn),'delta_x_norm':float(dx),'J_x_norm':jx,'J_t_norm':jt})
+        if i%5==0 or i==49:
+            status('calibrating',case=case['id'],step=i+1,total_steps=50,seconds=time.perf_counter()-started)
+        del noise,x,ft,xn,manual,fx,ft_next,dx
+    np.savez(result,timesteps=sigmas[:-1]*1000,J_x_norm=np.asarray(jxs),J_t_norm=np.asarray(jts),sample_counts=np.ones(50,dtype=np.int64))
+    m={'case':case,'seconds':time.perf_counter()-started,'sha256':sha(result),
+       'protocol_sha256':sha(ROOT/'protocol.json'),'video_sha256':sha(folder/'video.mp4'),
+       'encoded_sha256':sha(folder/'encoded.pt'),'steps':diagnostics}
+    save(meta,m)
+    del xs,xclean,embedding,mask,coords,kwargs
+    gc.collect();torch.cuda.empty_cache()
+    return m
+
+def aggregate(protocol, count):
+    import numpy as np
+    cases=protocol['calibration_cases'][:count]
+    arrays=[]; refs=[]; times=None
+    for c in cases:
+        p=ROOT/'calibration'/c['id']/'sensitivity.npz'
+        with np.load(p) as d:
+            assert len(d['timesteps'])==50 and np.all(d['sample_counts']==1)
+            if times is None:times=d['timesteps'].copy()
+            else:assert np.array_equal(times,d['timesteps'])
+            arrays.append(np.stack([d['J_x_norm'],d['J_t_norm']],axis=-1))
+        refs.append({'case':c['id'],'sha256':sha(p)})
+    samples=np.stack(arrays); means=samples.mean(axis=0)
+    assert np.isfinite(samples).all() and (samples>=0).all()
+    target=ROOT/f'sensitivity_ltx_096_n{count:03d}.npz'
+    np.savez(target,timesteps=times,J_x_norm=means[:,0],J_t_norm=means[:,1],sample_counts=np.full(50,count,dtype=np.int64))
+    report={'samples':count,'path':str(target),'sha256':sha(target),'sources':refs,
+            'protocol_sha256':sha(ROOT/'protocol.json'),'finite':True,'steps':50,
+            'mean_J_x':float(means[:,0].mean()),'mean_J_t':float(means[:,1].mean())}
+    if count>1:
+        sem=samples.std(axis=0,ddof=1)/math.sqrt(count)
+        report['relative_sem_median_by_component']=np.median(sem/np.maximum(means,1e-12),axis=0).tolist()
+        report['relative_sem_max_by_component']=np.max(sem/np.maximum(means,1e-12),axis=0).tolist()
+    if count>=4:
+        half=samples[:count//2].mean(axis=0)
+        report['prefix_half_vs_full_relative_l2_by_component']=[float(np.linalg.norm(half[:,j]-means[:,j])/max(np.linalg.norm(means[:,j]),1e-12)) for j in range(2)]
+    save(ROOT/f'aggregate_n{count:03d}.json',report)
+    if count==len(protocol['calibration_cases']):
+        import shutil
+        shutil.copy2(target,ROOT/'sensitivity_ltx_096.npz')
+        save(ROOT/'calibration_complete.json',report)
+    return target,report
+
+def smoke(runner, protocol):
+    import torch
+    marker=ROOT/'smoke_checks.json'
+    if marker.exists():
+        d=read(marker);assert d['script_sha256']==sha(ROOT/'calibrate.py');return
+    status('smoke_validation')
+    checks=analytic_check()
+    case=protocol['calibration_cases'][0]
+    small={**protocol['generation'],'height':256,'width':256,'frames':17}
+    old=PACKAGE/'data/sensitivity_ltx.npz'
+    a=ROOT/'checks/native';b=ROOT/'checks/zero'
+    run=generate(runner,case,a,small,check_branch=True)
+    zero=generate(runner,case,b,small,table=old,zero=True)
+    assert torch.equal(load_latent(a),load_latent(b)), 'Zero-threshold path differs from native'
+    assert zero['full_transformer_steps']==50
+    checks.update(zero_threshold_native_bit_exact=True,conditional_branch=run['conditional_branch_check'],script_sha256=sha(ROOT/'calibrate.py'))
+    save(marker,checks)
+
+def paired_validation(runner, protocol, table):
+    import torch
+    cases=protocol['historical_evaluation_cases']+protocol['fresh_evaluation_cases']
+    rows=[]
+    old=PACKAGE/'data/sensitivity_ltx.npz'
+    for i,case in enumerate(cases):
+        pairs=[('old',old),('new',table)] if i%2==0 else [('new',table),('old',old)]
+        for method,profile in [('native',None),*pairs]:
+            status('paired_validation',case=case['id'],method=method,completed=len(rows),total=3*len(cases))
+            out=ROOT/'validation'/case['id']/method
+            run=generate(runner,case,out,protocol['generation'],profile)
+            rows.append({'id':case['id'],'method':method,'seed':case['seed'],'seconds':run['online_seconds'],
+                         'full_steps':run.get('full_transformer_steps',50),'folder':str(out),
+                         'table_sha256':sha(profile) if profile else None})
+            save(ROOT/'validation_runs.json',rows)
+            if method!='native':
+                assert run['sigmas']==read(out.parent/'native/run.json')['sigmas']
+                assert max(e['consecutive_skips'] for e in run['cache_trace'])<=4
+    return rows
+
+@__import__('torch').inference_mode()
+def main():
+    import torch
+    parser=argparse.ArgumentParser();parser.add_argument('--pilot',action='store_true');args=parser.parse_args()
+    protocol=read(ROOT/'protocol.json')
+    assert sha(ROOT/'download_manifest.json')==protocol['source']['manifest_sha256']
+    audit=read(ROOT/'seed_audit.json')
+    assert audit['passed'] and audit['protocol_sha256']==sha(ROOT/'protocol.json')
+    assert read(ROOT/'source_checks.json')['all_passed']
+    status('loading',pilot=args.pilot)
+    runner=Runner(PACKAGE/'tests/paths.local.json')
+    assert runner.generation==protocol['generation']
+    identity={'hardware':runner.hardware,'identity':runner.identity,'protocol_sha256':sha(ROOT/'protocol.json'),
+              'script_sha256':sha(ROOT/'calibrate.py'),'original_sensitivity_sha256':sha(PACKAGE/'data/sensitivity_ltx.npz')}
+    if (ROOT/'identity.json').exists(): assert read(ROOT/'identity.json')==identity,'Frozen identity mismatch'
+    else: save(ROOT/'identity.json',identity)
+    smoke(runner,protocol)
+    # This inference establishes the actual evaluation time grid and warms up
+    # the model. Its RGB output is never used as calibration input.
+    schedule_run=generate(runner,protocol['fresh_evaluation_cases'][0],ROOT/'warmup/native',protocol['generation'],check_branch=True)
+    cases=protocol['calibration_cases'][:1] if args.pilot else protocol['calibration_cases']
+    guard=TimingGuard(runner.gpu_uuid)
+    for i,case in enumerate(cases):
+        folder=ROOT/'calibration'/case['id']
+        status('encoding_real_calibration_video',case=case['id'],completed=i,total=len(cases))
+        source=ROOT/case['video_file']
+        assert sha(source)==case['video_sha256']
+        folder.mkdir(parents=True,exist_ok=True)
+        link=folder/'video.mp4'
+        if not link.exists(): link.symlink_to(source)
+        assert link.resolve()==source.resolve()
+        with guard: measured=measure(runner,case,folder,protocol['generation'],schedule_run)
+        guard.verify()
+        guard=TimingGuard(runner.gpu_uuid)
+        status('case_complete',case=case['id'],completed=i+1,total=len(cases),measurement_seconds=measured['seconds'])
+        if i+1 in {1,4,len(protocol['calibration_cases'])}:
+            table,report=aggregate(protocol,i+1)
+            # Actual loading into the unchanged native adapter validates NPZ compatibility.
+            from accelerators.official_adapters import SenCacheOfficialLTX
+            cache=SenCacheOfficialLTX(runner.adapter.pipe.transformer,str(table));cache.close()
+    if args.pilot:
+        save(ROOT/'pilot_complete.json',{'status':'passed','case':cases[0]['id'],'aggregate':report,'identity':identity})
+        status('pilot_complete',samples=1,table=str(table));return
+    table=ROOT/'sensitivity_ltx_096.npz'
+    rows=paired_validation(runner,protocol,table)
+    del runner;gc.collect();torch.cuda.empty_cache()
+    # Run standard project metrics only after model memory is released.
+    from score_pairs import CommonMetrics
+    from restore.metrics import read_video
+    import numpy as np
+    scorer=CommonMetrics();quality=[]
+    for row in rows:
+        if row['method']=='native':continue
+        folder=Path(row['folder']);native=folder.parent/'native/video.mp4'
+        status('quality',case=row['id'],method=row['method'],completed=len(quality),total=2*len(rows)//3)
+        q=scorer.compare(native,folder/'video.mp4')
+        gt,_=read_video(native);pred,_=read_video(folder/'video.mp4')
+        psnr=[]
+        for a,b in zip(gt,pred):
+            mse=float(np.mean(((a.astype(np.float32)-b.astype(np.float32))/255.)**2))
+            psnr.append(-10*math.log10(max(mse,1e-12)))
+        q.update(psnr=float(np.mean(psnr)));assert q['frames']==121
+        quality.append({**row,**q});save(ROOT/'quality.json',quality)
+    summary={'calibration':read(ROOT/'calibration_complete.json'),'validation_runs':rows,'quality':quality,
+             'limitations':protocol['limitations'],'original_table_unchanged':sha(PACKAGE/'data/sensitivity_ltx.npz')==identity['original_sensitivity_sha256']}
+    assert summary['original_table_unchanged']
+    save(ROOT/'summary.json',summary);status('complete',calibration_samples=len(protocol['calibration_cases']),quality_pairs=len(quality))
+
+if __name__=='__main__':
+    import fcntl
+    lock=(ROOT/'run.lock').open('w')
+    try:
+        fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+    except BlockingIOError:
+        raise SystemExit('Another calibration process owns this directory')
+    try:main()
+    except Exception as exc:
+        status('failed',error=str(exc),traceback=traceback.format_exc());raise

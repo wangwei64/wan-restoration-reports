@@ -1,0 +1,96 @@
+{
+  "videos": [
+    {
+      "id": "mixkit_51600",
+      "category": "river",
+      "prompt": "Water in slow motion flows down the river creating a foam and waves through the rocks",
+      "page_url": "https://mixkit.co/free-stock-video/water-in-slow-motion-flows-down-the-river-creating-a-51600/",
+      "download_url": "https://assets.mixkit.co/videos/51600/51600-1080.mp4",
+      "license": "https://mixkit.co/license/#videoFree",
+      "file": "sources/mixkit_51600.mp4",
+      "bytes": 74879074,
+      "sha256": "655b0b6741def75f80c70a0abc3da7c52767b8b63e73f66ae14b93aa86559a53"
+    },
+    {
+      "id": "mixkit_4401",
+      "category": "people",
+      "prompt": "Crowds of people cross a street junction",
+      "page_url": "https://mixkit.co/free-stock-video/crowds-of-people-cross-a-street-junction-4401/",
+      "download_url": "https://assets.mixkit.co/videos/4401/4401-1080.mp4",
+      "license": "https://mixkit.co/license/#videoFree",
+      "file": "sources/mixkit_4401.mp4",
+      "bytes": 74588084,
+      "sha256": "b2afbc1c08ad7c93df5559b95072dbcd88d7ac0e20c93d9284244afc96392352"
+    },
+    {
+      "id": "mixkit_1479",
+      "category": "dog",
+      "prompt": "A dog resting on the grass next to a dog toy",
+      "page_url": "https://mixkit.co/free-stock-video/a-dog-resting-on-the-grass-next-to-a-dog-1479/",
+      "download_url": "https://assets.mixkit.co/videos/1479/1479-1080.mp4",
+      "license": "https://mixkit.co/license/#videoFree",
+      "file": "sources/mixkit_1479.mp4",
+      "bytes": 42035291,
+      "sha256": "09554a015edec1b2707c3f6f692d28fbac004b62aa3df193fb84f76378a3599e"
+    },
+    {
+      "id": "mixkit_40524",
+      "category": "food",
+      "prompt": "Top view of a woman slicing vegetables",
+      "page_url": "https://mixkit.co/free-stock-video/top-view-of-a-woman-slicing-vegetables-40524/",
+      "download_url": "https://assets.mixkit.co/videos/40524/40524-1080.mp4",
+      "license": "https://mixkit.co/license/#videoFree",
+      "file": "sources/mixkit_40524.mp4",
+      "bytes": 52619507,
+      "sha256": "6815120dccf906fcacca8c91bd8d2291aacd84d28ee5735e44723960b88dd150"
+    },
+    {
+      "id": "mixkit_43483",
+      "category": "sport",
+      "prompt": "One on one in a soccer game",
+      "page_url": "https://mixkit.co/free-stock-video/one-on-one-in-a-soccer-game-43483/",
+      "download_url": "https://assets.mixkit.co/videos/43483/43483-1080.mp4",
+      "license": "https://mixkit.co/license/#videoFree",
+      "file": "sources/mixkit_43483.mp4",
+      "bytes": 21325430,
+      "sha256": "def76ebd8901da37568522963ed0fa92bee04cec79224cfa6bdc85af93898deb"
+    },
+    {
+      "id": "mixkit_572",
+      "category": "forest",
+      "prompt": "Waterfall landscape",
+      "page_url": "https://mixkit.co/free-stock-video/waterfall-landscape-572/",
+      "download_url": "https://assets.mixkit.co/videos/572/572-1080.mp4",
+      "license": "https://mixkit.co/license/#videoFree",
+      "file": "sources/mixkit_572.mp4",
+      "bytes": 116461880,
+      "sha256": "80bd17c9686fa25f1ed43b50d74aa45e2585f777b960a103f60a7afd6c1c10cc"
+    },
+    {
+      "id": "mixkit_4251",
+      "category": "traffic",
+      "prompt": "Busy Avenue in Las Vegas",
+      "page_url": "https://mixkit.co/free-stock-video/busy-avenue-in-las-vegas-4251/",
+      "download_url": "https://assets.mixkit.co/videos/4251/4251-1080.mp4",
+      "license": "https://mixkit.co/license/#videoFree",
+      "file": "sources/mixkit_4251.mp4",
+      "bytes": 29095604,
+      "sha256": "3f5558a09c516933bdcfd9397af41eddccb42f9cb1f73999dd423a5cc45857cf"
+    },
+    {
+      "id": "mixkit_2854",
+      "category": "flower",
+      "prompt": "Flowers in nature",
+      "page_url": "https://mixkit.co/free-stock-video/flowers-in-nature-2854/",
+      "download_url": "https://assets.mixkit.co/videos/2854/2854-1080.mp4",
+      "license": "https://mixkit.co/license/#videoFree",
+      "file": "sources/mixkit_2854.mp4",
+      "bytes": 25133073,
+      "sha256": "b38376275a4b061fdf3ad7b697d08e6a5afda113eac1a1601e865410d283ceb9"
+    }
+  ],
+  "downloaded_at_unix": 1794035210.4938507,
+  "selection": "First freely licensed landscape clip in each of eight prespecified Mixkit categories, in the archived 2026-11-07 category pages; eligibility checked before sensitivity or evaluation results.",
+  "caption_source": "Mixkit item title; no model-generated caption or outcome-based editing.",
+  "author_exact_eight_clips": false
+}

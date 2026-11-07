@@ -1,0 +1,18 @@
+{
+  "paper_url": "https://arxiv.org/html/2602.24208",
+  "checked_on": "2026-11-07",
+  "paper_section": "5 Implementation details; 5.2 Ablation on calibration set size; Figure4",
+  "paper_calibration_dataset": "MixKit",
+  "paper_calibration_video_count": 8,
+  "paper_size_comparison": [
+    8,
+    4096
+  ],
+  "paper_observation": "Eight diverse videos yielded sensitivity profiles close to those from the larger calibration set. This observation does not prove convergence for every checkpoint or target shape.",
+  "official_script_default_max_samples": 2048,
+  "default_is_not_paper_sample_count": true,
+  "official_source_url": "https://github.com/vita-epfl/SenCache/blob/3fb96a41511ede1e38f3555c863b1cb7cddfe567/LTX-Video/sensitivity_calculation_LTX.py",
+  "official_source_sha256": "918845b94269cb4e74f5e0721fc59f8b94b94d86d611762a67e69249f5181e42",
+  "authors_exact_clip_ids_found": false,
+  "our_protocol": "Eight independently selected real Mixkit clips; native LTX0.9.6 checkpoint and evaluated shape/schedule; unchanged old/new cache thresholds; independent paired test prompts and seeds."
+}

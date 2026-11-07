@@ -1,0 +1,16 @@
+{
+  "base_release": "ltx-all-methods-v1-20260912",
+  "base_commit": "604e75f810dc03f47f7d23bf9a1c39917f0c1feb",
+  "frozen_generation_sha256": "37dccb338d32169ab0efd540f247ef5fc1806d9e2bb886d17c51e448d0d51bab",
+  "paper_settings_source": "Local manuscript snapshot, before_intro_flow_185636.tex; experimental setup and baseline implementation appendix",
+  "paper_settings_source_sha256": "83c32fe9b16cde41e9c1e286c8a306d452e96adb62966e9181f8908f4605fc52",
+  "native_adapter_sha256": "8260d9ca196d9e3162c7c98d4666bdef140ad7dfc0209e39791ea8c1ea24bd9b",
+  "video_encoder_sha256": "7e6b883506b9ef972f97ff6b365fedb380602dbbd8c59e8ce0a30c936be9b8ad",
+  "calibration_script_original_sha256": "5d5d7be3b66fda7577f8fa714615d772eefdc28a8bc2a41565ed98140776b878",
+  "calibration_protocol_sha256": "5097366ca61371ccadec031f305ff4da94feaeff96308dc8635e9dc4c8f6c1cb",
+  "upstream_sencache_commit": "3fb96a41511ede1e38f3555c863b1cb7cddfe567",
+  "changes": "Portable SenCache-only runner; official dual-threshold adapter; explicit pinned table selection; guidance override provenance; unchanged native forward and video encoder.",
+  "raw_mixkit_media_included": false,
+  "external_model_weights_included": false,
+  "restorer_required": false
+}
